@@ -1,0 +1,1383 @@
+@charset "utf-8";
+
+ul, li, dl, dt, dd{
+	list-style: none;
+}
+img{
+    cursor: pointer;
+}
+body{
+	/*background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAIAAABL1vtsAAAAGXRFW…hKi6PBOeBG/AcDEozAVM0IBiQYQUbBRaWwIMap+AFAgAEAMSsqYNq4m9oAAAAASUVORK5CYII=);*/
+}
+
+.container {
+	background: #1e1e1e;
+	margin-top: 63px!important;
+}
+
+.index .banner-wrap {
+	position: relative;
+	overflow: hidden;
+}
+
+.banner-wrap .banner-cycle,
+.banner-wrap .banner, .banner-wrap .banner-img {
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+
+.banner-wrap .banner1 {
+	background: url("//image.beike188.com/KFY/images/index2/banner.jpg") no-repeat center top #030303;
+}
+
+.banner-wrap .pager {
+	position: absolute;
+	z-index: 100;
+	text-align: center;
+	width: 100%;
+	bottom: 80px;
+	left: 0;
+	height: 12px;
+}
+
+.banner-wrap .pager span {
+	width: 11px;
+	height: 11px;
+	background: url("//image.beike188.com/KFY/images/index2/pager.png") no-repeat 0 0;
+	display: inline-block;
+	margin: 0 4px;
+	cursor: pointer;
+}
+
+.banner-wrap .pager span.cycle-pager-active {
+	background-position: -21px 0;
+}
+
+.main .section .content {
+	position: relative;
+}
+
+.main .section1 .content {
+	/*padding: 235px 0 70px;*/
+}
+
+.section .casino {
+	/*position: absolute;*/
+	margin-top: 30px;
+	margin-left: 0;
+	width: 100%;
+	z-index: 200;
+}
+
+.casino .img {
+	float: left;
+	width: 594px;
+	height: 230px;
+	position: relative;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.casino .img1 {margin-right: 12px;}
+
+.casino .img img {
+	-webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+.casino .img-info {
+	padding: 26px 0 0 26px;
+	z-index: 100;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 204px;
+}
+
+.casino .img-info h3 {
+	font-size: 24px;
+	color: #fff;
+	font-weight: normal;
+	margin-bottom: 12px;
+}
+
+.casino .img-info p {
+	font-size: 16px;
+	color: #999;
+	line-height: 24px;
+}
+
+.casino .img-balance {
+	position: absolute;
+	bottom: 40px;
+	left: 25px;
+	font-size: 18px;
+	color: #cca352;
+	line-height: 20px;
+	transition: all 0.3s ease;
+	opacity: 1;
+	visibility: visible;
+}
+
+.casino .img-balance span {
+	font-size: 16px;
+}
+
+.casino .img-balance .icon-bal {
+	background: url("//image.beike188.com/KFY/images/index2/common/icon7.png") no-repeat;
+	width: 29px;
+	height: 20px;
+	display: block;
+	float: left;
+	margin-right: 12px;
+}
+
+.casino .img-info .img-btn, .section3 .img-btn {
+	display: block;
+	width: 134px;
+	height: 36px;
+	border: 1px solid #c2994e;
+	color: #cca352;
+	font-size: 16px;
+	line-height: 36px;
+	text-align: center;
+	-moz-transition: ease .2s;
+    -o-transition: ease .2s;
+    -webkit-transition: ease .2s;
+    transition: ease .2s;
+    position: absolute;
+    bottom: 30px;
+    left: 27px;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+
+}
+
+.casino .img-info .img-btn span, .section3 .img-btn span {
+	z-index: 3;
+	position: relative;
+}
+
+.casino .img-info .img-btn:before, .section3 .img-btn:before {
+	position: absolute;
+    content: '';
+    z-index: 2;
+    background: #ba8d4d;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -moz-transition: -moz-transform .6s cubic-bezier(0.8, 0, 0.2, 1) 0s;
+    -o-transition: -o-transform .6s cubic-bezier(0.8, 0, 0.2, 1) 0s;
+    -webkit-transition: -webkit-transform .6s cubic-bezier(0.8, 0, 0.2, 1);
+    -webkit-transition-delay: 0s;
+    transition: transform .6s cubic-bezier(0.8, 0, 0.2, 1) 0s;
+    -moz-transform: scale(0, 1);
+    -ms-transform: scale(0, 1);
+    -webkit-transform: scale(0, 1);
+    transform: scale(0, 1);
+    -moz-transform-origin: right top;
+    -ms-transform-origin: right top;
+    -webkit-transform-origin: right top;
+    transform-origin: right top;
+}
+
+.casino .img-info .img-btn:hover:before, .section3 .img-btn:hover:before {
+	-moz-transform-origin: left top;
+    -ms-transform-origin: left top;
+    -webkit-transform-origin: left top;
+    transform-origin: left top;
+    -moz-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+}
+
+.casino .img-info .img-btn:hover, .section3 .img-btn:hover {
+	color: #fff;
+}
+
+.casino .img .img-mask {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(36,36,36,0.5);
+	transition: all .3s ease-out;
+}
+
+.casino .img .img-mask-hover {
+	display: none;
+}
+
+.casino .img:hover .img-mask-hover {
+	display: block;
+}
+
+.casino .img:hover img {
+	/*-webkit-transform: scale(1.05);*/
+    /*transform: scale(1.05);*/
+}
+
+.casino .img:hover .img-balance {
+	opacity: 0;
+	visibility: hidden;
+}
+
+.casino .img:hover .img-btn {
+	opacity: 1;
+	visibility: visible;
+}
+
+.casino .img .img-mask.mask-maintain {
+	z-index: 200;
+	background: rgba(36,36,36,0.8);
+}
+
+.casino .mask-maintain .mask-wrap {
+	padding-top: 78px;
+	text-align: center;
+	cursor: default;
+}
+
+.mask-maintain .icon-maintain {
+	background: url("//image.beike188.com/KFY/images/index2/icon-maintain.png") no-repeat;
+	width: 35px;
+	height: 40px;
+	display: block;
+	margin: 0 auto 10px;
+}
+
+.mask-maintain h5 {
+	font-size: 18px;
+	font-weight: normal;
+	color: #999;
+}
+
+
+.section .row {
+	margin-bottom: 65px;
+}
+
+.section .row .t {
+	font-size: 24px;
+	color: #fff;
+	text-align: center;
+	margin-bottom: 35px;
+	line-height: 24px;
+}
+
+.section .row .t .line {
+	width: 80px;
+	height: 1px;
+	display: inline-block;
+	background: #353535;
+	vertical-align: middle;
+}
+
+.section .row .t .line1 {
+	margin-right: 15px;
+}
+
+.section .row .t .line2 {
+	margin-left: 15px;
+}
+
+.row .c1 {
+	margin-left: -12px;
+}
+
+.row .iframe-holder {
+	width: 392px;
+	height: 326px;
+	background: #141414;
+	float: left;
+	margin-left: 12px;
+}
+
+.row .box {
+	width: 392px;
+	height: 326px;
+	background: #141414;
+	float: left;
+	margin-left: 12px;
+}
+
+.row .box .box-t {
+	padding: 18px 20px 0;
+	margin-bottom: 17px;
+	font-size: 18px;
+	color: #fff;
+	line-height: 18px;
+}
+
+.row .box-t .time {
+	float: right;
+	font-size: 18px;
+	color: #697081;
+}
+
+.row .box-t i {
+	background: url("//image.beike188.com/KFY/images/index2/common/icon8.png") no-repeat;
+	width: 19px;
+	height: 19px;
+	display: inline-block;
+	margin-right: 8px;
+	position: relative;
+	top: 2px;
+}
+
+.row .box .scoreboard {
+	width: 286px;
+	height: 26px;
+	border: 1px solid #31353d;
+	border-radius: 20px;
+	margin: 0 auto 18px;
+	text-align: center;
+	padding-top: 8px;
+}
+
+.box .scoreboard .col {
+	width: 33%;
+	height: 18px;
+	line-height: 18px;
+	border-right: 1px solid #31353d;
+	float: left;
+}
+
+.box .scoreboard .col h5 {
+	font-size: 16px;
+	color: #ccc;
+}
+
+.box .scoreboard .col1 span {
+	color: #e54560;
+	margin-right: 3px;
+}
+
+.box .scoreboard .col2 span {
+	color: #24b253;
+	margin-right: 3px;
+}
+
+.box .scoreboard .col3 span {
+	color: #668cff;
+	margin-right: 3px;
+}
+
+.box .scoreboard .col3 {
+	border-right: 0;
+}
+
+.box .img {
+	text-align: center;
+	margin-bottom: 18px;
+}
+
+.box .box-btn {
+	display: block;
+	width: 136px;
+	height: 38px;
+	border: 1px solid #c39a4f;
+	background: transparent;
+	margin: 0 auto;
+	-moz-transition: ease .2s;
+    -o-transition: ease .2s;
+    -webkit-transition: ease .2s;
+    transition: ease .2s;
+    position: relative;
+}
+
+.box .box-btn:before {
+	position: absolute;
+    content: '';
+    z-index: 2;
+    background: #ba8d4d;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -moz-transition: -moz-transform .6s cubic-bezier(0.8, 0, 0.2, 1) 0s;
+    -o-transition: -o-transform .6s cubic-bezier(0.8, 0, 0.2, 1) 0s;
+    -webkit-transition: -webkit-transform .6s cubic-bezier(0.8, 0, 0.2, 1);
+    -webkit-transition-delay: 0s;
+    transition: transform .6s cubic-bezier(0.8, 0, 0.2, 1) 0s;
+    -moz-transform: scale(0, 1);
+    -ms-transform: scale(0, 1);
+    -webkit-transform: scale(0, 1);
+    transform: scale(0, 1);
+    -moz-transform-origin: right top;
+    -ms-transform-origin: right top;
+    -webkit-transform-origin: right top;
+    transform-origin: right top;
+}
+
+.box .box-btn span {
+	display: block;
+	line-height: 36px;
+	text-align: center;
+	color: #cca352;
+	font-size: 16px;
+	position: relative;
+	z-index: 3;
+}
+
+.box .box-btn:hover:before {
+	-moz-transform-origin: left top;
+    -ms-transform-origin: left top;
+    -webkit-transform-origin: left top;
+    transform-origin: left top;
+    -moz-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+}
+
+.box .box-btn:hover span {
+	color: #fff;
+}
+
+.section .row .t1 {
+	margin-bottom: 15px;
+}
+
+.section .row h5.sub-t {
+	font-size: 16px;
+	color: #b0b0b0;
+	text-align: center;
+	font-weight: normal;
+}
+
+.section .row h5.sub-t span {
+	color: #cca352;
+	text-decoration: underline;
+}
+
+.row .baccarat {
+	background: url("//image.beike188.com/KFY/images/index2/bg1.jpg") no-repeat;
+	width: 1160px;
+	height: 388px;
+	position: relative;
+	padding: 20px;
+	margin-bottom: 25px;
+}
+
+.section .row.last {margin-bottom: 0;}
+
+.baccarat .tag {
+	background: url("//image.beike188.com/KFY/images/index2/tag1.png") no-repeat;
+	width: 69px;
+	height: 69px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: block;
+	transition: all 0.3s ease-in-out;
+	cursor: pointer;
+}
+
+.baccarat .tag:hover {
+	background: url("//image.beike188.com/KFY/images/index2/tag1h.png") no-repeat;
+}
+
+.baccarat .table {
+	float: left;
+	width: 394px;
+}
+
+.baccarat .table th {
+	height: 40px;
+	text-align: center;
+	font-size: 14px;
+	color: #fff;
+	background: rgba(0,0,0,0.4);
+}
+
+.baccarat .table td {
+	height: 34px;
+	border-bottom: 1px solid #9cb7ed;
+	text-align: center;
+	background: rgba(0,0,0,0.1);
+	font-size: 14px;
+	color: #fff;
+	cursor: default;
+	transition: background 0.2s ease-in-out;
+}
+
+.baccarat .table td.space {
+	width: 20px;
+	border-bottom: 1px solid transparent;
+}
+
+.baccarat .table .icon-medal {
+	width: 22px;
+	height: 27px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 10px;
+	font-size: 14px;
+	color: #fff;
+	text-align: center;
+	line-height: 27px;
+}
+
+.baccarat .table .icon-gold {
+	background: url("//image.beike188.com/KFY/images/index2/icon-gold.png") no-repeat;
+}
+
+.baccarat .table .icon-silver {
+	background: url("//image.beike188.com/KFY/images/index2/icon-silver.png") no-repeat;
+}
+
+.baccarat .table .icon-bronze {
+	background: url("//image.beike188.com/KFY/images/index2/icon-bronze.png") no-repeat;
+}
+
+.baccarat .table .arrow {
+	width: 12px;
+	height: 18px;
+	vertical-align: middle;
+	display: inline-block;
+}
+
+.baccarat .table .arrow-up {
+	background: url("//image.beike188.com/KFY/images/index2/icon-arrow-up.png") no-repeat;
+}
+
+.baccarat .table .arrow-down {
+	background: url("//image.beike188.com/KFY/images/index2/icon-arrow-down.png") no-repeat;
+}
+
+.baccarat .table .arrow-line {
+	width: 12px;
+	height: 2px;
+	background: #4d659e;
+	vertical-align: middle;
+}
+
+.baccarat .table tr.last td {
+	border-bottom: 0;
+}
+
+.baccarat .table tr.active td {
+	background: rgba(255,255,255,0.8);
+	color: #668cff;
+	border-bottom: 0;
+	position: relative;
+	z-index: 100;
+	font-weight: bold;
+}
+
+.baccarat .table tr:hover td {
+	background: rgb(255,255,255,0.2);
+	z-index: 100;
+}
+
+.baccarat .table .arrow-right {
+	background: url("//image.beike188.com/KFY/images/index2/icon-arrow-right.png") no-repeat;
+	width: 5px;
+	height: 9px;
+	display: none;
+	margin: 0 auto;
+}
+
+.baccarat .table tr.active .arrow-right {
+	display: block;
+}
+
+.baccarat .info {
+	float: left;
+	padding: 0 60px;
+	width: 645px;
+}
+
+.baccarat .info .t {
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	font-size: 14px;
+	color: #fff;
+	font-weight: bold;
+	margin-bottom: 17px;
+}
+
+.baccarat .info .t .line {
+	width: 114px;
+	height: 1px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.baccarat .info .t .line1 {
+	background: url("//image.beike188.com/KFY/images/index2/line1.png") no-repeat;
+	margin-right: 10px;
+}
+
+.baccarat .info .t .line2 {
+	background: url("//image.beike188.com/KFY/images/index2/line2.png") no-repeat;
+	margin-left: 10px;
+}
+
+.baccarat .info .value {
+	background: url("//image.beike188.com/KFY/images/index2/img3.png") no-repeat;
+	width: 447px;
+	height: 84px;
+	display: block;
+	margin: 0 auto 40px;
+	position: relative;
+	line-height: 84px;
+	font-size: 44px;
+	color: #fff;
+	font-weight: bold;
+	padding-left: 100px;
+	letter-spacing: 1px;
+}
+
+.baccarat .info .value span {
+	font-size: 45px;
+	font-weight: normal;
+}
+
+.baccarat .info .arrow {
+	display: inline-block;
+	width: 26px;
+	height: 32px;
+	margin-left:8px;
+	position: relative;
+	top: -2px;
+}
+
+.baccarat .info .arrow-up {
+	background: url("//image.beike188.com/KFY/images/index2/icon-arrowb-up.png") no-repeat;
+}
+.baccarat .info .arrow-down {
+	background: url("//image.beike188.com/KFY/images/index2/icon-arrowb-down.png") no-repeat;
+}
+.baccarat .info .arrow-line {
+    background: url("//image.beike188.com/KFY/images/index2/icon-arrowb-line.png") no-repeat;
+/*	width: 27px;
+    height: 5px;
+    background: #4D65DC;
+    vertical-align: middle;*/
+}
+
+.baccarat .info .value .icon {
+	width: 80px;
+	height: 100px;
+	display: block;
+	position: absolute;
+	top: -4px;
+	left: -10px;
+}
+
+.baccarat .info .value .icon1 { background: url("//image.beike188.com/KFY/images/index2/01.png") no-repeat;}
+.baccarat .info .value .icon2 { background: url("//image.beike188.com/KFY/images/index2/02.png") no-repeat;}
+.baccarat .info .value .icon3 { background: url("//image.beike188.com/KFY/images/index2/03.png") no-repeat;}
+.baccarat .info .value .icon4 { background: url("//image.beike188.com/KFY/images/index2/04.png") no-repeat;}
+.baccarat .info .value .icon5 { background: url("//image.beike188.com/KFY/images/index2/05.png") no-repeat;}
+.baccarat .info .value .icon6 { background: url("//image.beike188.com/KFY/images/index2/06.png") no-repeat;}
+.baccarat .info .value .icon7 { background: url("//image.beike188.com/KFY/images/index2/07.png") no-repeat;}
+.baccarat .info .value .icon8 { background: url("//image.beike188.com/KFY/images/index2/08.png") no-repeat;}
+.baccarat .info .value .icon9 { background: url("//image.beike188.com/KFY/images/index2/09.png") no-repeat;}
+.baccarat .info .value .icon10 { background: url("//image.beike188.com/KFY/images/index2/10.png") no-repeat;}
+
+.baccarat .info h4 {
+	font-size: 18px;
+	font-weight: normal;
+	line-height: 38px;
+	text-align: center;
+	color: #fff;
+	margin-bottom: 25px;
+}
+
+.baccarat .info h4 span {
+	font-weight: bold;
+	color: #cca352;
+	text-decoration: underline;
+}
+
+.baccarat .info h4 .btn {
+	display: inline-block;
+	width: 134px;
+	height: 36px;
+	line-height: 36px;
+	text-align: center;
+	font-size: 16px;
+	color: #fff;
+	border: 1px solid #fff;
+	margin-left: 35px;
+    -moz-transition: ease .2s;
+    -o-transition: ease .2s;
+    -webkit-transition: ease .2s;
+    transition: ease .2s;
+    position: relative;
+}
+
+.baccarat .info h4 .btn:before {
+	position: absolute;
+    content: '';
+    z-index: 2;
+    background: #fff;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -moz-transition: -moz-transform .6s cubic-bezier(0.8, 0, 0.2, 1) 0s;
+    -o-transition: -o-transform .6s cubic-bezier(0.8, 0, 0.2, 1) 0s;
+    -webkit-transition: -webkit-transform .6s cubic-bezier(0.8, 0, 0.2, 1);
+    -webkit-transition-delay: 0s;
+    transition: transform .6s cubic-bezier(0.8, 0, 0.2, 1) 0s;
+    -moz-transform: scale(0, 1);
+    -ms-transform: scale(0, 1);
+    -webkit-transform: scale(0, 1);
+    transform: scale(0, 1);
+    -moz-transform-origin: right top;
+    -ms-transform-origin: right top;
+    -webkit-transform-origin: right top;
+    transform-origin: right top;
+}
+
+.baccarat .info h4 .btn span {
+	position: relative;
+	z-index: 3;
+	color: #fff;
+	text-decoration: none;
+	font-weight: normal;
+}
+
+.baccarat .info h4 .btn:hover span {
+	color: #668cff;
+}
+
+.baccarat .info h4 .btn:hover:before {
+	-moz-transform-origin: left top;
+    -ms-transform-origin: left top;
+    -webkit-transform-origin: left top;
+    transform-origin: left top;
+    -moz-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+}
+
+.baccarat .info .t2 {margin-bottom: 6px;}
+
+.baccarat .info .list {width: 100%;}
+
+.baccarat .info .list-col {
+	list-style: none;
+	padding-left: 0;
+	float: left;
+}
+
+.baccarat .info .list-col1 {
+	width: 318px;
+}
+
+.baccarat .info .list li {
+	height: 26px;
+	line-height: 26px;
+	margin-bottom: 8px;
+	font-size: 14px;
+	color: #fff;
+}
+
+.baccarat .info .list li .underline {
+	text-decoration: underline;
+}
+
+.baccarat .info .list li span {
+	color: #cca352;
+	font-size: 16px;
+	margin-left: 6px;
+}
+
+.baccarat .info .list .i-wrap {
+	margin: 0 2px;
+	width: 0px;
+	display: inline-block;
+	text-align: center;
+}
+
+.baccarat .info .list .list-icon {
+	display: inline-block;
+	min-width: 16px;
+	height: 26px;
+	vertical-align: middle;
+	text-align: center;
+	font-size: 12px;
+	color: #fff;
+	font-weight: bold;
+	line-height: 25px;
+	font-style: normal;
+	border-radius: 26px;
+	padding: 0 5px;
+}
+
+.baccarat .info .list .list-icon-2 {
+	background: url("//image.beike188.com/KFY/images/index2/icon-blue.png") no-repeat;
+}
+
+.baccarat .info .list .list-icon-1 {
+	background: url("//image.beike188.com/KFY/images/index2/icon-red.png") no-repeat;
+}
+
+.baccarat .info .list .list-icon-3 {
+	background: url("//image.beike188.com/KFY/images/index2/icon-green.png") no-repeat;
+}
+
+.baccarat .info .list .list-icon-4 {
+	background: url("//image.beike188.com/KFY/images/index2/type4.png") no-repeat;
+}
+.baccarat .info .list .list-icon-5 {
+	background: url("//image.beike188.com/KFY/images/index2/type5.png") no-repeat;
+}
+
+.baccarat .info .list .list-icon-6 {
+	background: url("//image.beike188.com/KFY/images/index2/type6.png") no-repeat;
+	width: 43px;
+	margin: 0 2px;
+}
+
+.baccarat .info .list .list-icon-7 {
+	background: url("//image.beike188.com/KFY/images/index2/type7.png") no-repeat;
+	width: 43px;
+	margin: 0 2px;
+}
+
+.baccarat .info .list .list-icon-8 {
+	background: url("//image.beike188.com/KFY/images/index2/type8.png") no-repeat;
+	width: 43px;
+	margin: 0 2px;
+}
+
+.baccarat .info .list .list-icon-red {background: #e64560;}
+.baccarat .info .list .list-icon-blue {background: #668cff;}
+.baccarat .info .list .list-icon-green {background: #0bac42;}
+
+.main .section2 {
+	background: #282828;
+	padding-bottom: 40px;
+	/*padding: 50px 0 70px;*/
+}
+
+.section2 .t {
+	font-size: 24px;
+	color: #cca352;
+	text-align: center;
+	line-height: 40px;
+	margin-bottom: 20px;
+	font-weight: normal;
+}
+
+.section2 .t .line {
+	width: 492px;
+	height: 3px;
+	border-top: 1px solid #3e3e3e;
+	display: inline-block;
+	padding-top: 3px;
+	position: relative;
+	top: -5px;
+}
+
+.section2 .t .line i {
+	display: block;
+	width: 100%;
+	height: 4px;
+	background: #3e3e3e;
+}
+
+.section2 .t .line1 {
+	margin-right: 16px;
+}
+
+.section2 .t .line2 {
+	margin-left: 16px;
+}
+
+.section2 .jackpot {
+	text-align: center;
+}
+
+.section2 .jackpot h1 {
+	font-size: 83px;
+	color: #cca352;
+	font-weight: normal;
+}
+
+.section2 .br {
+	background: url("//image.beike188.com/KFY/images/index2/br.png") repeat-x;
+	width: 100%;
+	height: 10px;
+	display: block;
+	margin: 32px 0 40px;
+}
+
+.section2 .c {
+	position: relative;
+	overflow: hidden;
+	height: 300px;
+}
+
+.section2 .c .list-cycle, .section2 .c .list-cycle .group {
+	width: 100%;
+	height: 460px;
+}
+
+.section2 .list-cycle .item {
+	width: 392px;
+	height: 100%;
+	float: left;
+	margin-right: 12px;
+}
+
+.section2 .list-cycle .item.last {margin-right: 0;}
+
+.section2 .item .item-t {
+	height: 38px;
+	line-height: 38px;
+	margin-bottom: 16px;
+	cursor: default;
+}
+
+.section2 .item .item-t .icon {
+	background: url("//image.beike188.com/KFY/images/index2/icon1.png") no-repeat;
+	width: 38px;
+	height: 38px;
+	float: left;
+	margin-right: 14px;
+	transition: all 0.3s ease-in-out;
+}
+
+.section2 .item .item-t h3 {
+	font-size: 18px;
+	color: #cca352;
+	font-weight: normal;
+	height: 26px;
+	border-bottom: 1px dotted #cca352;
+	float: left;
+	line-height: 20px;
+	margin-top: 5px;
+	transition: all 0.3s ease-in-out;
+}
+
+.section2 .item:hover .item-t .icon {
+	background: url("//image.beike188.com/KFY/images/index2/icon1h.png") no-repeat;
+}
+
+.section2 .item:hover .item-t h3 {
+	color: #ba8d4d;
+	border-bottom: 0;
+}
+
+.section2 .item .item-img {
+	height: 230px;
+	position: relative;
+	overflow: hidden;
+}
+
+.section2 .item .item-img img {
+	-webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.item .item-mask {
+	padding: 12px 0;
+	height: 65px;
+	background: rgba(0,0,0,0.8);
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+}
+
+.item .item-mask .col {
+	width: 50%;
+	position: relative;
+	text-align: center;
+	height: 100%;
+	float: left;
+}
+
+.item .item-mask .col p {
+	font-size: 12px;
+	color: #fff;
+}
+
+.item .item-mask .time {
+	width: 136px;
+	margin: 0 auto;
+}
+
+.item .item-mask .time i {
+	font-size: 20px;
+	color: #fff;
+	font-style: normal;
+	vertical-align: top;
+	display: block;
+	line-height: 22px;
+	font-weight: bold;
+	width: 10px;
+	margin-top: 5px;
+	float: left;
+}
+
+.item .item-mask .time .t-col {
+	display: block;
+	float: left;
+	width: 26px;
+	font-size: 20px;
+	color: #fff;
+	margin-top: 5px;
+}
+
+.item .item-mask .time .t-col1 {
+	margin-right: 10px;
+}
+
+.item .item-mask .time .t-col span {
+	font-size: 12px;
+	color: #999;
+}
+
+.item .item-mask .col .border {
+	width: 1px;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: #31353d;
+	display: block;
+}
+
+.item .item-btn {
+	display: block;
+	width: 134px;
+	height: 36px;
+	border: 1px solid #c2994e;
+	color: #cca352;
+	font-size: 16px;
+	line-height: 36px;
+	margin: 12px auto 0;
+	text-align: center;
+	-moz-transition: ease .2s;
+    -o-transition: ease .2s;
+    -webkit-transition: ease .2s;
+    transition: ease .2s;
+    position: relative;
+
+}
+
+.item .item-btn span {
+	z-index: 3;
+	position: relative;
+}
+
+.item .item-btn:before {
+	position: absolute;
+    content: '';
+    z-index: 2;
+    background: #ba8d4d;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -moz-transition: -moz-transform .6s cubic-bezier(0.8, 0, 0.2, 1) 0s;
+    -o-transition: -o-transform .6s cubic-bezier(0.8, 0, 0.2, 1) 0s;
+    -webkit-transition: -webkit-transform .6s cubic-bezier(0.8, 0, 0.2, 1);
+    -webkit-transition-delay: 0s;
+    transition: transform .6s cubic-bezier(0.8, 0, 0.2, 1) 0s;
+    -moz-transform: scale(0, 1);
+    -ms-transform: scale(0, 1);
+    -webkit-transform: scale(0, 1);
+    transform: scale(0, 1);
+    -moz-transform-origin: right top;
+    -ms-transform-origin: right top;
+    -webkit-transform-origin: right top;
+    transform-origin: right top;
+}
+
+.item .item-btn:hover:before {
+	-moz-transform-origin: left top;
+    -ms-transform-origin: left top;
+    -webkit-transform-origin: left top;
+    transform-origin: left top;
+    -moz-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+}
+
+.item .item-btn:hover {
+	color: #fff;
+}
+
+.item .item-table {
+	background: #141414;
+	padding: 10px 14px 14px;
+	height: 151px;
+}
+
+.item .item-table .table-col {
+	float: left;
+	width: 172px;
+}
+
+.item .item-table th {
+	height: 24px;
+	font-size: 12px;
+	color: #999;
+	font-weight: normal;
+}
+
+.item .item-table .centered {
+	text-align: center;
+}
+.item .item-table .txt-left {
+	text-align: left;
+	padding-left: 10px;
+}
+
+.item .item-table .txt-right {
+	text-align: right;
+}
+
+.item .item-table td {
+	height: 24px;
+	border-top: 1px solid #232529;
+	font-size: 13px;
+	color: #fff;
+	transition: all 0.3s ease-in-out;
+	cursor: default;
+}
+
+.item .item-table tr:hover td, .item .item-table tr.active td {
+	background: #282828;
+}
+
+.item .item-table .f-right {
+	float: right;
+}
+
+.item .item-table2 {
+	padding: 0;
+	height: 177px;
+}
+
+.item .item-mask2 {
+	position: relative;
+}
+
+.item .item-mask2 .col .value {
+	font-size: 20px;
+	color: #fff;
+	margin-top: 5px;
+}
+
+.item .item-rules {
+	padding: 15px 20px;
+}
+
+.item .item-rules p {
+	font-size: 13px;
+	color: #999;
+	line-height: 20px;
+}
+
+.section2 .item:hover .item-img img {
+	-webkit-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+.section2 .pager2 {
+	text-align: center;
+	height: 11px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+}
+
+.section2 .pager2 span {
+	width: 11px;
+	height: 11px;
+	background: url("//image.beike188.com/KFY/images/index2/pager2.png") no-repeat -21px 0;
+	display: inline-block;
+	margin: 0 4px;
+}
+
+.section2 .pager2 span.cycle-pager-active {
+	background-position: 0 0;
+}
+
+.main .section3 {
+	padding: 70px 0 0;
+}
+
+.section3 .img {
+	/*width: 588px;*/
+	/*height: 230px;*/
+	position: relative;
+	float: left;
+	margin-bottom: 20px;
+	overflow: hidden;
+}
+
+.section3 .img img {
+	-webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.section3 .img1 {
+	margin-right: 12px;
+}
+
+.section3 .img .info {
+	padding: 22px 0 0 28px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 200;
+}
+
+.section3 .img .info h3 {
+	font-size: 24px;
+	color: #fff;
+	font-weight: normal;
+	margin-bottom: 10px;
+}
+
+.section3 .img .info p {
+	font-size: 16px;
+	color: #999;
+}
+
+.section3 .img .img-mask {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(36,36,36,0.5);
+	display: none;
+	transition: all .3s ease-out;
+	z-index: 100;
+}
+
+.section3 .promo-ad {
+	background: url("//image.beike188.com/KFY/images/index2/promo-ad.jpg") no-repeat center top;
+	width: 100%;
+	height: 200px;
+	display: block;
+}
+
+.section3 .img:hover .img-mask {
+	display: block;
+}
+
+.section3 .img:hover img {
+	-webkit-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+.section3 .img:hover .img-mask .img-btn {
+	opacity: 1;
+	visibility: visible;
+}
+
+.fish-bg
+{
+	position: relative;
+	width: 100%;
+	height: 892px;
+	overflow: hidden;
+	background: url(../images/catchFishBanner.png) no-repeat center top;
+	padding-top: 360px;
+	background-size: auto 100% ;
+
+}
+
+.lotteryBanner{
+	width:100%;
+	height:360px;
+	background: url(../images/lotterybanner.jpg) no-repeat center top;
+	background-size: 100% auto;
+}
+
+.smallFish{
+	display: none;
+	width:70px;
+	height:100%;
+	background: url(../images/smallfish.png) no-repeat 0% center;
+	background-size: 65px auto;
+	margin-left: -25px;
+}
+
+.router-icon{
+	display: block;
+	width:45px;
+	height:100%;
+}
+
+.deposit{
+	background: url(../images/icon/deposit.png) no-repeat 0% center;
+	background-size: 25px auto;
+}
+.vipCenter{
+	background: url(../images/icon/vip.png) no-repeat 0% center;
+	background-size: 25px auto;
+}
+
+.tikuan{
+	background: url(../images/icon/tikuan.png) no-repeat 0% center;
+	background-size: 27px auto;
+}
+
+.edu{
+	background: url(../images/icon/eduzhuanhuan.png) no-repeat 0% center;
+	background-size: 25px auto;
+}
+
+.report{
+	background: url(../images/icon/report.png) no-repeat 0% center;
+	background-size: 24px auto;
+}
+
+.lotteryDraw{
+	background: url(../images/icon/draw.png) no-repeat 0% center;
+	background-size: 27px auto;
+}
+.eGameBanner{
+	background: url(../images/eGameBanner.png) no-repeat 0% 0%;
+	background-size: auto 100%;
+	height: 400px;
+	width: 100%;
+}
+
+.score{
+	background: url(../images/icon/score.png) no-repeat 0% center;
+	background-size: 25px auto;
+}
+
+.loginout{
+	background: url(../images/icon/logout.png) no-repeat 0% center;
+	background-size: 25px auto;
+}
+.startGame{
+	display: none;
+	margin-left: 20px;
+	letter-spacing: 3px;
+}
+
+.ivu-page{
+	margin-top: 20px;
+}
+
+.live-banners{
+    background: url(../images/freeDemo.png) no-repeat center top;
+    /*padding-top: 360px;*/
+    background-size: auto 100% ;
+    height: 400px;
+}

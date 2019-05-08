@@ -1,0 +1,2461 @@
+/*====== global start ======*/
+html, body { font-family: 'PingFang SC','San Francisco','Helvetica Neue','Helvetica','STHeitiSC-Light','Microsoft Yahei',sans-serif,arial; min-width: 1200px; font-size: 16px; font-weight: normal; -webkit-font-smoothing: antialiased; }
+.date-picker, .date-picker-wrapper{font-family: 'PingFang SC','San Francisco','Helvetica Neue','Helvetica','STHeitiSC-Light','Microsoft Yahei',sans-serif,arial; font-weight: 300; -webkit-font-smoothing: antialiased;}
+.container { overflow: hidden; }
+.relative { position: relative; }
+.content { width: 1200px; margin: 0 auto; }
+.none { display: none; }
+.clear { clear: both; }
+.right { float: right; }
+.left { float: left; }
+.gold-text { color: #cca352; }
+.gray-text { color: #cccccc; }
+.white-text { color: #ffffff; }
+a { text-decoration: none; }
+/*a:hover{color:#c08103!important;}*/
+input[type=text]:focus::-webkit-input-placeholder, input[type=password]:focus::-webkit-input-placeholder { color:transparent; }
+input[type=text]:focus:-moz-placeholder, input[type=password]:focus:-moz-placeholder { color:transparent; }
+input[type=text]:focus::-moz-placeholder, input[type=password]:focus::-moz-placeholder { color:transparent; }
+input[type=text]:focus::-ms-input-placeholder, input[type=password]:focus::-ms-input-placeholder { color:transparent; }
+/*====== global end ======*/
+
+/*====== header start ======*/
+#header { height: 176px; background: url("//image.beike188.com/KFY/images/register/top_bg.png") no-repeat center top #141414;  }
+#header .top-head { height: 29px; border-bottom: 1px solid #2F2323; color: #828282; line-height: 29px; font-size: 13px; }
+#time {width: 170px; display: inline-block; *display: inline; *zoom: 1; border-right: 1px #343434 dotted; padding-right: 8px; font-family: Verdana; white-space: nowrap;}
+#flag, #check, #clock, #head-next { display: inline-block; vertical-align: middle; margin-top: -3px; }
+#flag { margin-left: 10px; margin-right: 8px; }
+#head-next { margin-left: 5px; }
+.lang-text { border-bottom: 1px #343434 dotted; cursor: pointer; position: relative; }
+.lang-text-more { display: none; position: absolute; z-index: 10; left: 0; bottom: -16px; line-height: 16px; }
+.lang-text-more a { color: #fff; }
+.lang-text:hover .lang-text-more { display: block; }
+.top-head-right { float: right; }
+.top-head-left { float: left; }
+.top-head-left select{ width: 60px; height: 20px; border: 1px solid #404040; background: transparent; text-align: center; font-size: 12px; color: #8c8c8c; margin-top: 3px; padding: 0 0 0 10px; outline: none;}
+#check, #clock { display: inline-block; margin-left: 10px;}
+.one-bet { color: #CECECE; }
+.top-yellow { color: #cca352; border-bottom: 1px solid #cca352; }
+.logo { background: url('//image.beike188.com/KFY/images/register/logo.png') no-repeat; width: 187px; height: 60px; display: inline-block; margin-top: 17px; }
+.logo-dotted { height: 25px; width: 23px; border-right: 1px #343434 dotted; display: inline-block; margin-bottom: 10px; }
+.event-logo { background: url('//image.beike188.com/KFY/images/register/logo9.png') no-repeat; width: 248px; height: 56px; display: inline-block; margin-left: 20px; position: relative;}
+.event-logo a {display: block; width: 100%; height: 100%;}
+.event-logo a.logo1{width:50px; height:55px;float:left;}
+.event-logo a.logo2{width:50px; height:55px;float:right;margin: 0 47px 0 0;}
+.event-logo .btn {display: block; background: url("//image.beike188.com/KFY/images/register/wba-btn.png") no-repeat 0 0; width: 62px; height: 23px; text-align: center; font-size: 13px; color: #fff; line-height: 23px; position: absolute; bottom: 3px; right: 8px;}
+.event-logo .btn:hover {background-position: 0 -23px;}
+.mid-head-right { float: right; }
+.mid-head-left { float: left; }
+.mid-head-right-text { color: #cccccc; margin-right: 20px; }
+.login { width: 101px; height: 48px; display: inline-block; background: url('//image.beike188.com/KFY/images/register/login.png') no-repeat; vertical-align: middle; }
+.mid { height: 100px; border-bottom: 1px #412A2A solid; }
+.main-nav { height: 45px; line-height: 45px; color: #b0b0b0; }
+.nav { float: left; width: 129px; text-align: center; text-decoration: none; color: #b0b0b0; -webkit-font-smoothing: antialiased; }
+.nav.first-child { width: 63px; text-align: left; }
+.nav.last-child { width: 96px; text-align: right; }
+.nav-underline:hover, .nav-underline.active { border-bottom: 3px #cca352 solid; padding-bottom: 10px; color: #ffffff; }
+.nav-dotted { float: left; border-right: 1px dotted #525866; height: 10px; height: 12px; margin-top: 16px; }
+.float-right-nav { position: fixed; bottom: 50px; right: 55px; z-index: 9999; display: none; }
+.live { position: absolute; right: -4px; top: 0; z-index: 99; }
+.mid-head-right-wrapper { margin-top: 29px; }
+.top-info { color: #b0b0b0; line-height: 21px; margin-left: 10px; font-size: 13px; margin-top: 6px; }
+.top-username { color: #ffffff; font-size: 15px; text-decoration: underline; position: relative; cursor: pointer;}
+.header-button-1 { margin-left: 44px; margin-top: 6px; }
+.header-button-2 { margin-left: 12px; margin-top: 6px; }
+.header-button-3 { margin-left: 12px; margin-top: 6px; }
+.register, .trial, .login { float: left; }
+.trial { margin-right: 12px; }
+.login { margin-right: 12px; }
+.triangle { display: inline-block; margin-left: 7px; width: 0; height: 0; border-style: solid; border-width: 5px 5px 0 5px; border-color: #ffffff transparent transparent transparent; margin-bottom: 4px; }
+.triangle.inverted { border-width: 0 5px 5px 5px; border-color: transparent transparent #fff transparent; }
+.menu-1-wrapper { position: absolute; bottom: -128px; left: -56px; z-index: 201; display: none; }
+a.menu-1 { display: block; color: #333333; font-size: 13px; height: 42px; line-height: 42px; text-align: center; border-top: 1px solid #e7e7e7; }
+a.menu-1:first-child { border-top: none; }
+a.menu-1.gold-text { color: #cca352; }
+a.menu-1.gold-text:hover { color: #c08103; }
+.menu-1-inner-wrapper { position: relative; white-space: nowrap; background: #ffffff; width: 157px; padding: 0 0 2px; border-radius: 3px; top: 8px;}
+.menu-1-inner-wrapper:before { bottom: 100%; left: 50%; border: transparent solid; content: " "; height: 0; width: 0; position: absolute; }
+.menu-1-inner-wrapper:before { border-bottom-color: #ffffff; border-width: 5px; margin-left: -5px; }
+a.menu-1:hover {background: #e8e8e8;}
+a.menu-1:first-child {border-top-right-radius: 3px; border-top-left-radius: 3px;}
+
+.mid-head-right-wrapper a.cover-sprite {text-align: center; font-size: 14px; color: #fff; line-height: 41px; }
+.mid-head-right-wrapper a.verified-common-sprite {line-height: 41px; color: #fff; padding-left: 40px; font-size:14px;}
+.mid-head-right .refresh { margin-left: 5px; }
+
+.top-head-right .topmenu {cursor: pointer; width: 95px; display: inline-block; height: 29px; line-height: 29px; text-align: center; font-size: 13px; color: #828282; margin-left: 5px; position: relative;}
+.topmenu i {background: url("//image.beike188.com/KFY/images/register/sprite_common/arrow.png") no-repeat; width: 10px; height: 6px; display: inline-block; position: relative; top: -2px; margin-left: 2px;}
+.topmenu i.icon-down {background-position: 0 -6px;}
+.topmenu .topmenu-info {cursor: default; position: absolute; top: 29px; right: 0; width: 1200px; height: 256px; background: #dbdbdb; display: none; z-index: 201; padding: 20px 0 24px;}
+.topmenu .col {height: 240px; border-right: 1px solid #bdbdbd; float: left; display: block; padding: 0 25px; text-align: left;}
+.topmenu .col1 {width: 194px;}
+.topmenu .col2 {width: 190px;}
+.topmenu .col3 {width: 170px;}
+.topmenu .col4 {width: 118px; border-right: 0; padding-left:80px;}
+.topmenu h1, .topmenu h2, .topmenu h3, .topmenu h4, .topmenu h5, .topmenu p {margin: 0;}
+.topmenu .col .group {margin-bottom: 10px; line-height: 22px;}
+.topmenu .col h3 {font-size: 16px; color: #ce7502; font-weight: normal; margin-bottom: 10px;}
+.topmenu .col h5 {color: #a2a2a2; margin-bottom: 10px; font-weight: normal; font-size: 14px;}
+.topmenu .col a {font-size: 14px; color: #333; display: inline-block; margin-bottom: 10px; line-height: 22px;min-width:61px;}
+.topmenu .col a:hover {color: #cc8800; text-decoration: underline;}
+.topmenu .col .br {display: inline-block; height: 12px; width: 1px; background: #bdbdbd; margin: 0 15px; position: relative; top: 2px;}
+.topmenu .col .readmore {font-size: 13px; color: #cc9629; display: block; float: right; margin-top: 5px;}
+.topmenu .col .qr {width: 100px; float: left; margin-right: 20px; font-size: 12px; color: #999; text-align: center;}
+.topmenu .qr span {display: block; width: 100px; height: 100px; margin-bottom: 5px;}
+.topmenu .qr .qr1 {background: url("//image.beike188.com/KFY/images/register/qr1.jpg") no-repeat;}
+.topmenu .qr .qr2 {background: url("//image.beike188.com/KFY/images/register/qr2.jpg") no-repeat;}
+.topmenu .col .qr.last {margin-right: 0;}
+.top-head-right .topmenu:hover {background: #dbdbdb; color: #666;}
+.top-head-right .topmenu:hover i {background-position: 0 0;}
+.top-head-right .topmenu:hover .topmenu-info {display: block;}
+/*====== header end ======*/
+
+
+/*====== footer start ======*/
+.footer {  background: url("//image.beike188.com/KFY/images/register/bottom_bg.png") no-repeat center bottom #090909; border-top: 1px solid #BA924A; }
+.footer-head { height: 130px; border-bottom: 1px solid #1E1F22; }
+.phone-wrapper { float: left; width: 322px; }
+.newbie-wrapper { float: left; width: 314px; }
+.convenient-wrapper { float: left; width: 317px; }
+.licence-wrapper {  float: left; width: 247px; }
+.phone, .newbie, .convenient, .licence { margin-top: 20px; float: left; margin-right: 20px; margin-bottom: 30px; }
+.footer-head-title { color: #cccccc; margin-top: 30px; }
+.footer-head-text { color: #828282; font-size: 12px; margin-top: 10px; }
+.footer-head-more, .footer-head-more a { color: #cca352; font-size: 12px; margin-top: 16px; }
+.footer-head-more a:hover { color: #c08103; text-decoration: underline;}
+.footer-body { height: 78px; border-bottom: 1px solid #1E1F22; }
+.cobrand-wrapper { width: 848px; height: 30px; margin-top: 27px; float: left; }
+.cobrand-sprite { float: left; margin-left: 22px; }
+.cobrand-sprite:first-child { margin-left: 0; }
+.firstcagayan { width: 106px; height: 24px; background: url('//image.beike188.com/KFY/images/register/firstcagayan.png'); float: left; margin-top: 27px; margin-left: 18px; }
+.adult { width: 207px; height: 26px; background: url('//image.beike188.com/KFY/images/register/adult.png'); float: left; margin-top: 27px; margin-left: 20px; }
+.adult-1 { width: 25px; height: 25px; display: inline-block; margin-left: 92px; }
+.adult-2 { width: 25px; height: 25px; display: inline-block; margin-left: 60px; }
+.footer-more { padding-top: 20px; }
+.bottom-logo { width: 150px; height: 40px; background: url('//image.beike188.com/KFY/images/register/logo3.png'); display: inline-block; }
+.bottom-event-logo { width: 195px; height: 42px; background: url('//image.beike188.com/KFY/images/register/logo9_transparent.png'); display: inline-block; margin-left: 30px; position: relative; top: 3px;}
+.bottom-event-logo a.logo1{height:40px;width:40px;display:block;float:left;}
+.bottom-event-logo a.logo2{height:40px;width:40px;display:block;float: right;margin: 0px 23px 0 0;}
+.link { float: right; }
+.link a { text-decoration: none; color: #727272; font-size: 14px; }
+.link a:hover { color: #cccccc; }
+.link-slice { height: 12px; border-right: 1px solid #999999; display: inline-block; margin: 0 10px; }
+.all-rights { color: #727272; text-align: right; font-size: 12px; margin-top: 8px; }
+/*====== footer end ======*/
+
+/*====== page start ======*/
+.marquee { line-height: 30px; font-size: 13px; background: rgba(0, 0, 0, 0.46);top: 105px;  height: 30px;display:block;position: absolute;width: 100%;z-index: 99;}
+.marquee .container{ margin-top: 0!important;}
+.marquee a { color: #ddd; text-decoration: none; }
+.notice-content { margin-right: 40px; }
+.marquee-icon { width: 20px; height: 15px; background: url('//image.beike188.com/KFY/images/common/marquee.png') no-repeat ; float:left;margin-left: 10px;margin-top: 8px; }
+.marquee marquee { width: 1164px; }
+.trans { background: url('//image.beike188.com/KFY/images/sport/trans.png'); height: 100%; width: 100%; border: 1px solid #996B3D; position: absolute; top: 0; left: 0; display: none; }
+.bet-now { width: 120px; height: 37px; background: url('//image.beike188.com/KFY/images/register/main/bet-now.png'); display: inline-block; margin-top: 20px; }
+.page-body { background: #1E1E1E; padding-bottom: 60px; }
+.title { color: #ffffff; border-bottom: 2px solid #CC2944; padding-bottom: 11px; }
+.title-wrapper { border-bottom: 1px solid #323232; padding-bottom: 12px; margin-bottom: 20px; }
+.red-button { background: url('//image.beike188.com/KFY/images/register/red-button.png'); width: 120px; height: 37px; text-align: center; line-height: 37px; color: #ffffff; text-decoration: none; display: inline-block; }
+.red-button:hover { background: url('//image.beike188.com/KFY/images/register/red-button-hover.png'); }
+.white-button { border: 1px solid #cca352; color: #cca352; text-align: center; width: 118px; height: 35px; display: inline-block; line-height: 35px; border-radius: 4px; cursor: pointer; }
+.white-button:hover { border-color: #d89003; color: #d89003; }
+.gold-button { width: 120px; height: 37px; background: url('//image.beike188.com/KFY/images/register/lottery/btn1.png'); display: inline-block; line-height: 36px; color: #ffffff; text-align: center; font-size: 14px; }
+.gold-button:hover { background: url('//image.beike188.com/KFY/images/register/lottery/btn1h.png') no-repeat;}
+.page-nav { color: #999999; font-size: 16px; line-height: 24px; margin-left: 76px; text-decoration: none; padding-bottom: 11px; }
+.page-nav:first-child { margin-left: 110px; }
+.page-nav.highlight, .page-nav:hover { color: #ffffff; border-bottom: 2px solid #cc2944; }
+.page-nav-wrapper { height: 34px; border-bottom: 1px solid #323232; text-align: center; }
+.page-nav:first-child { margin-left: 0; }
+.page {background: #1e1e1e;margin-top: 63px;}
+/*====== page end ======*/
+
+/*====== login lightbox start ======*/
+/*.lightbox-overlay { position: absolute; z-index: 88888; background: #000000; opacity: 0.8; filter: alpha(opacity=85); top:0; left: 0; }*/
+.lightbox { width: 392px; left: 50%; top: 50%; margin-left: -196px; margin-top: -167px; position: fixed; z-index: 99999; background: #fff; }
+#lightbox.lightbox { background: transparent; margin-left: 0; margin-top: 0; } /* lightbox-2.6.min.js conflict class */
+.lightbox-title { height: 63px; background: url("//image.beike188.com/KFY/images/register/lightbox-title-bg.jpg"); color: #cca352; line-height: 63px; position: relative; text-align: center; font-size: 16px; border-bottom: 1px solid #cca352; }
+.lightbox-close { position: absolute; right: 10px; top: 3px; line-height: normal; cursor: pointer; }
+.lightbox-close-new { position: absolute; right: 10px; top: 3px; line-height: normal; cursor: pointer; }
+.lightbox-content { padding: 34px 47px 29px; }
+.lightbox-input-wrapper { width: 296px; height: 39px; border: 1px solid #b7b7b7; position: relative; margin-top: 12px; }
+.lightbox-input-wrapper:first-child { margin-top: 0; }
+.username.cover-sprite, .password.cover-sprite, .captcha.cover-sprite { float: left; margin-top: 11px; margin-left: 13px; }
+.username.cover-sprite-sport, .password.cover-sprite-sport, .captcha.cover-sprite-sport { float: left; margin-top: 11px; margin-left: 13px; }
+.lightbox-input-line { float: left; height: 21px; border-right: 1px solid #e4e4e4; margin: 9px 13px 0; }
+.lightbox-input-c { float: left; line-height: 39px; color: #999999; margin-right: 10px; }
+.placeholder { color: #cacaca; }
+::-webkit-input-placeholder { color: #cacaca; }
+::-ms-clear, ::-ms-reveal { display: none; }
+.lightbox-input-wrapper input:focus { outline: none; }
+.lightbox-input-wrapper input {border: none; height: 37px; font-size: 14px; line-height: 37px; }
+.clear-input.cover-sprite { position: absolute; right:15px; top: 50%; margin-top: -8px; cursor: pointer; display: none; }
+.lightgox-gray-text-wrapper { text-align: right; margin-top: 8px; }
+.login-captcha-wrapper { margin-top: 15px; }
+a.lightgox-gray-text { color: #999999; font-size: 13px; }
+a.lightgox-gray-text:hover { color: #cca352; text-decoration:underline; }
+.lightbox-input-wrapper img { position: absolute; right: 0; top: 0; }
+.button.cover-sprite { border: none; height: 43px; background-position-y: -117px; color: #ffffff; margin-top: 13px; outline: 0;}
+.lightbox-input-tips { text-align: center; color: #999999; font-size: 14px; margin-top: 14px; }
+.lightbox-input-sports_text { color: #999999; font-size: 14px;}
+.lightbox-input-tips a { color: #cca352; text-decoration:underline; }
+.lightbox-notice { border: 1px solid #eb4b4b; background: #ffe5e6; color: #eb4b4b; overflow: hidden; font-size: 12px; line-height: 24px; border-radius: 2px; display: none; }
+.notice.cover-sprite { float: left; margin: 4px 12px; }
+#captcha-img { width: 103px; height: 41px; cursor: pointer; }
+.lightbox-button { background: url('//image.beike188.com/KFY/images/register/lightbox-button.png'); width: 156px; height: 37px; }
+.lightbox-button:hover { background: url('//image.beike188.com/KFY/images/register/lightbox-buttonh.png') no-repeat;}
+.lightbox-border { border: 6px solid #666666; }
+
+#login-lightbox .lightbox-input-wrapper {border: 1px solid transparent;}
+#login-lightbox .lightbox-input-wrapper input {padding-left: 56px; border: 1px solid #b7b7b7; position: absolute; top: -1px; left: -1px; width: 240px; background-color: transparent;}
+#login-lightbox .lightbox-input-wrapper input.inpt-prefix {width: 20px; color: #999; font-size: 14px; padding: 0; position: relative; z-index: 100; top: 1px; left: auto; border: 0;}
+#login-lightbox .username, #login-lightbox .lightbox-input-line, #login-lightbox .password {position: relative; z-index: 100;}
+#login-lightbox .lightbox-input-wrapper input:focus {border: 1px solid #b79675;}
+#login-lightbox .lightbox-input-wrapper input.inpt-prefix:focus {border: 0;}
+
+#login-lightbox .lightbox-input-wrapper input.lightbox-input-password {padding-left: 56px; width: 142px;}
+#login-lightbox .lightbox-input-wrapper input.lightbox-input-password-sport {padding-left: 56px; width: 240px;}
+#login-lightbox .lightbox-input-wrapper .eye{position: absolute;right: 10px;top: 12px;}
+#login-lightbox .lightbox-input-wrapper .close-eye{position: absolute;right: 10px;top: 17px;}
+
+#login-lightbox .send-code {display: block; width: 94px; height: 41px; margin: 12px 0 0 3px; text-align: center; font-size: 13px; color: #fff; background: #39b5a2; line-height: 41px; float: left;}
+#login-lightbox .send-code.disabled {background: #ccc;}
+#login-lightbox a.lightgox-gray-text {text-decoration: underline;}
+#lightbox-input-password-wrapper {width: 198px; float: left;}
+/*====== login lightbox end ======*/
+
+/*====== loading lightbox start ======*/
+/*.loading.lightbox-overlay { z-index: 888888; }*/
+/*#loading-lightbox { width: auto; z-index: 999999; margin-left: -55px; margin-top: -55px; background: #000000; opacity: 0.9; border-radius: 6px; }*/
+
+.loading-img {
+	width: 83px;
+	height: 83px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -42px;
+	margin-top: -42px;
+	z-index: 9999;
+}
+
+.loading-img .loading-sprite {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	background-repeat: no-repeat;
+	background-image: url("//image.beike188.com/KFY/images/register/sprites.png");
+	background-position: 0 0;
+}
+
+.loading-img .loading-sprite.animated {
+	-webkit-animation: loadingAnimation 1.2s steps(12) infinite;
+	animation: loadingAnimation 1.2s steps(12) infinite;
+}
+
+@-webkit-keyframes loadingAnimation {
+	0% {
+		background-position: 0 0;
+	}
+
+	100% {
+		background-position: -996px 0;
+	}
+}
+
+@keyframes loadingAnimation {
+	0% {
+		background-position: 0 0;
+	}
+
+	100% {
+		background-position: -996px 0;
+	}
+}
+
+@-webkit-keyframes circle {
+	0% {
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+
+	100% {
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes circle {
+	0% {
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+
+	100% {
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+/*====== loading lightbox end ======*/
+
+/*====== pop lightbox start ======*/
+#pop-lightbox .lightbox-content { text-align: center; font-size: 14px; color: #666666; padding-top: 57px; padding-bottom: 41px; }
+#pop-lightbox .lightbox-confirm { margin: 0 auto; font-size: 14px; color: #ffffff; line-height: 37px; margin-top: 46px; cursor: pointer; text-align: center; }
+.kf_css{margin: 0 auto;line-height: 37px;margin-top: 46px;border: 1px solid;width: 156px;height: 37px;}
+#pop-lightbox.lightbox-2 .lightbox-content { padding: 41px 28px 59px; text-align: left; }
+#pop-lightbox.lightbox-2 .lightbox-content.txt-center { text-align: center; }
+#pop-lightbox.lightbox-2 .lightbox-button-2-wrapper { margin-top: 27px; }
+#pop-lightbox.lightbox-2 .lightbox-button-3-wrapper { margin-top: 60px; }
+#pop-lightbox.lightbox-2 .lightbox-button-2-1 { margin: 0; }
+#pop-lightbox.lightbox-2 .lightbox-button-2-2 { margin: 0 0 0 16px; }
+#pop-lightbox.lightbox-2 .lightbox-button-3-1 { margin: 0; }
+#pop-lightbox.lightbox-2 .lightbox-content-3 { padding: 41px 28px 40px; text-align: left; }
+
+
+/*====== pop lightbox end ======*/
+
+/*====== login maintain start ======*/
+.trans-maintain { width: 99.5%; height: 99%; border: 1px solid #3a3a3a; background: url('//image.beike188.com/KFY/images/register/trans-maintain.png'); position: absolute; top: 0; left: 0; }
+.maintain-wrapper { color: #cccccc; font-size: 18px; position: absolute; top: 50%; left: 50%; margin-top: -38px; margin-left: -32px; }
+.maintain-icon { background: url('//image.beike188.com/KFY/images/register/maintain.png'); width: 48px; height: 49px; margin: 0 auto; }
+.maintain-text { text-align: center; margin-top: 5px; font-size: 16px; }
+.trans-maintain .icon-maintain-l {background: url("//image.beike188.com/KFY/images/register/main/icon-maintain-l.png") no-repeat; width: 55px; height: 55px; margin: 126px auto 8px; display: block;}
+.trans-maintain .icon-maintain {background: url("//image.beike188.com/KFY/images/register/main/icon-warning.png") no-repeat; width: 35px; height: 35px; margin: 76px auto 8px; display: block;}
+.trans-maintain .icon-maintain-m {background: url("//image.beike188.com/KFY/images/register/main/icon-maintain-m.png") no-repeat; width: 41px; height: 41px; display: block;}
+.trans-maintain p {font-size: 14px; color: #e1e1e1; text-align: center; margin: 0;}
+/*====== login maintain end ======*/
+
+/*====== sprite icon_verified_common start ======*/
+.verified-common-sprite { background-image: url('//image.beike188.com/KFY/images/register/sprite_verified_common/icon_verified_common.png'); background-color: transparent; background-repeat: no-repeat; }
+.header-button-1 { width: 75px; height: 41px; background-position: -2px -282px; }
+.header-button-1:hover {background-position: -2px -239px; }
+.gender-1 { width: 63px; height: 63px; background-position: -2px -174px; }
+.gender-2 { width: 63px; height: 63px; background-position: -67px -174px; }
+.header-button-2 { width: 55px; height: 41px; background-position: -2px -131px; }
+.header-button-2:hover {background-position: -2px -88px; }
+.header-button-3 { width: 55px; height: 41px; background-position: -2px -45px; }
+.header-button-3:hover {background-position: -2px -2px; }
+/*====== sprite icon_verified_common end ======*/
+
+/*====== form start ======*/
+.error-message { color: #eb4b4b; font-size: 12px; line-height: 15px; margin-top: 5px; }
+.error-message-default { color: #eb4b4b; font-size: 12px; line-height: 15px; margin-top: 5px; }
+.member .right .form-group .error-message label, .member .right .form-group .error-message-default label, .pop-verify2 .pop-c .form-group .error-message label, .pop-card .pop-c .form-group .error-message label { line-height: inherit; }
+.member .form-group input.input-error, .member .form-group .select .placeholder.visual-element-error, .member .form-group select.input-error { border: 1px solid #eb4b4b; }
+/*====== form end ======*/
+
+
+
+
+
+/*====== icon_register.css start ======*/
+.register-sprite { background-image: url('//image.beike188.com/KFY/images/register/icon_register.png'); background-color: transparent; background-repeat: no-repeat; }
+.eye2 { width: 24px; height: 16px; background-position: -2px -31px; }
+.close_eyes2 { width: 24px; height: 10px; background-position: -2px -19px; }
+.check2 { width: 15px; height: 15px; background-position: -2px -2px; }
+.incorrect { width: 15px; height: 15px; background-position: -19px -2px; }
+.refresh { width: 15px; height: 13px; background-position: -28px -29px; display: inline-block; cursor: pointer; position: relative; top: 2px;}
+.close_eyes { width: 20px; height: 8px; background-position: -28px -19px; }
+/*====== icon_register.css end ======*/
+
+
+.register-sprite1 { background-image: url('//image.beike188.com/KFY/images/register/icon_common.png'); background-color: transparent; background-repeat: no-repeat; }
+
+.check3 { width: 15px; height: 15px; background-position: -61px -144px; }
+
+/*====== icon_cobrand.css start ======*/
+.cobrand-sprite {background: url("//image.beike188.com/KFY/images/register/icon_cobrand_normal.png") no-repeat;}
+.cobrand1 { width: 71px; height: 24px; background-position: 0 -3px;}
+.cobrand2 { width: 68px; height: 28px; background-position: -93px 1px; }
+.cobrand3 { width: 103px; height: 23px; background-position: -183px -3px; }
+.cobrand4 { width: 94px; height: 24px; background-position: -308px -3px;}
+.cobrand5 { width: 110px; height: 24px; background-position: -424px -3px;}
+.cobrand6 { width: 95px; height: 24px; background-position: -556px -3px; }
+.cobrand7 { width: 57px; height: 23px; background-position: -673px -3px; }
+.cobrand8 { width: 96px; height: 26px; background-position: -751px -3px; }
+
+/*.cobrand-sprite:hover { background-image: url('//image.beike188.com/KFY/images/register/sprite_cobrand/icon_cobrand.png'); background-color: transparent; background-repeat: no-repeat; }
+.cobrand5:hover { width: 110px; height: 24px; background-position: -2px -294px; }
+.cobrand8:hover { width: 96px; height: 26px; background-position: -2px -240px; }
+.cobrand3:hover { width: 103px; height: 23px; background-position: -2px -187px; }
+.cobrand6:hover { width: 95px; height: 24px; background-position: -2px -136px; }
+.cobrand4:hover { width: 94px; height: 24px; background-position: -2px -84px; }
+.cobrand2:hover { width: 68px; height: 28px; background-position: -2px -28px; }
+.cobrand1:hover { width: 71px; height: 24px; background-position: -2px -2px; }
+.cobrand7:hover { width: 57px; height: 23px; background-position: -99px -108px; }*/
+/*====== icon_cobrand.css end ======*/
+
+/*====== icon_index.css start ======*/
+.cover-sprite { background-image: url('//image.beike188.com/KFY/images/register/icon_cover.png'); background-color: transparent; background-repeat: no-repeat; }
+.cover-sprite-sport { background-image: url('//image.beike188.com/KFY/images/register/icon_cover.png'); background-color: transparent; background-repeat: no-repeat; }
+.button:hover { width: 302px; height: 43px; background-position: -2px -161px; }
+.button { width: 302px; height: 42px; background-position: -2px -120px; }
+.round { width: 111px; height: 110px; background-position: -2px -2px; }
+.trial { width: 115px; height: 41px; background-position: -115px -45px; }
+.register { width: 100px; height: 41px; background-position: -115px -2px; }
+.login { width: 95px; height: 41px; background-position: -217px -2px; }
+.hot { width: 63px; height: 30px; background-position: -115px -88px; }
+.hots { width: 63px; height: 30px; background-position: -115px -88px; }
+.next { width: 31px; height: 46px; background-position: -232px -63px; }
+.previous { width: 31px; height: 46px; background-position: -265px -64px; }
+.eye { width: 24px; height: 16px; background-position: -232px -45px; }
+.notice { width: 16px; height: 16px; background-position: -258px -45px; }
+.username {width: 16px; height: 17px; background-position: -276px -45px; }
+.clear-input { width: 15px; height: 15px; background-position: -293px -45px; }
+.password { width: 13px; height: 17px; background-position: -298px -95px; }
+.captcha { width: 13px; height: 16px; background-position: -298px -77px; }
+.close-eye { width: 20px; height: 8px; background-position: -180px -88px; }
+.next-game { width: 8px; height: 13px; background-position: -298px -62px; }
+.prev-game { width: 8px; height: 13px; background-position: -180px -98px; }
+/*====== icon_index.css end ======*/
+
+.mid-head-right-wrapper.not-login a:hover {background: url("//image.beike188.com/KFY/images/register/sprite_cover/btn_hover.png") no-repeat;}
+.mid-head-right-wrapper.not-login a.trial:hover {background-position: 0 0;}
+.mid-head-right-wrapper.not-login a.login:hover {background-position: -129px 0;}
+.mid-head-right-wrapper.not-login a.register:hover {background-position: -238px 0;}
+
+/*====== icon_poker.css start ======*/
+.poker-sprite { background-image: url('//image.beike188.com/KFY/images/register/poker/sprite_poker/icon_poker.png'); background-color: transparent; background-repeat: no-repeat; }
+.poker-button { width: 120px; height: 37px; background-position: -2px -30px; }
+.icon-2 { width: 26px; height: 26px; background-position: -2px -2px; }
+.icon-1 { width: 24px; height: 26px; background-position: -30px -2px; }
+.icon-3 { width: 20px; height: 14px; background-position: -56px -2px; }
+/*====== icon_poker.css end ======*/
+
+/*====== icon_registerok.css start ======*/
+.register-success-sprite { background-image: url('//image.beike188.com/KFY/images/register_success/icon_register_success2.png'); background-color: transparent; background-repeat: no-repeat; }
+.barcode-payment { width: 92px; height: 92px; background-position: -2px -399px; }
+.complete-profile { width: 92px; height: 92px; background-position: -2px -305px; }
+.online-payment { width: 92px; height: 92px; background-position: -2px -211px; }
+.point-payment { width: 92px; height: 92px; background-position: -2px -117px; }
+.big_check { width: 74px; height: 74px; background-position: -2px -41px; }
+.deposit_now { width: 120px; height: 37px; background-position: -2px -2px; }
+.new-big-check { width: 41px; height: 41px; background-position: -4px -1250px; }
+.new-online-payment { width: 53px; height: 53px; background-position: -3px -494px; }
+.new-barcode-payment { width: 42px; height: 42px; background-position: -4px -551px; }
+.new-point-payment { width: 52px; height: 33px; background-position: -4px -598px; }
+.new-complete-profile { width: 43px; height: 42px; background-position: -4px -635px; }
+.cell-2-1 { width: 140px; height: 140px; background-position: -3px -678px; }
+.cell-2-2 { width: 140px; height: 140px; background-position: -3px -821px; }
+.cell-2-3 { width: 140px; height: 140px; background-position: -3px -964px; }
+.cell-2-4 { width: 140px; height: 140px; background-position: -3px -1108px; }
+/*====== icon_registerok.css end ======*/
+
+/*HEADER SUCCESS*/
+#header .mid-head-right .user {color: #b0b0b0; font-size: 13px; line-height: 50px; float: left; margin-right: 45px;}
+#header .mid-head-right .user .username {color: #fff; font-size: 18px;}
+#header .mid-head-right .profile_pic {background: url("//image.beike188.com/KFY/images/register/register_success/profile_pic.png") no-repeat; width: 63px; height: 63px; float: left; margin-right: 8px; display: block;}
+#header .mid-head-right .logout { background: url("//image.beike188.com/KFY/images/register/register_success/btn.png") no-repeat; width: 53px; height: 41px; display: block; font-size: 14px; color: #fff; line-height: 41px; padding: 0 0 0 42px; text-align: left; float: left; margin-top: 6px;}
+#header .mid-head-right .logout:hover { background: url("//image.beike188.com/KFY/images/register/register_success/btnh.png") no-repeat;}
+
+/*POPUP*/
+/*.pop-mask-forget {position: fixed; width: 100%; height: 100%; background: #000; opacity: 0.6; filter: alpha(opacity=60); z-index: 999; top: 0; left: 0;}*/
+
+.pop-wrap-forget {position: fixed; width: 100%; height: 100%; z-index: 999; top: 0; left: 0;}
+.pop-wrap-forget .popup-forget.lightbox {margin: 0 auto; left: auto; top: 35%; position: relative;}
+.popup-forget .radio-label {width: 298px; height: 41px; font-size: 14px; height: 41px; line-height: 41px; color: #b1b1b1; display: block; position: absolute; top: -1px; left: -1px;}
+.ie8 .popup-forget .radio-label input{position:absolute; top:0; left: 18px;}
+.ie8 .popup-forget input[type=radio]:checked label {color: #cca353;}
+.popup-forget input[type=radio]:not(old) {position: absolute; top: 13px; left: 20px; z-index: 100; cursor: pointer; width: 15px; height: 15px; margin: 0; padding: 0; opacity: 0; filter: alpha(opacity=0); }
+.popup-forget input[type=radio]:not(old) + label {display: inline-block; width: 294px; height: 37px; line-height: 37px; position: relative; top: 0; left: 0; border: 2px solid transparent;}
+.popup-forget input[type=radio]:not(old) + label i {background: url("//image.beike188.com/KFY/images/register/popup/radio.png") no-repeat 0 0; width: 15px; height: 15px; position: absolute; top: 11px; left: 18px;}
+.popup-forget .radio-label .msg {text-align: center; position: absolute; width: 100%; top: 0; left: 0;}
+.popup-forget input[type=radio]:not(old):checked + label i { background: url("//image.beike188.com/KFY/images/register/popup/radio.png") no-repeat -15px 0;}
+.popup-forget input[type=radio]:not(old):checked + label {border: 2px solid #b79675; color: #cca353; z-index: 100;}
+
+.pop-wrap-forget .popup2-forget.lightbox {top: 25%;}
+.popup2-forget.lightbox .lightbox-content {padding: 34px 15px 13px;}
+.popup-forget.lightbox .step-nav {height: 36px; margin-bottom: 12px;}
+.popup-forget.lightbox .step {background: url("//image.beike188.com/KFY/images/register/popup/step.png") no-repeat; text-align: center; font-size: 14px; color: #666; line-height: 36px; width: 129px; height: 36px; float: left; display: block;}
+.popup-forget.lightbox .step1 {z-index: 100; position: relative;}
+.popup-forget.lightbox .step2, .popup-forget.lightbox .step3 {margin-left: -13px;}
+.popup-forget.lightbox .step2 {z-index: 99; position: relative;}
+.popup-forget.lightbox .step:hover, .popup-forget.lightbox .step.active {background: url("//image.beike188.com/KFY/images/register/popup/steph.png") no-repeat; color: #fff;}
+.popup-forget.lightbox .step-content .item {display: block; float: left; width: 176px; height: 176px; background: #cbcbcb; border-radius: 4px; -webkit-border-radius: 4px; text-align: center; color: #fff; font-size: 14px; position: relative;}
+.popup-forget.lightbox .step-content .item1 {margin-right: 9px;}
+.popup-forget.lightbox .step-content i.step-i {width: 96px; height: 96px; display: block; margin: 24px auto 12px; position: relative;}
+.popup-forget.lightbox .step-content i.mobile {background: url("//image.beike188.com/KFY/images/register/popup/icon-mobile.png") no-repeat;}
+.popup-forget.lightbox .step-content i.email {background: url("//image.beike188.com/KFY/images/register/popup/icon-email.png") no-repeat;}
+.popup-forget.lightbox .step-content i.user {background: url("//image.beike188.com/KFY/images/register/popup/icon-user.png") no-repeat;}
+.popup-forget.lightbox .step-content .item:hover, .popup-forget.lightbox .step-content .item.active {background: url("//image.beike188.com/KFY/images/register/popup/itemh.png") no-repeat;}
+.popup-forget.lightbox .step-content .item .tag {font-size: 13px; color: #fff; display: block; background: url("//image.beike188.com/KFY/images/register/popup/tag.png") no-repeat; width: 40px; height: 20px; text-align: center; line-height: 20px; position: absolute; top: -6px; left: 27px; font-style: normal;}
+.popup-forget.lightbox form {margin-top: 19px;}
+.popup-forget.lightbox .form-group {min-height: 41px; margin-bottom: 12px; line-height: 41px; clear: both;}
+.popup-forget.lightbox .form-group label {font-size: 12px; color: #666; float: left; width: 84px; line-height: 41px; margin-right: 6px; display: block; text-align: right;}
+.popup-forget.lightbox .form-group .form-input {width: 203px; height: 39px; border: 1px solid #b7b7b7; padding: 0 15px; color: #666; line-height: 39px; float: left;}
+.popup-forget.lightbox .form-group .tip {background: url("//image.beike188.com/KFY/images/register/popup/icon-help.png") no-repeat; width: 20px; height: 20px; float: left; display: block; margin: 10px 0 0 10px;}
+.popup-forget.lightbox .form-group .form-input2 {width: 76px;}
+.popup-forget.lightbox .form-group .verification_code {background:#39b5a2;width: 117px; height: 41px; text-align: center; font-size: 13px; color: #fff; line-height: 41px; float: left; margin-left: 10px; }
+.popup-forget.lightbox .form-group .verification_code_hand {cursor:pointer; }
+.popup-forget.lightbox .validate {margin-left: 90px; font-size: 13px; color: #b1b1b1; display: block;}
+.popup-forget.lightbox .submit {margin: 13px auto 0; display: block;}
+.popup-forget.lightbox .success {margin-top: 30px; text-align: center;}
+.popup-forget.lightbox .success .msg {font-size: 13px; color: #666; line-height: 20px; margin-bottom: 15px;}
+.popup-forget.lightbox .success .icon-success {background: url("//image.beike188.com/KFY/images/register/member/icon-success2.png") no-repeat; width: 20px; height: 20px; display: inline-block; margin-right: 3px; position: relative; top: 3px;}
+.popup-forget.lightbox .success .icon-error {background: url("//image.beike188.com/KFY/images/register/member/icon-warning.png") no-repeat; width: 20px; height: 20px; display: inline-block; margin-right: 3px; position: relative; top: 3px;}
+.popup-forget.lightbox .success p {font-size: 13px; color: #666;}
+.popup-forget.lightbox .success .submit {margin: 20px auto 15px;}
+.popup-forget.lightbox .success .table {border: 1px solid #b7b7b7; width: 296px; height: 198px; margin: 0 auto 15px;}
+.popup-forget.lightbox .success th, .popup-forget.lightbox .success td {height: 39px; border-bottom: 1px solid #b7b7b7; text-align: center; background: #fff; font-weight: normal; font-size: 13px; color: #666;}
+.popup-forget.lightbox .success .checkbox {width: 15px; height: 15px; position: relative; margin: 0 auto;}
+.popup-forget.lightbox .success input[type=checkbox]:not(old), .popup-forget.lightbox .success input[type=radio]:not(old) {position: absolute; top: 0; left: 0; z-index: 100; cursor: pointer; width: 15px; height: 15px; margin: 0; padding: 0; opacity: 0; filter: alpha(opacity=0); }
+.popup-forget.lightbox .success input[type=checkbox]:not(old) + label, .popup-forget.lightbox .success input[type=radio]:not(old) + label {display: inline-block; background: url("//image.beike188.com/KFY/images/register/popup/radio.png") no-repeat 0 0; width: 15px; height: 15px; position: relative;}
+.popup-forget.lightbox .success input[type=checkbox]:not(old):checked + label, .popup-forget.lightbox .success input[type=radio]:not(old):checked + label { background: url("//image.beike188.com/KFY/images/register/popup/radio.png") no-repeat -15px 0;}
+.popup-forget.lightbox .success .note {font-size: 13px; color: #cca352;}
+.popup-forget.lightbox .success .btn-group {text-align: center; height: 37px; margin-bottom: 15px;}
+.popup-forget.lightbox .btn-group .btn {display: block; width: 144px; height: 42px; display: inline-block; text-align: center; line-height: 37px; font-size: 16px; background: url("//image.beike188.com/KFY/images/register/popup/btn.png") no-repeat;}
+.popup-forget.lightbox .btn-group .btn1 {color: #cca353; margin-right: 8px; background-position: 0 0;}
+.popup-forget.lightbox .btn-group .btn2 {color: #fff; background-position: -154px 0;}
+.popup-forget.lightbox .success .light-txt {font-size: 13px; color: #b1b1b1; margin: 16px 0;}
+.popup-forget.lightbox .form-group .message {font-size: 12px; display: block; clear: both; margin: 6px 0 0 90px; padding-left: 20px; line-height: normal; text-align: left; position: relative; top: 6px;}
+.popup-forget.lightbox .form-group.error .message {background: url("//image.beike188.com/KFY/images/register/popup/icon-error.png") no-repeat left center; color: #eb4b4b;}
+.popup-forget.lightbox .form-group.error .form-input {border: 1px solid #eb4b4b; background: #ffe5e6;}
+.popup-forget.lightbox .success input[type=radio]:not(old) + label {border:0;}
+.hide {display: none;}
+
+/*====== rotating start ======*/
+@keyframes rotating {
+	to {
+		transform: rotate(360deg);
+	}
+}
+.rotating {
+	animation: rotating 2s linear infinite;
+}
+/*====== rotating end ======*/
+
+/*POP PASSWORD*/
+.password-back {display: none;}
+.pop-password {width: 552px; margin: 0 auto; left: auto; top: 25%; position: relative;}
+.pop-password .lightbox-content {padding: 20px 16px 45px;}
+.pop-password .step-nav {height: 36px; margin-bottom: 15px;}
+.pop-password .step-nav a {width: 194px; height: 36px; position: relative; text-align: center; font-size: 14px; color: #666; line-height: 36px; background: url("//image.beike188.com/KFY/images/register/popup/step2.png") no-repeat right top; display: block; float: left;}
+.pop-password .step-nav a.step1 {z-index: 200;}
+.pop-password .step-nav a.step2 {z-index: 100; width: 178px; margin-left: -12px;}
+.pop-password .step-nav a.step3 {width: 167px; margin-left: -12px;}
+.pop-password .step-nav a:hover, .pop-password .step-nav a.active {background: url("//image.beike188.com/KFY/images/register/popup/step2h.png") no-repeat right top; color: #fff;}
+.pop-password .step-content {display: none;}
+.pop-password .prompt {border: 1px dashed #ccc; padding: 10px 12px; margin-bottom: 20px;}
+.pop-password .prompt.warning {background: #fdebdd;}
+.pop-password .prompt .icon {width: 20px; height: 20px; display: block; float: left; margin-right: 8px;}
+.pop-password .prompt.warning .icon-warning {background: url("//image.beike188.com/KFY/images/register/member/icon-warning.png") no-repeat;}
+.pop-password .prompt p {font-size: 14px; color: #666; line-height: 20px; float: left; margin: 0;}
+.pop-password form {margin-left: 55px;}
+.pop-password .form-group {min-height: 41px; margin-bottom: 12px; line-height: 41px; clear: both;}
+.pop-password .form-group label {font-size: 12px; color: #666; float: left; width: 84px; line-height: 41px; margin-right: 6px; display: block; text-align: right;}
+.pop-password .form-group .form-input {width: 203px; height: 39px; outline: 0; border: 1px solid #b7b7b7; padding: 0 15px; color: #666; line-height: 39px; float: left;}
+.pop-password .form-group .form-input2 {width: 100px;}
+.pop-password .form-group .form-input:focus {border: 1px solid #b79675;}
+.pop-password .form-group .forget {font-size: 13px; color: #999; text-decoration: underline; display: block; float: left; line-height: 41px; margin-left: 10px;}
+.pop-password .form-group .error-message {display: none;}
+.pop-password .form-group.success .forget {display: none;}
+.pop-password .form-group .icon-success {background: url("//image.beike188.com/KFY/images/register/member/icon-success2.png") no-repeat; margin: 12px 0 0 10px; width: 20px; height: 20px; float: left; display: none;}
+.pop-password .form-group.success .icon-success {display: block;}
+.pop-password .form-group.error .form-input {border: 1px solid #eb4b4b; background: #ffe5e6;}
+.pop-password .form-group.error .error-message {display: block; margin: 5px 0 0 90px; background: url("//image.beike188.com/KFY/images/register/popup/icon-error.png") no-repeat left center; padding-left: 20px; font-size: 12px; color: #eb4b4b;}
+.pop-password .form-group .captcha {display: block; float: left; width: 103px; height: 41px;}
+.pop-password .form-group .refresh_forget {background: url("//image.beike188.com/KFY/images/register/popup/icon-refresh.png") no-repeat; width: 15px; height: 13px; display: block; float: left; margin: 15px 0 0 12px;}
+.pop-password .form-group.success .refresh {display: none;}
+.pop-password .submit {background: url("//image.beike188.com/KFY/images/register/popup/pw-btn.png") no-repeat 0 0; width: 180px; height: 37px; text-align: center; line-height: 37px; font-size: 16px; color: #fff; display: block; margin: 22px 0 0 90px; box-shadow: 0 3px 2px #e8e1da;}
+.pop-password .submit:hover {background-position: 0 -42px;}
+.pop-password .submit.disabled {background-position: 0 -85px; box-shadow: 0 0 0 #fff;}
+.pop-password .form-group .form-input.disabled {background: #e3e3e3; border: 1px solid #e3e3e3;}
+.pop-password .form-group .message {margin-left: 90px; font-size: 12px; color: #999; display: block; margin-top: 5px; line-height: normal;}
+.pop-password .form-group .message a {color: #e94a5e; text-decoration: underline;}
+.pop-password .form-group .btn-green {float: left; font-size: 13px; color: #fff; width: 117px; height: 41px; background: #39b5a2; text-align: center; line-height: 41px;}
+.pop-password .form-group .form-input3 {width: 86px;}
+.pop-password .form-group .btn-gray {float: left; font-size: 13px; color: #fff; width: 117px; height: 41px; background: #ccc; text-align: center; line-height: 41px;}
+.pop-password .form-group .success-message {line-height: 20px; margin: 5px 0 0 90px; background: url("//image.beike188.com/KFY/images/register/member/icon-success2.png") no-repeat left center; padding-left: 26px; font-size: 12px; color: #24ae99; display: none;}
+.pop-password .form-group.success .success-message{display: block;}
+.pop-password .password-success {text-align: center;}
+.pop-password .password-success .icon-success {background: url("//image.beike188.com/KFY/images/register/member/icon-success.png") no-repeat; width: 50px; height: 50px; margin: 0 auto 15px; display: block;}
+.pop-password .password-success .icon-error {background: url("//image.beike188.com/KFY/images/register/member/icon-error.png") no-repeat; width: 50px; height: 50px; margin: 0 auto 15px; display: block;}
+.pop-password .password-success p {font-size: 14px; color: #666;}
+.pop-password .password-success .btn-group {height: 42px; text-align: center; margin-top: 30px;}
+.pop-password .btn-group .btn {display: block; width: 144px; height: 42px; display: inline-block; text-align: center; line-height: 37px; font-size: 16px; background: url("//image.beike188.com/KFY/images/register/popup/btn.png") no-repeat;}
+.pop-password .btn-group .btn1 {color: #cca353; margin-right: 8px; background-position: 0 0;}
+.pop-password .btn-group .btn2 {color: #fff; background-position: -154px 0;}
+
+
+/*#backdrop-systerm {top: 0; left: 0; position: fixed; height: 100%; width: 100%; background-color: #000; opacity: 0.5; filter: alpha(opacity = 50); z-index: 9999999;display: none; }*/
+
+.pop-systerm {position: fixed; height: 100%; width: 100%; z-index: 9999999; top: 25%; left: 0;display: none;}
+.popup-systerm {width: 392px; height: 297px; margin: 0 auto; border: 6px solid #333; position: relative; background: #fff;}
+.popup-systerm .pop-head {height: 63px; background: url("//image.beike188.com/KFY/images/register/member/pop-head.jpg") no-repeat right center #1e1e1e; width: 100%; height: 63px; position: relative; line-height: 63px; font-size: 16px; color: #cca352; text-align: center;}
+.popup-systerm .pop-head2 {height: 63px; background: url("//image.beike188.com/KFY/images/register/member/pop-head.jpg") no-repeat right center #1e1e1e; width: 100%; height: 63px; position: relative; line-height: 63px; font-size: 16px; color: #cca352; text-align: center;}
+.popup-systerm .pop-close {background: url("//image.beike188.com/KFY/images/register/member/icon-close.png") no-repeat; width: 10px; height: 9px; position: absolute; top: 10px; right: 10px; display: block;}
+.popup-systerm .pop-c {padding-top: 58px; text-align: center;}
+.popup-systerm .pop-c p {font-size: 14px; color: #666; line-height: 22px;}
+.popup-systerm .pop-buttons {position: absolute; height: 36px; width: 100%; bottom: 74px; left: 0;}
+.popup-systerm .pop-buttons a, .lightbox-button-2 {display: inline-block; width: 156px; height: 37px; text-align: center; line-height: 37px; font-size: 14px; color: #fff; margin: 0 8px;}
+.popup-systerm .pop-buttons a.btn1, .lightbox-button-2-1 {background: url("//image.beike188.com/KFY/images/register/member/btn3.png") no-repeat; color: #cca352; cursor: pointer;}
+.popup-systerm .pop-buttons a.btn2, .lightbox-button-2-2 {background: url("//image.beike188.com/KFY/images/register/member/btn4.png") no-repeat; cursor: pointer;}
+.popup-systerm .pop-buttons a.btn1:hover, .lightbox-button-2-2:hover {background: url("//image.beike188.com/KFY/images/register/member/btn4.png") no-repeat; color: #fff;}
+.popup-systerm .pop-buttons a.btn2:hover, .lightbox-button-2-1:hover {background: url("//image.beike188.com/KFY/images/register/member/btn4h.png") no-repeat; color: #fff;}
+
+.popup-systerm .pop-buttons a.btn1, .lightbox-button-3-1 {background: url("//image.beike188.com/KFY/images/register/member/btn4.png") no-repeat; cursor: pointer;}
+.popup-systerm .pop-buttons a.btn2:hover, .lightbox-button-3-1:hover {background: url("//image.beike188.com/KFY/images/register/member/btn4.png") no-repeat; color: #fff;}
+
+.popup-forget.lightbox .success .table-c {height: 160px;}
+.popup-forget.lightbox .success .scrollbar-inner {width: 308px;}
+.popup-forget.lightbox .success .table-c > .viewport { width: 308px; max-height: 160px; overflow: auto; margin-top: 0; position: relative; }
+.popup-forget.lightbox .table-c .scrollbar-inner > .scroll-element.scroll-y { width: 10px !important; height: 160px !important; top: 0 !important;}
+.popup-forget.lightbox .table-c .scrollbar-inner > .scroll-element .scroll-element_outer, .popup-forget.lightbox .table-c .scrollbar-inner > .scroll-element .scroll-element_track, .popup-forget.lightbox .table-c .scrollbar-inner > .scroll-element .scroll-bar { -webkit-border-radius: 0 !important; -moz-border-radius: 0 !important; border-radius: 0 !important; }
+.popup-forget.lightbox .table-c .scrollbar-inner > .scroll-element .scroll-element_track, .popup-forget.lightbox .table-c .scrollbar-inner > .scroll-element .scroll-bar { -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=1)" !important; filter: alpha(opacity=100) !important; opacity: 100 !important; }
+.popup-forget.lightbox .table-c .scrollbar-inner > .scroll-element .scroll-element_track {width: 10px !important; background-color: #b7b7b7 !important; left: 0px !important; top: 0 !important;}
+.popup-forget.lightbox .table-c .scrollbar-inner > .scroll-element .scroll-bar {background: #fff; width: 9px !important; height: 44px !important; left: 1px;}
+.popup-forget.lightbox .success .table2 {width: 308px;}
+.popup-forget.lightbox .scrollbar-inner > .scroll-element.scroll-y {right: 0 !important;}
+
+.btn-grey-disabled { background-color: #ccc;}
+.btn-green-enabled { background-color: #39b5a2; }
+
+/*#backdrop-promo {top: 0; left: 0; position: fixed; height: 100%; width: 100%; background-color: #000; opacity: 0.5; filter: alpha(opacity = 50); z-index: 9999999;display: none;}*/
+
+.pop-promo {position: fixed; height: 100%; width: 100%; z-index: 9999999; top: 25%; left: 0;display: none;}
+.pop-k8 {background: url("../../__static/__images/k8_2017/popup.png") no-repeat; width: 634px; height: 435px; margin: 0 auto; position: relative;}
+.pop-k8 .pop-close {background: url("../../__static/__images/k8_2017/pop-close.png") no-repeat; width: 23px; height: 23px; display: block; position: absolute; top: 120px; right: 70px;}
+.pop-k8 .pop-btn {width: 175px; height: 42px; display: block; position: absolute; bottom: 86px; left: 245px;}
+
+#header.mothers_day {background: url("//image.beike188.com/KFY/images/register/mothers_day.jpg") no-repeat center top;}
+.top-head-right .slogan {float: left; font-size: 12px; color: #cca353; line-height: 30px; margin-right: 10px; background: -webkit-linear-gradient(left, #ffcc66, #996b3d); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-weight: bold;}
+
+.vip_laborday { width: 100%; height: 292px; position: fixed; bottom: -20px; z-index: 99999999;display: none;}
+.vip_laborday .img {display: block; width: 455px; height: 100%; margin: 0 auto; position: relative; background: url("../../__static/__images/index/vip_laborday.png") no-repeat;}
+.vip_laborday .vip-close {background: url("../../__static/__images/index/icon-close.png") no-repeat; width: 28px; height: 28px; display: block; position: absolute; bottom: 28px; left: 210px;}
+.vip_laborday .link {width: 100%; height: 100%; display: block;}
+
+.nav {position: relative;}
+.nav .hot {background: url("//image.beike188.com/KFY/images/register/hot.png") no-repeat; width: 21px; height: 21px; display: block; position: absolute; top: 7px; right: 9px;}
+
+
+/*.pop-mask-mobile {top: 0; left: 0; position: fixed; height: 100%; width: 100%; background-color: #000; opacity: 0.5; filter: alpha(opacity = 50); z-index: 99999;}*/
+
+.pop-wrap-mobile {position: fixed; height: 100%; width: 100%; z-index: 99999; top: 20%; left: 0;}
+.pop-mobile-account {width: 478px; margin: 0 auto; position: relative; top: auto; left: auto;}
+.pop-mobile-account .lightbox-content {padding: 20px 41px 20px;}
+.pop-mobile-account p {font-size: 13px; color: #666; text-align: center; margin: 0;}
+.pop-mobile-account .table {border: 1px solid #b7b7b7; width: 398px; margin: 15px 0 20px; border-bottom: 0;}
+.pop-mobile-account .table th, .pop-mobile-account .table td {height: 39px; text-align: center; font-size: 13px; color: #666; border-bottom: 1px solid #a2a2a2; font-weight: normal;}
+.pop-mobile-account .table .checkbox {width: 20px; height: 20px; position: relative; display: block; float: left; margin: 0 0 0 16px;}
+.pop-mobile-account .table input[type=checkbox]:not(old) {position: absolute; top: 0; left: 0; z-index: 100; cursor: pointer; width: 20px; height: 20px; margin: 0; padding: 0; opacity: 0; filter: alpha(opacity=0); }
+.pop-mobile-account .table input[type=checkbox]:not(old) + label {display: inline-block; background: url("//image.beike188.com/KFY/images/register/popup/checkbox.png") no-repeat 0 0; width: 20px; height: 20px; position: relative;}
+.pop-mobile-account .table input[type=checkbox]:not(old):checked + label { background: url("//image.beike188.com/KFY/images/register/member/checkbox.png") no-repeat 0 0;}
+.pop-mobile-account .game-accounts {}
+.pop-mobile-account .game-accounts .scrollbar-inner {width: 398px;}
+.pop-mobile-account .game-accounts > .viewport { width: 398px; max-height: 320px; overflow: auto; margin-top: 0; position: relative; }
+.pop-mobile-account .game-accounts .scrollbar-inner > .scroll-element.scroll-y { width: 10px !important; height: 320px !important; top: 0 !important;}
+.pop-mobile-account .game-accounts .scrollbar-inner > .scroll-element .scroll-element_outer.pop-mobile-account .game-accounts .scrollbar-inner > .scroll-element .scroll-element_track, .pop-mobile-account .game-accounts .scrollbar-inner > .scroll-element .scroll-bar { -webkit-border-radius: 0 !important; -moz-border-radius: 0 !important; border-radius: 0 !important; }
+.pop-mobile-account .game-accounts .scrollbar-inner > .scroll-element .scroll-element_track, .pop-mobile-account .game-accounts .scrollbar-inner > .scroll-element .scroll-bar { -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=1)" !important; filter: alpha(opacity=100) !important; opacity: 100 !important; }
+.pop-mobile-account .game-accounts .scrollbar-inner > .scroll-element .scroll-element_track {width: 10px !important; background-color: #b7b7b7 !important; left: 0px !important; top: 0 !important;}
+.pop-mobile-account .game-accounts .scrollbar-inner > .scroll-element .scroll-bar {background: #fff; width: 9px !important; height: 44px !important; left: 1px;}
+.pop-mobile-account .game-accounts .scrollbar-inner > .scroll-element.scroll-y {right: 0 !important;}
+.pop-mobile-account .game-accounts .scrollbar-inner > .scroll-element .scroll-element_outer,
+.pop-mobile-account .game-accounts .scrollbar-inner > .scroll-element .scroll-element_track,
+.pop-mobile-account .game-accounts .scrollbar-inner > .scroll-element .scroll-bar {border-radius: 0 !important; -webkit-border-radius: 0 !important;}
+.pop-mobile-account .pop-mobile-btn {width: 51px; height: 24px; border-radius: 2px; -webkit-border-radius: 2px; display: inline-block; line-height: 24px; color: #fff; font-size: 12px; text-align: center;}
+.pop-mobile-account .pop-mobile-btn1 {background: #4fb0dd;}
+.pop-mobile-account .pop-mobile-btn2 {background: #ccc;}
+.pop-mobile-account .close-accounts {font-size: 14px; color: #b58a49; display: block; text-align: center; text-decoration: underline;}
+.pop-mobile-close { position: absolute; right: 10px; top: 3px; line-height: normal; cursor: pointer; }
+
+
+/*PROMO BACKDROP*/
+/*#promo-backdrop { position: fixed; z-index: 88888; background: #000000; opacity: 0.6; filter: alpha(opacity=60); top: 0; left: 0; width: 100%; height: 100%;display: none;}*/
+
+
+.promo-wrap {position: fixed; width: 100%; height: 100%; top: 20%; left: 0; z-index: 88888;display: none;}
+.promo1-popup {width: 585px; height: 514px; margin: 0 auto; position: relative; background: url("//image.beike188.com/KFY/images/register/promo1/popup.png") no-repeat;}
+.promo1-popup .pop-close {background: url("//image.beike188.com/KFY/images/register/promo1/icon-close.png") no-repeat; width: 36px; height: 36px; position: absolute; top: 0; right: -5px; display: block;}
+.promo1-popup .pop-close:hover {background: url("//image.beike188.com/KFY/images/register/promo1/icon-closeh.png") no-repeat;}
+.promo1-popup .pop-btn {background: url("//image.beike188.com/KFY/images/register/promo1/pop-btn.png") no-repeat; width: 152px; height: 65px; display: block; position: absolute; bottom: 35px; left: 232px;}
+.promo1-popup .pop-btn:hover {background: url("//image.beike188.com/KFY/images/register/promo1/pop-btnh.png") no-repeat;}
+
+
+#header .fathers_day {background: url("//image.beike188.com/KFY/images/register/events/fathers_day.png") no-repeat center top; width: 100%; height: 100%; position: absolute; top: 0; left: 0;}
+#header .top-head, #header .mid, #header .main-nav {position: relative;}
+.nav .on {background: url("//image.beike188.com/KFY/images/register/on.png") no-repeat; width: 21px; height: 21px; display: block; position: absolute; top: 7px; right: 9px;}
+
+/*POPUP*/
+.pop-wrapper {position: fixed; height: 100%; width: 100%; z-index: 9999999; top: 25%; left: 0; }
+.pop-wrapper-logout {position: fixed; height: 100%; width: 100%; z-index: 9999999; top: 25%; left: 0; }
+.confirmToDelBankCard{position: fixed; height: 100%; width: 100%; z-index: 9999999; top: 25%; left: 0; }
+.popup {width: 392px; height: 297px; margin: 0 auto; border: 6px solid #333; position: relative; background: #fff;}
+.popup .pop-head {height: 63px; background: url("//image.beike188.com/KFY/images/register/member/pop-head.jpg") no-repeat right center #1e1e1e; width: 100%; height: 63px; position: relative; line-height: 63px; font-size: 16px; color: #cca352; text-align: center;}
+.popup .pop-head2 {height: 63px; background: url("//image.beike188.com/KFY/images/register/member/pop-head.jpg") no-repeat right center #1e1e1e; width: 100%; height: 63px; position: relative; line-height: 63px; font-size: 16px; color: #cca352; text-align: center;}
+.popup .pop-close {background: url("//image.beike188.com/KFY/images/register/member/icon-close.png") no-repeat; width: 10px; height: 9px; position: absolute; top: 10px; right: 10px; display: block;}
+.popup .pop-c {padding-top: 58px; text-align: center;}
+.popup .pop-c p {font-size: 14px; color: #666; line-height: 22px;}
+.popup .pop-buttons {position: absolute; height: 36px; width: 100%; bottom: 74px; left: 0;}
+.popup .pop-buttons a, .lightbox-button-2 {display: inline-block; width: 156px; height: 37px; text-align: center; line-height: 37px; font-size: 14px; color: #fff; margin: 0 8px;}
+.popup .pop-buttons a.btn1, .lightbox-button-2-1 {background: url("//image.beike188.com/KFY/images/register/member/btn3.png") no-repeat; color: #cca352; cursor: pointer;}
+.popup .pop-buttons a.btn2, .lightbox-button-2-2 {background: url("//image.beike188.com/KFY/images/register/member/btn4.png") no-repeat; cursor: pointer;}
+.popup .pop-buttons a.btn1:hover, .lightbox-button-2-2:hover {background: url("//image.beike188.com/KFY/images/register/member/btn4.png") no-repeat; color: #fff;}
+.popup .pop-buttons a.btn2:hover, .lightbox-button-2-1:hover {background: url("//image.beike188.com/KFY/images/register/member/btn4h.png") no-repeat; color: #fff;}
+.popup2 .pop-c {text-align: left; padding: 40px 0 0 30px;}
+.popup2 .pop-buttons {bottom: 60px; text-align: center;}
+
+/*Update 0803 | LB-6233 */
+.hidden{display:none !important;}
+/*.goalpopup {position: fixed;z-index: 88888;background: #000000;opacity: 0.8;filter: alpha(opacity=85);top: 0;left: 0;display:block;height:100%;width:100%;}*/
+
+.popup-box{width:370px;height:438px;position:fixed;top:20%;left:0;right:0;margin:0 auto;background: url(../../__static/__images/goals/goalpop_bg.png) no-repeat center top;font-size:14px;z-index: 99999;}
+
+.popup-box .gmatch{display: block;width: 302px;text-align: center;height: 40px;color: #fff;font-size: 20px;margin: 115px 0 0 40px;}
+.popup-box .gmatch span{font-size:22px;}
+
+.popup-box .note{width:195px;margin:15px auto 35px;color:#fff;text-align:center;}
+.popup-box .note a{color:#fff;text-decoration: underline;cursor: pointer;}
+
+.popup-box .qrcode-img{display:block;margin:0 auto;}
+.popup-box .qrtxt{width:100%;text-align:center;font-size:12px;color:#3c68c3;margin-top: 10px;}
+.popup-box .gpop-close{width:50px;height:50px;display:block;margin:15px auto 0;}
+
+.popup-prize{width:353px;height:365px;position:fixed;top:10%;left:0;right:0;margin:0 auto;background: url(../../__static/__images/goals/goalpop2_bg.png) no-repeat center top;z-index: 99999;}
+
+.popup-prize .prize{width:172px;height:25px;float:left;margin: 197px 0 0 140px;color:#fff;text-align:center;}
+.popup-prize .prize span{font-size: 16px;}
+.popup-prize .gpop-detail{width: 80px;height: 50px;display: block;margin: 15px 0 0 185px;float: left; color:#fff; text-decoration:underline;}
+.popup-prize .gpop-close{width: 50px;height: 50px;display: block;margin: 38px 0 0 193px;float: left;}
+
+.national_day .mid .content {height: 100%; background: url("//image.beike188.com/KFY/images/register/events/01.png") no-repeat center top;}
+.national_day .mid .natl_day {background-position: 43% top;}
+.midautumn_festival .mid .content {height: 100%; background: url("//image.beike188.com/KFY/images/register/events/02.png") no-repeat center top;}
+.midautumn_festival .mid .move_decor {background: url("//image.beike188.com/KFY/images/register/events/midautumn.png") no-repeat 148px 0;}
+
+.mid-head-left .partners {display: inline-block; padding-left: 10px;}
+.mid-head-left .partner1 {background: url("//image.beike188.com/KFY/images/register/partner1.png") no-repeat; width: 215px; height: 40px; display: block; float: left; position: relative; top: -5px;}
+.mid-head-left .partner2 {background: url("//image.beike188.com/KFY/images/register/partner2.png") no-repeat; width: 95px; height: 40px; display: block; float: left; margin-left: 15px; position: relative; top: -5px;}
+.mid-head-left .partner1 a {width: 38px; height: 38px; display: block; position: absolute; top: 0;}
+.mid-head-left .partner1 a.logo1 {left: 0;}
+.mid-head-left .partner1 a.logo2 {left: 42px;}
+.mid-head-left .logo-cardiff {display: block; width: 100%; height: 100%;}
+
+.partners-footer {display: inline-block; margin-left: 20px;}
+.partners-footer .partner1 {background: url("//image.beike188.com/KFY/images/register/partner1-gray.png") no-repeat; width: 185px; height: 30px; float: left; position: relative;}
+.partners-footer .partner1  a {display: block; width: 30px; height: 30px; display: block; position: absolute; top: 0;}
+.partners-footer .partner1  a.logo1 {left: 0;}
+.partners-footer .partner1  a.logo2 {left: 33px;}
+.partners-footer .partner2 {background: url("//image.beike188.com/KFY/images/register/partner2-gray.png") no-repeat; width: 76px; height: 30px; float: left; margin-left: 12px;}
+.partners-footer .partner2 a {display: block; width: 100%; height: 100%;}
+.partners-footer .partner3 {background: url("//image.beike188.com/KFY/images/register/partner3-gray.png") no-repeat; width: 100px; height: 30px; float: left; margin-left: 12px;}
+.partners-footer .partner3 a {display: block; width: 100%; height: 100%;}
+
+
+/*VIDEO POPUP*/
+/*#video-backdrop {*/
+	/*position: fixed;*/
+	/*top: 0;*/
+	/*left: 0;*/
+	/*width: 100%;*/
+	/*height: 100%;*/
+	/*z-index: 99998;*/
+	/*background: #000;*/
+	/*opacity: 0.8;*/
+	/*filter: alpha(opacity=80);*/
+	/*display: none;*/
+/*}*/
+
+.wrapper-video {
+	position: fixed;
+	top: 150px;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 99998;
+	display: none;
+}
+
+.popup-video { width: 820px; height: 380px; margin: 0 auto; }
+.pop-close2 { display: block; float: right; width: 28px; height: 28px; background: url("../../__static/__images/tour/close.jpg") no-repeat center; }
+.pop-close2:hover { background: url("../../__static/__images/tour/closeh.jpg") no-repeat center; }
+
+#header.halloween {background: url("//image.beike188.com/KFY/images/register/events/halloween.jpg") no-repeat center top;}
+#header.halloween-login {background: url("//image.beike188.com/KFY/images/register/events/halloween-login.jpg") no-repeat center top;}
+
+/*#k8-overlay {background: #000; opacity: 0.6; width: 100%; height: 100%; position: fixed; top: 0; left: 0; z-index: 99999; filter: alpha(opacity=60);}*/
+
+.k8-wrap {position: fixed; top: 200px; width: 100%; height: 100%; left: 0; z-index: 99999;}
+.k8-treasure-pop {background: url("../../__static/__images/k8_treasure/popup.jpg") no-repeat; width: 628px; height: 358px; position: relative; margin: 0 auto;}
+.k8pop-close {background: url("../../__static/__images/k8_treasure/icon-close.png") no-repeat; width: 50px; height: 50px; display: block; position: absolute; top: -72px; left: 294px;}
+.k8-treasure-pop .k8-col {float: left;}
+.k8-treasure-pop .k8-col1 {width: 390px; text-align: center; padding-top: 205px;}
+.k8-treasure-pop .k8-col1 h4 {font-size: 18px; color: #fff; font-weight: normal; line-height: 26px; margin: 0;}
+.k8-treasure-pop .pop-btn {display: block; font-size: 18px; color: #fff; width: 293px; height: 42px; background: #2271ff; text-align: center; line-height: 42px; margin: 10px auto 0;}
+.k8-treasure-pop .k8-col2 {padding: 40px 0 0; width: 238px; text-align: center;}
+.k8-treasure-pop .k8-col2 p {font-size: 15px; color: #323232; margin: 0 0 27px;}
+.k8-treasure-pop .k8-col2 .pop-qr {display: block; width: 181px; height: 178px; background: url("../../__static/__images/k8_treasure/pop-qr.jpg") no-repeat; margin: 0 auto 20px;}
+.k8-treasure-pop .k8-col2 .pop-icons {text-align: center;}
+.k8-treasure-pop .k8-col2 .pop-icon {display: inline-block; font-size: 12px; color: #484848; margin: 0 12px;}
+.k8-treasure-pop .k8-col2 .icon-android {background: url("../../__static/__images/k8_treasure/pop-icons.png") no-repeat 0 0; width: 44px; height: 27px; display: block; margin-bottom: 5px;}
+.k8-treasure-pop .k8-col2 .icon-ios {background: url("../../__static/__images/k8_treasure/pop-icons.png") no-repeat -68px 0; width: 44px; height: 27px; display: block; margin-bottom: 5px;}
+
+/*.pop-mask-ie8 {background: #1c1c1c; opacity: 0.9; width: 100%; height: 100%; position: fixed; top: 0; left: 0; z-index: 99999; filter: alpha(opacity=90);}*/
+
+.popup-ie {position: fixed; width: 100%; height: 100%; z-index: 99999; text-align: center; top: 0; left: 0;}
+.popup-ie .ie-close {background: url("//image.beike188.com/KFY/images/register/ie8/pop-close.png") no-repeat; width: 67px; height: 62px; display: block; position: absolute; top: 0; right: 0;}
+.popup-ie .pop-message {padding-top: 168px; width: 1000px; margin: 0 auto;}
+.popup-ie .icon-warning {width: 132px; height: 121px; background: url("//image.beike188.com/KFY/images/register/ie8/icon-warning.png") no-repeat; display: inline-block; vertical-align: middle; position: relative; top: -4px;}
+.popup-ie h1 {font-size: 26px; color: #fff; font-weight: normal; margin: 0;}
+.popup-ie h1 .t {display: inline-block; margin: 0 0 0 -35px;}
+.popup-ie p.txt {font-size: 14px; color: #b5b5b5; margin: -15px 0 0;}
+.popup-ie .list {margin-top: 80px;}
+.popup-ie .pop-box {display: inline-block; width: 190px; height: 240px; background: url("//image.beike188.com/KFY/images/register/ie8/box.png"); margin: 0 22px;}
+.popup-ie .box-c {width: 178px; padding-top: 25px; text-align: center; position: relative; height: 201px;}
+.popup-ie .box-icon {display: block; width: 178px; height: 140px;}
+.popup-ie .box-icon1 {background: url("//image.beike188.com/KFY/images/register/ie8/icon-chrome.png") no-repeat;}
+.popup-ie .box-icon2 {background: url("//image.beike188.com/KFY/images/register/ie8/icon-ie.png") no-repeat;}
+.popup-ie .box-tag {background: url("//image.beike188.com/KFY/images/register/ie8/tag1.png") no-repeat; width: 32px; height: 32px; display: block; position: absolute; top: -2px; right: 8px;}
+.popup-ie .pop-box h5 {font-size: 15px; letter-spacing: 1px; color: #ccc; font-weight: normal; margin: -42px 0 0;}
+.popup-ie .pop-box .download-btn {display: block; font-size: 14px; color: #b5b5b5; text-align: center; width: 106px; height: 36px; border: 1px solid #ccc; border-radius: 3px; position: absolute; bottom: 29px; left: 38px; line-height: 36px;}
+.popup-ie .pop-box:hover .box-c {background: #3e3e3e;}
+
+/*.png-overlay {background: #000; opacity: 0.6; width: 100%; height: 100%; position: fixed; top: 0; left: 0; z-index: 99999; filter: alpha(opacity=60);}*/
+
+.png-wrap {position: fixed; top: 90px; width: 100%; height: 100%; left: 0; z-index: 99999;}
+.pop-png {background: url("../../__static/__images/png_activity/pop.png") no-repeat; width: 583px; height: 603px; position: relative; margin: 0 auto;}
+.pop-png .png-close {background: url("../../__static/__images/png_activity/pop-close.png") no-repeat; width: 40px; height: 40px; display: block; position: absolute; top: 116px; right: 77px; }
+.pop-png p {font-size: 12px; color: #8b6200; text-align: center; width: 270px; height: 38px; line-height: 38px; text-align: center; position: absolute; bottom: 65px; left: 158px; margin: 0;}
+.pop-png .pop-c {display: block; width: 100%; height: 100%; position: relative;}
+.pop-png .png-link {display: block; width: 120px; height: 46px; position: absolute; top: 356px; left: 168px;}
+.pop-png .png-link2 {display: block; width: 120px; height: 46px; position: absolute; top: 356px; left: 301px;}
+
+#header.christmas {position: relative;}
+#header.christmas .christmas-decors {position: absolute; top: 0; left: 0; width: 100%; height: 100%; overflow: hidden;}
+#header.christmas .christmas-decors .content {position: relative;}
+#header.christmas .christmas-decors .decor1 {background: url("//image.beike188.com/KFY/images/register/events/christmas1.png") no-repeat; width: 86px; height: 93px; position: absolute; top: 0; left: -158px; display: block;}
+#header.christmas .christmas-decors .decor3 {background: url("//image.beike188.com/KFY/images/register/events/christmas3.png") no-repeat; width: 123px; height: 84px; position: absolute; top: 36px; right: -126px; display: block;}
+#header.christmas .christmas-decors .decor4 {background: url("//image.beike188.com/KFY/images/register/events/christmas4.png") no-repeat; width: 345px; height: 18px; position: absolute; top: 52px; right: -4px; display: block; z-index: 200;}
+#header.christmas.-login .christmas-decors .decor4 {top: 58px;}
+
+#header.newyear {position: relative;}
+#header.newyear .mid {height: 99px;}
+#header.newyear .newyear-decor {position: absolute; top: 0; left: 0; width: 100%; overflow: hidden; height: 100%;}
+#header.newyear .newyear-decor .content {position: relative;}
+#header.newyear .ny1 {background: url("//image.beike188.com/KFY/images/register/events/ny1.gif") no-repeat; width: 234px; height: 174px; display: block; position: absolute; top: 0; left: -234px; z-index: 100;}
+#header.newyear .ny2 {background: url("//image.beike188.com/KFY/images/register/events/ny2.gif") no-repeat; width: 285px; height: 173px; display: block; position: absolute; top: 0; right: -285px; z-index: 100;}
+
+/*.concert-overlay {background: #000; opacity: 0.6; width: 100%; height: 100%; position: fixed; top: 0; left: 0; z-index: 99999; filter: alpha(opacity=60);}*/
+
+
+.concert-wrap {position: fixed; top: 0; width: 100%; height: 100%; left: 0; z-index: 99999;}
+.pop-concert {background: url("../../__static/__images/concert_tour/popup.png") no-repeat; width: 886px; height: 886px; position: relative; display: block; margin: 0 auto;}
+.pop-concert .pop-close { display: block; width: 52px; height: 52px; position: absolute; top: 196px; right: 185px; z-index: 100;}
+.pop-concert .pop-btn { display: block; width: 526px; height: 600px; position: absolute; top: 106px; left: 180px; }
+
+/*.event-overlay {background: #000; opacity: 0.6; width: 100%; height: 100%; position: fixed; top: 0; left: 0; z-index: 99999; filter: alpha(opacity=60);}*/
+
+.event-wrap {position: fixed; top: 0; width: 100%; height: 100%; left: 0; z-index: 99999;}
+.pop-event {background: url("../../__static/__images/newyear_event/popup.png") no-repeat; width: 640px; height: 775px; position: relative; margin: 0 auto;}
+.pop-event .pop-close {background: url("../../__static/__images/newyear_event/pop-close.png") no-repeat; width: 51px; height: 51px; display: block; position: absolute; top: 125px; right: 48px;}
+.pop-event .pop-event-info {padding-top: 434px; width: 395px; margin-left: 132px; text-align: center;}
+.pop-event .pop-event-info h4 {font-size: 20px; color: #fff; height: 50px; line-height: 50px; text-align: center; margin: 0;}
+.pop-event .pop-event-info h4 span {font-weight: normal;}
+.pop-event .pop-event-info .pop-btn {display: block; background: url("../../__static/__images/newyear_event/pop-btn.png") no-repeat; width: 317px; height: 51px; margin: 75px auto 0; font-size: 20px; font-weight: bold; color: #fd3331; text-align: center; line-height: 51px;}
+
+/*.success-backdrop {background: #000; opacity: 0.6; width: 100%; height: 100%; position: fixed; top: 0; left: 0; z-index: 99999; filter: alpha(opacity=60);}*/
+
+
+.success-wrap {position: fixed; top: 200px; width: 100%; height: 100%; left: 0; z-index: 99999;}
+.success-wrap .pop-success {width: 620px; height: 400px; margin: 0 auto; position: relative; background: url("//image.beike188.com/KFY/images/register/popup/success/pop-bg.jpg") no-repeat center top #121213;}
+.pop-success .pop-close {background: url("//image.beike188.com/KFY/images/register/popup/success/pop-close.png") no-repeat; width: 22px; height: 22px; display: block; position: absolute; top: 16px; right: 15px;}
+.pop-success .pop-success-info {padding: 50px 0 72px; text-align: center;}
+.pop-success .pop-logo {background: url("//image.beike188.com/KFY/images/register/popup/success/pop-logo.png") no-repeat; width: 188px; height: 62px; display: block; margin: 0 auto 42px;}
+.pop-success h3 {font-size: 24px; color: #cca352; font-weight: normal; margin: 0 0 20px; line-height: 41px;}
+.pop-success h3 span {color: #ccc;}
+.pop-success .icon-success {background: url("//image.beike188.com/KFY/images/register/popup/success/icon-success.png") no-repeat; vertical-align: middle; width: 41px; height: 41px; display: inline-block; margin-right: 14px;}
+.pop-success p {font-size: 14px; color: #ccc; margin: 0;}
+.pop-success p a {color: #cca352; text-decoration: underline;}
+.pop-success .pop-btn {display: block; font-size: 20px; color: #fff; text-align: center; background: url("//image.beike188.com/KFY/images/register/popup/success/pop-btn.png") no-repeat; width: 348px; height: 47px; line-height: 47px; margin: 44px auto 0;}
+.pop-success .pop-btn:hover {background: url("//image.beike188.com/KFY/images/register/popup/success/pop-btnh.png") no-repeat;}
+
+.success-wrap .pop-success2 {background: url("//image.beike188.com/KFY/images/register/popup/success/pop-bg2.jpg") no-repeat; height: 488px; width: 618px;}
+.pop-success2 h3 {margin-bottom: 5px;}
+.pop-success .pop-group {margin: 34px auto 0; width: 348px;}
+.pop-success .pop-form-group {height: 40px; line-height: 40px; margin-bottom: 10px;}
+.pop-success .pop-form-group label {float: left; font-size: 16px; color: #ccc;}
+.pop-success .pop-form-group .value {float: left; font-size: 16px; color: #ccc; width: 208px; text-align: left; margin-left: 5px;}
+.pop-success .pop-form-group .link {font-size: 16px; color: #cca352; text-decoration: underline; float: right;}
+.pop-success2 .pop-form-group {margin-bottom: 0;}
+.pop-success2 .pop-btn {margin: 20px auto 16px;}
+.pop-success2 .input-group {float: left; margin: 0 0 10px 20px; width: 258px; height: 40px; line-height: 40px;}
+.pop-success2 .input-group input {outline: 0; border: 0; background: #fff; height: 40px;}
+.pop-success2 .input-group .inpt-prefix {width: 48px; text-align: center; font-size: 16px; color: #222; float: left; padding: 0;}
+.pop-success2 .input-group .inpt {width: 190px; padding: 0 10px; text-align: left; font-size: 13px; color: #222; float: left;}
+.pop-success2 .input-group .inpt2 {padding: 0 10px 0 58px;}
+.pop-success2 .pop-button-group {margin: 35px 0 0; text-align: center; height: 47px;}
+.pop-success2 .pop-button-group .pop-btn {width: 162px; height: 47px; display: block; float: left; margin: 0; text-align: center; line-height: 47px; color: #fff; font-size: 20px;}
+.pop-success2 .pop-button-group .pop-btn1 {background: #404040; border-radius: 4px; color: #ccc; margin-right: 24px;}
+.pop-success2 .pop-button-group .pop-btn2 {background: url("//image.beike188.com/KFY/images/register/popup/success/pop-btn-s.png") no-repeat;}
+.pop-success2 .pop-button-group .pop-btn2:hover {background: url("//image.beike188.com/KFY/images/register/popup/success/pop-btn-sh.png") no-repeat;}
+.pop-success2 .pop-input .value {margin-left: 20px;}
+
+
+#header.cny {position: relative;}
+.cny .cny-decor {position: absolute; top: 0; left: 0; width: 100%; height: 100%; overflow: hidden;}
+.cny .cny-decor .content {position: relative;}
+.cny .cny-decor .lantern {display: block; position: absolute; top: 0; z-index: 100; animation: swing ease-in-out 1s infinite alternate; transform-origin: center -20px; }
+.cny .cny-decor .lantern1 {background: url("//image.beike188.com/KFY/images/register/events/lantern1.png") no-repeat; width: 31px; height: 61px; left: -46px;}
+.cny .cny-decor .lantern2 { background: url("//image.beike188.com/KFY/images/register/events/lantern2.png") no-repeat; width: 24px; height: 41px; left: 417px;}
+.cny .cny-decor .lantern3 {background: url("//image.beike188.com/KFY/images/register/events/lantern3.png") no-repeat; width: 31px; height: 56px; right: -110px;}
+.cny .mid-head-right-wrapper .cover-sprite {text-indent: 100%; overflow: hidden;}
+.cny .trial, .cny .mid-head-right-wrapper.not-login a.trial:hover {background: url("//image.beike188.com/KFY/images/register/events/cny-btn1.jpg") no-repeat;}
+.cny .login, .cny .mid-head-right-wrapper.not-login a.login:hover {background: url("//image.beike188.com/KFY/images/register/events/cny-btn2.jpg") no-repeat;}
+.cny .register, .cny .mid-head-right-wrapper.not-login a.register:hover {background: url("//image.beike188.com/KFY/images/register/events/cny-btn3.jpg") no-repeat;}
+.cny .mid-head-right-wrapper a.verified-common-sprite {padding-left: 0;}
+.cny .verified-common-sprite span {display: none;}
+.cny .header-button-1 {background: url("//image.beike188.com/KFY/images/register/events/cny-btn4.jpg") no-repeat; width: 115px;}
+.cny .header-button-2 {background: url("//image.beike188.com/KFY/images/register/events/cny-btn5.jpg") no-repeat; width: 95px;}
+.cny .header-button-3 {background: url("//image.beike188.com/KFY/images/register/events/cny-btn6.jpg") no-repeat; width: 95px;}
+.cny .fire { position: absolute; top: 0; height: 175px; display: block; left: -250px; }
+.cny .fire img {height: 100%;}
+.cny .fire2 {left: auto; right: -210px; top: 15px;}
+
+@keyframes swing {
+	0% { transform: rotate(8deg); }
+	100% { transform: rotate(-8deg); }
+}
+
+/*.curr-overlay {background: #000; opacity: 0.8; width: 100%; height: 100%; position: fixed; top: 0; left: 0; z-index: 99999; filter: alpha(opacity=80);}*/
+
+
+.curr-wrap {position: fixed; top: 150px; width: 100%; height: 100%; left: 0; z-index: 99999;}
+.pop-currency {background: url("../../__static/__images/currency-event/popup.png") no-repeat; width: 532px; height: 497px; margin: 0 auto; position: relative;}
+.pop-currency .pop-close {background: url("../../__static/__images/currency-event/pop-close.png") no-repeat; width: 50px; height: 50px; position: absolute; top: 100px; right: 50px; display: block;}
+.pop-currency .pop-c {width: 346px; height: 84px; display: block; position: absolute; bottom: 0; left: 94px; text-align: center;}
+.pop-currency .pop-c .pop-btn {width: 122px; height: 42px; display: inline-block; font-size: 22px; margin: 0 6px; line-height: 42px;}
+.pop-currency .pop-c .pop-btn1 {background: url("../../__static/__images/currency-event/btn1.png") no-repeat; color: #cd0011;}
+.pop-currency .pop-c .pop-btn2 {background: url("../../__static/__images/currency-event/btn2.png") no-repeat; color: #fff;}
+.pop-currency .pop-c p {font-size: 12px; color: #ea707a; margin-top: 18px;}
+
+/*.m-overlay {background: #000; opacity: 0.8; width: 100%; height: 100%; position: fixed; top: 0; left: 0; z-index: 99999; filter: alpha(opacity=80);}*/
+
+
+.m-wrap {position: fixed; top: 150px; width: 100%; height: 100%; left: 0; z-index: 99999;}
+.pop-millionaire {background: url("../../__static/__images/promo_millionaire/popup.png") no-repeat; width: 522px; height: 508px; position: relative; margin: 0 auto;}
+.pop-millionaire .pop-close {background: url("../../__static/__images/promo_millionaire/pop-close.png") no-repeat; width: 40px; height: 40px; display: block; position: absolute; top: 142px; right: 112px;}
+.pop-millionaire .pop-btn {display: block; font-size: 16px; color: #fff; background: url("../../__static/__images/promo_millionaire/pop-btn.png") no-repeat; text-align: center; width: 173px; height: 44px; line-height: 44px; position: absolute; bottom: 18px; left: 180px;}
+.underline{text-decoration: underline !important;}
+.cscolor{float: none !important;color: #cca352;margin-left: 0px !important;}
+
+/*LB-7804*/
+/*.worldcup-wrap {position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 9999; background: #000; opacity: 0.8; filter: alpha(opacity=80);}*/
+
+
+.pop-worldcup {position: fixed; top: 0; left: 0; right: 0; bottom: 0; margin: auto; z-index: 9999; background: url("../../__static/__images/worldcup2018/popup4.png") no-repeat bottom; width: 690px; height: 455px;}
+.pop-worldcup .pop-btn {font-size: 20px; color: #633501; background: url("../../__static/__images/worldcup2018/btn5.jpg") no-repeat; font-weight: bold; width: 130px; height: 44px; line-height: 44px; text-align: center; display: block; position: absolute; bottom: 12px; left: 272px;}
+.pop-worldcup .pop-close {background: url("../../__static/__images/worldcup2018/pop-close2.png") no-repeat; width: 40px; height: 40px; display: block; position: absolute; right: 150px; top: 120px;}
+
+/*LB-7791*/
+/*.pop-superpartner-backdrop {position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 9999; background: #000; opacity: 0.8; filter: alpha(opacity=80);}*/
+
+
+.pop-superpartner {background: url("../../__static/__images/promo_superpartner/pop-promo.png") no-repeat; width: 285px; height: 432px; position: fixed; margin: auto; top: 0; left: 0; right: 0; bottom: 0; z-index: 9999;}
+.pop-superpartner .pop-promo-close {background: url("../../__static/__images/promo_superpartner/pop-promo-close.png") no-repeat; width: 40px; height: 40px; display: block; position: absolute; bottom: -55px;left: 122px;}
+.pop-superpartner .pop-ad {display: block; width: 195px; height: 37px; position: absolute; bottom: 42px; left: 45px; font-size: 16px; font-weight: bold; color: #000; line-height: 37px; text-align: center; background: url("../../__static/__images/promo_superpartner/pop-btn.png") no-repeat;}
+.pop-superpartner .pop-ad:hover {background: url("../../__static/__images/promo_superpartner/pop-btnh.png") no-repeat;}
+
+#header.dragonboat .mid {background: url("//image.beike188.com/KFY/images/register/events/dragonboat.png") repeat-x center bottom;}
+#header.dragonboat .mid .content {position: relative; height: 100%;}
+#header.dragonboat .mid .decor-img {background: url("//image.beike188.com/KFY/images/register/events/dragonboat-img.png") no-repeat; width: 188px; height: 80px; display: block; position: absolute; left: 556px; top: 5px;}
+
+.nav .icon-wc {background: url("//image.beike188.com/KFY/images/register/icon-wc.png") no-repeat; width: 106px; height: 41px; display: block; position: absolute; top: -26px; left: 5px; z-index: 100;}
+.topmenu .col a.wc {background: url("//image.beike188.com/KFY/images/register/icon-wc.png") no-repeat; width: 106px; height: 41px; display: block; margin: -14px 0 0 -24px;}
+
+/*.promo-backdrop { position: fixed; z-index: 999999; background: #000000; opacity: 0.8; filter: alpha(opacity=80); top: 0; left: 0; width: 100%; height: 100%;}*/
+
+
+.pop-promo58 {transition: all 1s ease-in-out; background: url('//image.beike188.com/KFY/images/register/promo58/pop-promo58.png') no-repeat; width: 293px; height: 314px; position: fixed; top: 0; left: 0; right: 0; bottom: 0; margin: auto; z-index: 999999;}
+.pop-promo58 .pop-close {background: url("//image.beike188.com/KFY/images/register/promo58/pop-close.png") no-repeat; width: 39px; height: 39px; display: block; position: absolute; bottom: -66px; left: 123px;}
+.pop-promo58 .pop-c {padding-top: 155px; width: 245px; margin-left: 20px;}
+.pop-promo58 .pop-c p {font-size: 12px; color: #dabb87; text-align: center; margin: 0;}
+.pop-promo58 .pop-c .pop-btn {width: 127px; height: 31px; background: #d8ac62; text-align: center; line-height: 31px; font-size: 15px; border-radius: 4px; display: block; margin: 36px auto 22px; box-shadow: 5px 5px 2px #9f0000; color: #fff;}
+.pop-promo58 .pop-c ul {padding-left: 0; width: 100%; text-align: center; list-style: none; margin: 0;}
+/*.pop-promo58 .pop-c li {font-size: 12px; color: #dabb87; opacity: 0.8;}*/
+.pop-promo58 .pop-c li i {background: url("//image.beike188.com/KFY/images/register/promo58/icon-dot.png") no-repeat; width: 9px; height: 8px; display: inline-block; margin-right: 3px; vertical-align: middle;}
+
+.pop-promo-success {width: 430px; height: 260px; position: fixed;  top: 0; left: 0; right: 0; bottom: 0; margin: auto; z-index: 999999; background: #e2e2e2;}
+.pop-promo-success .pop-t {height: 50px; border-bottom: 1px solid #999; line-height: 50px; text-align: center; position: relative; font-size: 18px; font-weight: bold; color: #333;}
+.pop-promo-success .pop-close {background: url("//image.beike188.com/KFY/images/register/promo58/pop-close2.png") no-repeat; width: 24px; height: 24px; display: block; position: absolute; top: 8px; right: 8px;}
+.pop-promo-success .pop-c {padding: 45px 0 0; text-align: center;}
+.pop-promo-success .pop-c h5 {font-size: 16px; color: #666; margin: 0;}
+.pop-promo-success .pop-c .pop-btn {font-size: 16px; font-weight: bold; width: 300px; height: 48px; text-align: center; line-height: 48px; background: #cca352; display: block; margin: 42px auto 15px; color: #fff;}
+.pop-promo-success .pop-c p {font-size: 12px; color: #666; font-weight: bold; margin: 0;}
+.pop-promo-success .pop-c .pop-btn:hover {background: #996b3d;}
+
+.pop-promo58.zoom {animation: toCenter 1s; opacity: 1;}
+
+
+.pop-promo58.shrink {animation: toRight 1.5s; opacity: 0;}
+
+@keyframes toRight {
+	40% {
+		opacity: 1;
+		transform: scale(0.475, 0.475, 0.475) translate3d(0,0,0);
+	}
+
+	to {
+		transform: scale(0.3) translate3d(700%,0,0);
+		transform-origin: right 3%;
+		opacity: 1;
+	}
+}
+
+@keyframes toCenter {
+	from {
+		opacity: 1;
+		transform: scale3d(0.3, 0.3, 0.3) translate3d(700%, 0, 0);
+		transform-origin: right 3%;
+	}
+
+	40% {
+		opacity: 1;
+		transform: scale(0.475, 0.475, 0.475) translate3d(0,0,0);
+	}
+
+	to {
+		transform: scale(1);
+		transform-origin: center center;
+		opacity: 1;
+	}
+}
+
+/*.pop-backdrop-gift {background: #000; opacity: 0.7; filter: alpha(opacity=70); width: 100%; height: 100%; position: fixed; top: 0; left: 0; z-index: 9999;}*/
+
+
+.pop-wrapper-gift {position: absolute; top: 100px; left: 0; width: 100%; height: 100%; z-index: 9999;}
+.pop-success {width: 430px; height: 260px;position: fixed; top: 0; left: 0; right: 0; bottom: 0; margin: auto; background: #e2e2e2;}
+.pop-success .pop-head {height: 50px; border-bottom: 1px solid #999; position: relative; text-align: center; line-height: 50px; font-weight: bold;}
+.pop-success .pop-head .pop-close {background: url("../../__static/__images/promo_gift/pop-close.png") no-repeat; width: 24px; height: 24px; display: block; position: absolute; top: 8px; right: 8px;}
+.pop-success .pop-c {text-align: center; padding-top: 45px;}
+.pop-success .pop-c h5 {font-size: 16px; color: #666;}
+.pop-success .pop-btn {font-size: 16px; font-weight: bold; color: #fff; width: 300px; height: 48px; text-align: center; line-height: 48px; background: #cca352;}
+
+.pop-promogift {width: 698px; position: relative; padding: 122px 0 28px; background: url("../../__static/__images/promo_gift/popup.png") no-repeat #262abd; margin: 0 auto; border-radius: 34px;}
+.pop-promogift .pop-text {background: url("../../__static/__images/promo_gift/pop-text.png") no-repeat; width: 730px; height: 197px; display: block; position: absolute; left: -16px; top: -65px;}
+.pop-promogift .pop-close {background: url("../../__static/__images/promo_gift/pop-close2.png") no-repeat; width: 39px; height: 39px; position: absolute; top: -2px; right: 22px; z-index: 100;}
+.pop-promogift .pop-c {padding: 0 36px;}
+.pop-promogift .pop-item {position: relative; padding: 10px 0; background: #0a0892; border: 3px solid #06b7f9; border-radius: 30px; min-height: 34px; margin-bottom: 16px; box-shadow: 11px 11px 22px rgba(10,43,121,0.7);}
+.pop-promogift .pop-item .num {width: 60px; height: 60px; display: block; position: absolute; top: -3px; left: -3px;}
+.pop-promogift .pop-item .num1 {background: url("../../__static/__images/promo_gift/num1.png") no-repeat;}
+.pop-promogift .pop-item .num2 {background: url("../../__static/__images/promo_gift/num2.png") no-repeat;}
+.pop-promogift .pop-item .num3 {background: url("../../__static/__images/promo_gift/num3.png") no-repeat;}
+.pop-promogift .pop-item .num4 {background: url("../../__static/__images/promo_gift/num4.png") no-repeat;}
+.pop-promogift .pop-item .num5 {background: url("../../__static/__images/promo_gift/num5.png") no-repeat;}
+.pop-promogift .pop-item .item-info {padding: 0 0 0 90px; display: table; width: 536px;}
+.pop-promogift .pop-item .item-info h3 {font-size: 24px; color: #fcee02; font-weight: bold; display: inline-block; margin: 0 26px 0 0; letter-spacing: 2px;}
+.pop-promogift .pop-item .item-info p {font-size: 16px; color: #04b8fa; display: inline-block; margin: 0;}
+.pop-promogift .pop-item .item-info p span {color: #fff; font-weight: bold;}
+.pop-promogift .item-info .col {display: table-cell; vertical-align: middle;}
+.pop-promogift .item-info .col2 {width: 166px; position: relative;}
+.pop-promogift .item-info .item-btn {margin: 0 auto; font-size: 15px; color: #060293; font-weight: bold; width: 126px; height: 34px; border-radius: 18px; text-align: center; line-height: 34px; display: block;}
+.pop-promogift .item-info .item-btn1 {background: #04b8fa;}
+.pop-promogift .item-info .item-btn2 {background: #9b9b9b;}
+.pop-promogift .item-info .item-btn3 {background: #fcee02;}
+.pop-promogift .item-info .item-btn3:hover {color: #1a14ff;}
+.pop-promogift .item-info .hand {background: url("../../__static/__images/promo_gift/icon3.png") no-repeat; width: 61px; height: 52px; display: block; position: absolute; right: 52px; bottom: 0; top: -8px;}
+.pop-promogift .pop-list {margin-bottom: 35px;}
+.pop-promogift .pop-c .txt-center {font-size: 14px; color: #fff; text-align: center;}
+.pop-promogift .pop-c .txt-center i {background: url("../../__static/__images/promo_gift/icon4.png") no-repeat; display: inline-block; width: 15px; height: 15px; margin-right: 6px; position: relative; top: 2px;}
+.pop-promogift .pop-item2 {border-radius: 40px;}
+.pop-promogift .pop-item2 .num {top: 8px;}
+.pop-promogift .pop-c .pop-inline {margin-top: 6px;}
+.pop-promogift .pop-c .pop-inline .group {display: inline-block; font-size: 16px; color: #04b8fa; margin-right: 25px;}
+.pop-promogift .pop-c .pop-inline .group.last {margin-right: 0;}
+.pop-promogift .pop-c .pop-inline .group i.icon-check {background: url("../../__static/__images/promo_gift/icon-check.png") no-repeat; width: 17px; height: 17px; float: left; margin-right: 5px;}
+
+.pop-btn-fixed {background: url("../../__static/__images/promo_gift/pop-btn.png") no-repeat; width: 86px; height: 86px; position: fixed; top: 126px; right: 0; display: block; z-index: 99999;}
+
+
+html, body { font-family: 'Microsoft YaHei', sans-serif; min-width: 1200px; }
+body, div, ul, li, dl, dt, dd, ol, p, h1, h2, h3, h4, h5, h6 { margin: 0; padding: 0; }
+a {/* text-decoration: none; */}
+.content { width: 1200px; }
+.hide {display: none;}
+.clear {clear: both;}
+
+.wrapper {
+	position: relative;
+	width: 100%;
+	min-height: 100%;
+	padding-top: 73px;
+	background: #0f0f0f;
+	z-index: 2;
+	-webkit-transition: -webkit-transform 0.5s ease-in-out;
+	transition: -webkit-transform 0.5s ease-in-out;
+	transition: transform 0.5s ease-in-out;
+	transition: transform 0.5s ease-in-out,
+	-webkit-transform 0.5s ease-in-out;
+}
+
+.wrapper:before {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.75);
+	z-index: 400;
+	opacity: 0;
+	visibility: hidden;
+	-webkit-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+
+.nav-sidebar-open .wrapper {
+	position: fixed;
+	-webkit-transform: translateX(320px);
+	transform: translateX(320px);
+}
+
+.nav-sidebar-open .wrapper:before {
+	opacity: 1;
+	visibility: visible;
+}
+
+.router-link-exact-active{
+	font-weight: 700;
+	/*color: #333!important;*/
+}
+/*HEADER*/
+.header {
+	/*background: url("//image.beike188.com/KFY/images/common/head-bg.png") no-repeat center top #0f0f0f;*/
+	width: 100%;
+	z-index: 400;
+	/*position: fixed;*/
+	top: 0;
+	left: 0;
+}
+
+.header .top {
+	position: relative;
+	border-bottom: 1px solid #2a2c31;
+	height: 45px;
+	justify-content: space-between;
+	display: flex;
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.top .top-left {
+	/*position: absolute;*/
+	/*top: 0;*/
+	/*left: 0;*/
+	/*width: 633px;*/
+	height: 72px;
+}
+
+
+.top .top-nav {
+	width: 114px;
+	height: 100%;
+	display: block;
+	float: left;
+	border-right: 1px solid #2a2c31;
+	line-height: 73px;
+	font-size: 13px;
+	color: #697081;
+	font-weight: bold;
+	transition: all 0.2s;
+}
+
+.top .top-nav .icon-nav {
+	background: url("//image.beike188.com/KFY/images/common/icon1.png") no-repeat 0 0;
+	width: 15px;
+	height: 13px;
+	display: block;
+	margin: 30px 14px 0 28px;
+	float: left;
+	transition: all 0.3s ease-in-out;
+}
+
+.top .top-nav:hover {
+	color: #525866;
+}
+
+.top .top-nav:hover .icon-nav {
+	background-position: -15px 0;
+}
+
+.top .partners {
+	float: left;
+	margin: 20px 0 0 30px;
+	height: 34px;
+	position: relative;
+	width: 480px;
+}
+
+.top .partners a {
+	background: url("//image.beike188.com/KFY/images/common/partners.png") no-repeat;
+	height: 34px;
+	display: block;
+	float: left;
+	margin-right: 6px;
+	transition: all 0.2s;
+	cursor: Default;
+}
+
+.top .partners a:hover {
+	background: url("//image.beike188.com/KFY/images/common/partnersh.png") no-repeat;
+}
+
+.top .partners a.p-logo1 {
+	width: 34px;
+	background:none;
+	overflow: hidden;
+}
+
+.top .partners a.p-logo2 {
+	width: 172px;
+	background: none;
+	overflow: hidden;
+}
+
+.top .partners a.p-logo3 {
+	width: 190px;
+	margin-right: 0;
+	background: none;
+}
+
+.top .partners .p-logo3 i {
+	background: url("//image.beike188.com/KFY/images/common/partners.png") no-repeat -79px 0;
+	width: 32px;
+	height: 34px;
+	display: block;
+	float: left;
+	margin-right: 6px;
+}
+
+.top .partners .p-logo3:hover i {
+	background: url("//image.beike188.com/KFY/images/common/partnersh.png") no-repeat -79px 0;
+}
+
+.top .partners .p-logo3 .p-text {
+	float: left;
+	padding-top: 3px;
+}
+
+.top .partners .p-logo3 p {
+	font-size: 12px;
+	line-height: 15px;
+	color: #cca352;
+	transition: all 0.2s;
+}
+
+.top .partners .p-logo3 p.txt1 {color: #697081;}
+
+.top .partners .p-logo2 i {
+	background: url("//image.beike188.com/KFY/images/common/partners.png") no-repeat -40px 0;
+	width: 32px;
+	height: 34px;
+	display: block;
+	float: left;
+	margin-right: 6px;
+}
+
+.top .partners .p-logo2:hover i {
+	background: url("//image.beike188.com/KFY/images/common/partnersh.png") no-repeat -40px 0;
+}
+
+.top .partners .p-logo2 .p-text {
+	float: left;
+	padding-top: 3px;
+}
+
+.top .partners .p-logo2 p {
+	font-size: 12px;
+	line-height: 15px;
+	color: #cca352;
+	transition: all 0.2s;
+}
+
+.top .partners .p-logo2 p.txt1 {color: #697081;}
+
+.top .partners .p-logo1 i {
+	background: url("//image.beike188.com/KFY/images/common/partners.png") no-repeat 0px 0;
+	width: 32px;
+	height: 34px;
+	display: block;
+	float: left;
+	margin-right: 6px;
+}
+
+.top .partners .p-logo1:hover i {
+	background: url("//image.beike188.com/KFY/images/common/partnersh.png") no-repeat 0px 0;
+}
+
+.top .partners .p-logo1 .p-text {
+	float: left;
+	padding-top: 3px;
+}
+
+.top .partners .p-logo1 p {
+	font-size: 12px;
+	line-height: 15px;
+	color: #cca352;
+	transition: all 0.2s;
+}
+
+.top .partners .p-logo1 p.txt1 {color: #697081;}
+
+.top .top-centered {
+	display: block;
+	/*margin: 0 auto;*/
+	width: 132px;
+}
+
+.top .k8-logo {
+	background: url("https://cdn.weibo-hk.com/Web.Portal/QH001-01.Portal/Content/Views/Shared/images/logo.png") no-repeat;
+    width: 200px;
+    height: 79px;
+    background-size: contain;
+	display: block;
+	transition: all 0.4s;
+	margin-top:0px;
+	position: relative;
+}
+
+.top .k8-logo .l-text {
+	background: url("//image.beike188.com/KFY/images/common/logo-text2.png") no-repeat;
+	width: 128px;
+	height: 12px;
+	position: absolute;
+	top: 30px;
+	left: 48px;
+	display: block;
+	animation : changelogo 2.5s alternate infinite;
+}
+
+.top .k8-logo.w {
+	width: 40px;
+	margin: 0 auto;
+}
+
+.top .k8-logo.w .l-text {
+	width: 0;
+}
+
+.userGlobal{
+	width:36px;
+	height:36px;
+	background: url("../images/global.png") 50% 50% no-repeat;
+	background-size: 25px auto;
+	background-color: #aaabab;
+}
+.userIcon{
+	width:36px;
+	height:36px;
+	background: url("../images/username.png") 50% 50% no-repeat;
+	background-size: 25px auto;
+	background-color: #aaabab;
+}
+.userPhone{
+	width:36px;
+	height:36px;
+	background: url("../images/mobile.png") 50% 50% no-repeat;
+	background-size: 25px auto;
+	background-color: #aaabab;
+}
+.userPwd{
+	width:36px;
+	height:36px;
+	background: url("../images/password.png") 50% 50% no-repeat;
+	background-size: 25px auto;
+	background-color: #aaabab;
+}
+
+.userCheck{
+	width:36px;
+	height:36px;
+	background: url("../images/check.png") 50% 50% no-repeat;
+	background-size: 25px auto;
+	background-color: #aaabab;
+}
+
+@keyframes changelogo {
+	0% {background: url("//image.beike188.com/KFY/images/common/logo-text1.png") no-repeat;}
+	100% {background: url("//image.beike188.com/KFY/images/common/logo-text2.png") no-repeat;}
+}
+
+.top .login-right {
+	position: absolute;
+	right: 80px;
+	top: 155px;
+	height: 300px;
+	width: 270px;
+	border-radius: 4px;
+	z-index:99;
+}
+
+.login-right .user-login {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	color:#000;
+	font-size: 16px;
+	align-items: center;
+	padding: 25px 0;
+	/*height: 100%;*/
+	/*line-height: 45px;*/
+	/*font-size: 18px;*/
+	/*color: #697081;*/
+	/*margin-right: 22px;*/
+	/*transition: all 0.2s;*/
+}
+
+.top-right .user-login a {
+	color: #cca352;
+	-webkit-transition: opacity .2s;
+	-moz-transition: opacity .2s;
+	-ms-transition: opacity .2s;
+	transition: opacity .2s;
+	opacity: 1;
+}
+
+.top-right .user-login a:hover {
+	opacity: 0.5;
+}
+
+.free-demo {
+	font-size: 16px;
+	font-weight: bold;
+	color: #fff;
+	display: block;
+	width: 130px;
+	height: 45px;
+	float: left;
+	text-align: center;
+	line-height: 43px;
+	background: #cca352;
+	position: relative;
+	margin-left: 15px;
+	transition: all .2s;
+	overflow: hidden;
+	/*position: absolute;*/
+	/*right: 0;*/
+}
+
+.free-demo:after {
+	content: "";
+	width: 100%;
+	height: 100%;
+	background: rgba(255,255,255,.2);
+	transform: rotate(-45deg);
+	position: absolute;
+	top: -10%;
+	left: -100%;
+	transition: .6s ease;
+}
+
+.free-demo:hover {
+	background: #ba8d4d;
+	color:#ffffff;
+}
+
+.free-demo:hover:after {
+	animation: cv-submit-hover .8s ease;
+}
+
+@keyframes cv-submit-hover {
+	0% {left: -100%;}
+	100% {left: 100%;}
+}
+
+/*loggedin*/
+.top-right .tools {
+	float: left;
+	/*padding-top: 7px;*/
+	margin-right: 25px;
+	height: 45px;
+}
+
+.top-right .tool {
+	width: 42px;
+	height: 57px;
+	display: block;
+	float: left;
+	margin-right: 14px;
+	position: relative;
+}
+
+.top-right .tool .tool-icon {
+	width: 100%;
+	height: 42px;
+	display: block;
+	cursor: pointer;
+}
+
+.top-right .tool .tool-icon1 {
+	background: url("//image.beike188.com/KFY/images/common/icon2.png") no-repeat center;
+}
+
+.top-right .tool .tool-icon2 {
+	background: url("//image.beike188.com/KFY/images/common/icon4.png") no-repeat center;
+}
+
+.top-right .tool .msg {
+	background: url("//image.beike188.com/KFY/images/common/icon3.png") no-repeat;
+	width: 20px;
+	height: 20px;
+	display: block;
+	text-align: center;
+	font-size: 14px;
+	color: #fff;
+	line-height: 20px;
+	text-align: center;
+	position: absolute;
+	top: 3px;
+	right: -3px;
+	cursor: default;
+}
+
+.top-right .tool:active {
+	background: url("//image.beike188.com/KFY/images/common/icon6.png") no-repeat;
+}
+
+.tool .subnav {
+	width: 250px;
+	background: #fff;
+	position: absolute;
+	top: 59px;
+	right: -135px;
+	z-index: 200;
+	-webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.3);
+	box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.3);
+	-webkit-transform: translateY(10px);
+	transform: translateY(10px);
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	opacity: 0;
+	visibility: hidden;
+}
+
+.tool .subnav .up {
+	background: url("//image.beike188.com/KFY/images/common/icon-arrow-up.png") no-repeat;
+	width: 16px;
+	height: 9px;
+	position: absolute;
+	top: -9px;
+	left: 92px;
+	display: block;
+}
+
+
+.tool .subnav a {
+	height: 69px;
+	border-bottom: 1px solid #deddda;
+	padding: 0 20px;
+	width: 210px;
+	display: block;
+	font-size: 16px;
+	font-weight: bold;
+	color: #181818;
+	line-height: 69px;
+	background-color: #fcfcfc;
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+.tool .subnav .t-icon {
+	width: 28px;
+	height: 25px;
+	float: left;
+	margin: 24px 22px 0 0;
+}
+
+.tool .subnav .t-icon1 {background: url("//image.beike188.com/KFY/images/common/icon-chat.png") no-repeat center;}
+.tool .subnav .t-icon2 {background: url("//image.beike188.com/KFY/images/common/icon-person.png") no-repeat center;}
+.tool .subnav .t-icon3 {background: url("//image.beike188.com/KFY/images/common/icon-tel.png") no-repeat center;}
+.tool .subnav .t-icon4 {background: url("//image.beike188.com/KFY/images/common/icon-tel2.png") no-repeat center;}
+.tool .subnav a:hover {
+	background: #efeeec;
+}
+
+.top-right .tool:hover .subnav {
+	opacity: 1;
+	visibility: visible;
+	-webkit-transform: translateY(0);
+	transform: translateY(0);
+}
+
+.tool .msg-subnav {
+	width: 380px;
+	right: -97px;
+}
+
+.tool .msg-subnav .up {
+	left: auto;
+	right: 108px;
+}
+
+.tool .msg-subnav .sub-t {
+	height: 44px;
+	border-bottom: 1px solid #deddda;
+	padding: 0 16px;
+	line-height: 44px;
+	font-size: 14px;
+	font-weight: bold;
+	color: #cca352;
+}
+
+.tool .msg-subnav .sub-t .more {
+	font-size: 13px;
+	color: #92918d;
+	float: right;
+	width: auto;
+	height: auto;
+	border: 0;
+	font-weight: normal;
+	padding: 0;
+	line-height: 44px;
+}
+
+.tool .msg-subnav .sub-t .more:hover {
+	background: transparent;
+}
+
+.tool .msg-subnav .msg-list ul {
+	list-style: none;
+}
+
+.tool .msg-subnav .msg-list li {
+	padding: 22px 30px;
+	background: #fff;
+	border-bottom: 1px solid #deddda;
+	position: relative;
+	background-color: #fcfcfc;
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+.tool .msg-subnav .msg-list li p {
+	font-size: 12px;
+	color: #92918d;
+	line-height: 18px;
+}
+
+.tool .msg-subnav .msg-list li:hover, .tool .msg-subnav .msg-list li.new, .tool .msg-subnav .msg-list li.active {
+	background: #efeeec;
+}
+
+.tool .msg-subnav .msg-list li.new p, .tool .msg-subnav .msg-list li.active p {
+	color: #181818;
+	font-weight: bold;
+	font-size: 13px;
+}
+
+.tool .msg-subnav .msg-list li .dot {
+	background: url("//image.beike188.com/KFY/images/common/icon-dot.png") no-repeat;
+	width: 6px;
+	height: 6px;
+	position: absolute;
+	top: 26px;
+	left: 13px;
+	display: none;
+}
+
+.tool .msg-subnav .msg-list li.new .dot,
+.tool .msg-subnav .msg-list li.active .dot {
+	display: block;
+}
+
+.tool .msg-subnav .sub-t2 {color: #181818;}
+
+.tool .msg-empty {
+	height: 248px;
+	background: #fff;
+	text-align: center;
+	display: table;
+	width: 100%;
+}
+
+.tool .no-msg {
+	width: 100%;
+	display: table-cell;
+	height: 105px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.tool .no-msg .icon-bell {
+	background: url("//image.beike188.com/KFY/images/common/icon-notification.png") no-repeat;
+	width: 66px;
+	height: 80px;
+	display: block;
+	margin: 0 auto 10px;
+}
+
+.tool .no-msg p {
+	font-size: 12px;
+	font-weight: bold;
+	color: #b0b0b0;
+}
+
+.top-right .user {
+	float: left;
+	border-left: 1px solid #505154;
+	padding: 0 30px;
+	cursor: pointer;
+	height: 45px;
+}
+
+.top-right .user-info {
+	float: left;
+	text-align: right;
+	/*padding-top: 4px;*/
+}
+
+.top-right .user-info h5 {
+	font-size: 10px;
+	line-height: 20px;
+}
+
+.top-right .user-info .username {
+	color: #697081;
+	width: auto;
+	height: 16px;
+	line-height: 13px;
+}
+
+.top-right .user-info .user-balance {
+	color: #cca352;
+	height: 15px;
+	line-height: 13px;
+}
+
+.top-right .user-img {
+	width: 38px;
+	height: 38px;
+	float: left;
+	margin: 3px 12px 0;
+	position: relative;
+}
+
+.top-right .user-img1 {
+	background: url("//image.beike188.com/KFY/images/common/icon-user1.png") no-repeat;
+}
+
+.top-right .user-img2 {
+	background: url("//image.beike188.com/KFY/images/common/icon-user2.png") no-repeat;
+}
+
+.top-right .icon {
+	background: url("//image.beike188.com/KFY/images/common/icon5.png") no-repeat 0 0;
+	width: 15px;
+	height: 13px;
+	display: block;
+	float: left;
+	margin: 15px 0 0;
+	transition: all 0.3s ease-in-out;
+}
+
+.top-right .user:hover .user-info .username {
+	color: #4c5364;
+}
+
+.top-right .user:hover .user-info .user-balance {
+	color: #ba8d4d;
+}
+
+.top-right .user:hover .icon {
+	background-position: -15px 0;
+}
+
+.user-img .user-nav {
+	width: 250px;
+	background: #fcfcfc;
+	position: absolute;
+	top: 56px;
+	right: -30px;
+	z-index: 200;
+	-webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.3);
+	box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.3);
+	-webkit-transform: translateY(10px);
+	transform: translateY(10px);
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	opacity: 0;
+	visibility: hidden;
+}
+
+.user-img .user-nav .up {
+	width: 16px;
+	height: 9px;
+	position: absolute;
+	top: -20px;
+	left: 150px;
+	display: block;
+	font-size: 30px;
+}
+
+.user-img .user-nav a {
+	cursor: pointer;
+	font-size: 16px;
+	color: #181818;
+	font-weight: bold;
+	padding-left: 20px;
+	width: 230px;
+	height: 69px;
+	border-bottom: 1px solid #deddda;
+	line-height: 69px;
+	position: relative;
+	background-color: #fcfcfc;
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.user-img .user-nav a .arrow-left {
+	background: url("//image.beike188.com/KFY/images/common/icon-arrow-left.png") no-repeat;
+	width: 6px;
+	height: 10px;
+	display: none;
+	position: absolute;
+	top: 29px;
+	right: 20px;
+}
+
+.user-img .user-nav a:hover, .user-img .user-nav a.active {
+	background: #efeeec;
+}
+
+.user-img .user-nav a:hover .arrow-left, .user-img .user-nav a.active .arrow-left {
+	display: block;
+}
+
+.user-img .user-nav a.logout {
+	color: #92918d;
+}
+
+.user-img .user-nav .arrow-exit {
+	background: url("//image.beike188.com/KFY/images/common/icon-exit.png") no-repeat;
+	width: 16px;
+	height: 14px;
+	display: block;
+	position: absolute;
+	top: 30px;
+	right: 20px;
+}
+
+.top-right .user:hover .user-nav {
+	opacity: 1;
+	visibility: visible;
+	-webkit-transform: translateY(0);
+	transform: translateY(0);
+}
+
+.fixed{
+	position: fixed;
+	top:0;
+}
+
+.navigation {
+	height: 60px;
+	/*position: fixed;*/
+	width: 100%;
+	z-index: 300;
+	/*background: #ffffff;*/
+	/*box-shadow: 0 4px 10px 0 rgba(0,0,0,.05);*/
+	background-image: linear-gradient(180deg, #222325, #5a5a5a, #8f9092);
+}
+
+.navigation ul {
+	list-style: none;
+	height: 100%;
+	display: table;
+	width: 100%;
+}
+
+.navigation li {
+	padding: 0 22px;
+	height: 100%;
+	position: relative;
+	display: table-cell;
+}
+
+.navigation li.first {
+	padding-left: 5px;
+}
+
+.navigation li.last {
+	padding-right: 18px;
+}
+
+.navigation li a:hover {
+	font-weight: 700;
+	/*color:#333!important;*/
+}
+
+.navigation li a:after {
+	content: "";
+	background-color: #cca352;
+	width: 0;
+	height: 2px;
+	position: absolute;
+	left: 0;
+	bottom: 0px;
+	transition: all .2s;
+}
+
+.navigation li:hover a, .navigation li.active a {
+	/* color: #cca352; */
+}
+
+.navigation li:hover a:after, .navigation li.active a:after {
+	width: 100%;
+}
+
+.navigation li .dot-line {
+	width: 1px;
+	height: 10px;
+	border-right: 1px dotted #525866;
+	position: absolute;
+	top: 25px;
+	right: 0;
+}
+
+/*FOOTER*/
+.footer {
+	border-top: 1px solid #ba924a;
+	background: #0a0a0a;
+	background-image: linear-gradient(to bottom, #0a0a0a, #1b1b1b);
+	filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr=#0a0a0a, endcolorstr=#1b1b1b, gradientType=0);
+	/*height: 274px;*/
+}
+
+.footer .footer-row {
+	border-bottom: 1px solid #2a2c31;
+	padding: 24px 0 30px;
+}
+
+.footer .col {
+	float: left;
+}
+
+.footer .col1 {width: 367px;}
+.footer .col2 {width: 265px;}
+.footer .col3 {width: 330px;}
+.footer .col4 {width: 236px;}
+
+.footer .foot-icon {
+	width: 60px;
+	height: 60px;
+	float: left;
+	margin-right: 16px;
+	display: block;
+}
+
+.footer .foot-icon1 {background: url("//image.beike188.com/KFY/images/common/footer-icon1.png") no-repeat;}
+.footer .foot-icon2 {background: url("//image.beike188.com/KFY/images/common/footer-icon2.png") no-repeat;}
+.footer .foot-icon3 {background: url("//image.beike188.com/KFY/images/common/footer-icon3.png") no-repeat;}
+.footer .foot-icon4 {background: url("//image.beike188.com/KFY/images/common/footer-icon4.png") no-repeat;}
+
+.footer .foot-info {
+	float: left;
+	padding-top: 7px;
+}
+
+.footer .foot-info h5 {
+	font-size: 16px;
+	color: #ccc;
+	font-weight: normal;
+	margin-bottom: 5px;
+}
+
+.footer .foot-info p {
+	font-size: 12px;
+	color: #666;
+}
+
+.footer .foot-info p.txt2 {
+	color: #cca352;
+	margin-top: 10px;
+}
+
+.footer .foot-info .txt2 a {
+	color: #cca352;
+	margin-right: 4px;
+	-webkit-transition: opacity .2s;
+	-moz-transition: opacity .2s;
+	-ms-transition: opacity .2s;
+	transition: opacity .2s;
+	opacity: 1;
+}
+
+.footer .foot-info .txt2 a:hover {
+	opacity: 0.5;
+}
+
+.footer .sponsors {
+	background: url("//image.beike188.com/KFY/images/common/sponsors.png") no-repeat;
+	width: 1200px;
+	height: 66px;
+	display: block;
+	margin:0 auto;
+}
+
+.footer .foot-nav {
+	border-top: 1px solid #2a2c31;
+	background: url("//image.beike188.com/KFY/images/common/foot-bg.png") no-repeat center bottom;
+	height: 77px;
+}
+
+.footer .foot-nav ul {
+	padding-top: 20px;
+	text-align: center;
+	margin-bottom: 8px;
+}
+
+.footer .foot-nav ul li {
+	display: inline-block;
+	font-size: 15px;
+	color: #666;
+}
+
+.footer .foot-nav ul li a {
+	font-size: 14px;
+	color: #666;
+	padding: 0 24px;
+	-webkit-transition: opacity .2s;
+	-moz-transition: opacity .2s;
+	-ms-transition: opacity .2s;
+	transition: opacity .2s;
+	opacity: 1;
+}
+
+.footer .foot-nav ul li a:hover {
+	opacity: 0.5;
+}
+
+.footer .copyright {
+	font-size: 12px;
+	color: #484848;
+	text-align: center;
+}
+
+/*FIXED */
+.fixed-btm {position: fixed; bottom: 15px; right: 20px; z-index: 99999;}
+
+.btn-download {
+	position: relative;
+	background: url("//image.beike188.com/KFY/images/common/icon-app.png") no-repeat 0 0;
+	text-align: left;
+	line-height: 44px;
+	color: #fff;
+	font-size: 14px;
+	width: 172px;
+	height: 44px;
+	z-index: 200;
+	display: block;
+	transition: all 0.3s ease-in-out;
+	margin-bottom: 10px;
+	padding: 0 20px;
+	cursor: pointer;
+	opacity: 1!important;
+	box-sizing: content-box;
+	left: 51px;
+}
+
+.btn-download .icon-contact {
+	background: url("//image.beike188.com/KFY/images/common/icon10.png") no-repeat;
+	width: 21px;
+	height: 16px;
+	display: inline-block;
+	position: absolute;
+	top: 14px;
+	right: 62px;
+}
+
+.btn-download .icon-download {
+	background: url("//image.beike188.com/KFY/images/common/icon-download.png") no-repeat;
+	width: 7px;
+	height: 10px;
+	display: inline-block;
+	margin-left: 5px;
+}
+
+.btn-download:hover {
+	background: url("//image.beike188.com/KFY/images/common/icon-apph.png") no-repeat;
+}
+
+.btn-qr {
+	display: none;
+	width: 44px;
+	height: 44px;
+	position: fixed;
+	bottom: 30px;
+	right: 20px;
+	background: url("//image.beike188.com/KFY/images/common/icon-qr.png") no-repeat;
+	z-index: 200;
+	transition: all 0.3s ease-in-out;
+}
+
+.btn-qr:hover {
+	background: url("//image.beike188.com/KFY/images/common/icon-qrh.png") no-repeat;
+}
+
+.qr-fixed {
+	width: 168px;
+	height: 195px;
+	position: relative;
+	background: #39383f;
+	border-radius: 10px !important;
+	padding: 12px 0 0 !important;
+	z-index: 200;
+	display: none;
+	transition: all 0.3s ease-in-out;
+}
+
+.qr-fixed p {
+	color: #999;
+	font-size: 12px;
+	display: block;
+	text-align: center;
+}
+
+.qr-fixed .qr-img {
+	width: 144px;
+	height: 144px;
+	/*background: url("//image.beike188.com/KFY/images/common/erweim.png") no-repeat;*/
+	display: block;
+	margin: 5px auto 11px;
+}
+
+.qr-fixed .qr-close {
+	background: url("//image.beike188.com/KFY/images/common/icon-close.png") no-repeat;
+	width: 9px;
+	height: 9px;
+	display: block;
+	margin: 0 auto;
+	transition: all 0.3s ease-in-out;
+}
+
+.qr-fixed .qr-close:hover, .btn-expand .qr-close:hover {
+	opacity: 0.5;
+}
+
+.btn-download.show, .btn-qr.show {
+	display: block;
+}
+
+.qr-fixed.show {
+	display: block;
+}
+
+.btn-min {
+	background: url("//image.beike188.com/KFY/images/common/icon9.png") no-repeat;
+	width: 44px;
+	height: 44px;
+	display: none;
+	margin-bottom: 10px;
+	text-align: center;
+	transition: all 0.3s ease-in-out;
+	cursor: pointer;
+	float: right;
+	opacity: 1!important;
+}
+
+.btn-min:hover {
+	background: url("//image.beike188.com/KFY/images/common/icon9h.png") no-repeat;
+}
+
+.btn-min .icon-contact {
+	background: url("//image.beike188.com/KFY/images/common/icon11.png") no-repeat center center;
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+
+.btn-min .icon-qr {
+	background: url("//image.beike188.com/KFY/images/common/icon-qr-s.png") no-repeat center center;
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+
+.btn-expand {
+	width: 130px;
+	display: none;
+	background: #39383f;
+	border-radius: 20px;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+}
+
+.btn-expand .btn-menu {
+	height: 51px;
+	border-bottom: 1px solid #4a494f;
+	text-align: left;
+	line-height: 51px;
+	font-size: 12px;
+	color: #fff;
+	display: block;
+	width: 128px;
+	transition: all 0.3s ease-in-out;
+}
+
+.btn-expand .btn-menu.first {
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+}
+
+.btn-expand .btn-menu:hover {
+	background: #333239;
+}
+
+.btn-expand .icon-tool {
+	width: 22px;
+	height: 20px;
+	display: inline-block;
+	margin-right: 15px;
+	vertical-align: middle;
+}
+
+.btn-expand .icon-tool1 {
+	background: url("//image.beike188.com/KFY/images/common/icon12.png") no-repeat center;
+}
+.btn-expand .icon-tool2 {
+	background: url("//image.beike188.com/KFY/images/common/icon13.png") no-repeat center;
+}
+.btn-expand .icon-tool3 {
+	background: url("//image.beike188.com/KFY/images/common/icon14.png") no-repeat center;
+}
+.btn-expand .icon-tool4 {
+	background: url("//image.beike188.com/KFY/images/common/icon15.png") no-repeat center;
+}
+
+.btn-expand .qr-close {
+	background: url("//image.beike188.com/KFY/images/common/icon-close.png") no-repeat;
+	width: 9px;
+	height: 9px;
+	display: block;
+	margin: 10px auto 0;
+	transition: all 0.3s ease-in-out;
+}
+
+/*sidebar*/
+.sidebar {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	width: 320px;
+	height: 100vh;
+	background: #3a3a3a;
+	z-index: 301;
+	-webkit-transform: translateX(-320px);
+	transform: translateX(-320px);
+	-webkit-transition: background 0.3s ease-in-out;
+	transition: background 0.3s ease-in-out;
+}
+
+.sidebar .scrollbar-inner {
+	max-height: 100vh;
+}
+
+.sidebar .t {
+	height: 72px;
+	border-bottom: 1px solid #434343;
+	line-height: 72px;
+	padding: 0 30px;
+}
+
+.sidebar .t .lang, .sidebar .t .back-btn {
+	font-size: 13px;
+	color: #b0b0b0;
+	display: block;
+	float: left;
+	border-bottom: 1px solid rgba(176,176,176,0.5);
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	width: auto;
+	height: 17px;
+	line-height: normal;
+	cursor: pointer;
+	margin-top: 28px;
+}
+
+.sidebar .t .back-btn {display: none;}
+
+.sidebar .t .lang:hover, .sidebar .t .back-btn:hover {
+	border-color: #b0b0b0;
+}
+
+.sidebar .side-close {
+	display: block;
+	float: right;
+	padding-top: 28px;
+	line-height: 17px;
+	font-size: 13px;
+	color: #adadad;
+	transition: all 0.3s ease-in-out;
+}
+
+.sidebar .side-close .close {
+	background: url("//image.beike188.com/KFY/images/common/icon-close2.png") no-repeat;
+	width: 16px;
+	height: 17px;
+	display: inline-block;
+	margin-left: 12px;
+	vertical-align: middle;
+	position: relative;
+	top: -1px;
+}
+
+.sidebar .side-close:hover .close {
+	opacity: 0.5;
+}
+
+.sidebar ul li {
+	padding: 22px 18px 22px 38px;
+	border-bottom: 1px solid #434343;
+	cursor: default;
+	-webkit-transition: background 0.3s ease-in-out, border 0.3s ease-in-out, color 0.3s ease-in-out;
+	transition: background 0.3s ease-in-out, border 0.3s ease-in-out, color 0.3s ease-in-out;
+	position: relative;
+}
+
+.sidebar ul li h5 {
+	font-size: 16px;
+	color: #b0b0b0;
+	margin-bottom: 8px;
+}
+
+.sidebar ul li h5 .more {
+	float: right;
+	font-size: 12px;
+	color: #999;
+	font-weight: normal;
+	transition: color 0.3s ease-in-out;
+}
+
+.sidebar ul li h5 .more:hover {
+	color: #cca352;
+}
+
+.sidebar ul li .links a {
+	font-size: 12px;
+	color: #999;
+	line-height: 20px;
+	transition: color 0.3s ease-in-out;
+	margin-right: 4px;
+}
+
+.sidebar ul li .links a:hover {
+	color: #cca352;
+}
+
+.sidebar ul li:hover {
+	background: #2b2b2b;
+	-webkit-transition: background 0.3s ease-in-out;
+	transition: background 0.3s ease-in-out;
+}
+
+.sidebar .side-qr {
+	width: 144px;
+	height: 144px;
+	background: #747474;
+	margin: 88px auto 50px;
+	padding: 8px;
+}
+
+.sidebar ul li a.lang-option {
+	font-size: 16px;
+	font-weight: bold;
+	color: #b0b0b0;
+}
+
+.sidebar ul li .icon-check {
+	background: url("//image.beike188.com/KFY/images/common/icon-check.png") no-repeat;
+	width: 32px;
+	height: 32px;
+	display: block;
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	opacity: 0;
+	transition: all 0.3s ease-in-out;
+}
+
+.sidebar ul li.active .icon-check {
+	opacity: 1;
+}
+
+.sidebar .c {
+	display: none;
+}
+
+.sidebar .c.active {
+	display: block;
+}
+
+.sidebar .scrollbar-inner > .scroll-element .scroll-element_outer,
+.sidebar .scrollbar-inner > .scroll-element .scroll-element_track,
+.sidebar .scrollbar-inner > .scroll-element .scroll-bar {
+	border-radius: 0;
+}
+
+.view.view-slideup {
+	/*opacity: 0;*/
+}
+
+.view.view-slideup.on {
+	opacity: 1;
+	animation: view-slideup .6s ease;
+}
+
+@keyframes view-slideup {
+	0% {
+		opacity: 0;
+		transform: translate(0,35px);
+	}
+	100% {
+		opacity: 1;
+		transform: translate(0,0);
+	}
+}
+
+.icon-wc {background: url("//image.beike188.com/KFY/images/register/icon-wc.png") no-repeat; width: 106px; height: 41px; display: block; position: absolute; top: -26px; left: 5px; z-index: 9999;}
+.topmenu .col a.wc {background: url("//image.beike188.com/KFY/images/register/icon-wc.png") no-repeat; width: 106px; height: 41px; display: block; margin: -14px 0 0 -24px;}
+
+/*LETTERS*/
+.member .sidenav5 ul li:hover i, .member .sidenav5 ul li.active i {background: url("//image.beike188.com/KFY/images/register/member/icon-member.png") no-repeat;}
+.member .sidenav5 ul li i.s-ico11 {background-position: 0 -25px; width: 23px; height: 23px; margin-top: 18px;}
+.member .sidenav5 ul li:hover i.s-ico11,.member .sidenav5 ul li.active i.s-ico11 {background-position: -23px -25px;}
+.member .letters .table th {text-align: center;}
+.member .letters .table td.txt-center {text-align: center;}
+.member .letters .table tr .mail {display: block; float: left; margin: 2px 8px 0 0;}
+.member .letters .table tr.new-email .mail {width: 19px; height: 14px; background-position: -137px -147px;}
+.member .letters .table .msg {cursor:pointer}
+.member .letters .table tr.new-email .msg {text-decoration: underline;}
+.member .letters .table tr.new-email td {color: #fff;}
+.member .letters .table tr.email-read td {color: #909090;}
+.member .letters .table tr.email-read .mail {background-position: -46px -24px; width: 19px; height: 19px; margin-top: -2px;}
+.member .letters .table tr.active td.msg {color: #cca352;}
+.member .letters .table tr.new-email.active .mail {background-position: -156px -147px;}
+.member .letters .table tr.email-read.active .mail {background-position: -65px -24px;}
+.member .letters .row .checkbox a {padding: 0 6px;}
+
+.popup-letters {width: 702px; height: 495px;}
+.popup-letters .pop-c {padding: 0 20px;}
+.popup-letters .msg-title {height: 56px; border-bottom: 1px dashed #d7d7d7; padding-top: 27px; text-align: center;}
+.popup-letters .msg-title h5 {font-size: 16px; color: #666; font-weight: normal;}
+.popup-letters .msg-title p {font-size: 13px; color: #ccc;}
+.popup-letters .msg {    word-break: break-word; padding: 20px 10px 0; font-size: 13px; color: #666; line-height: 30px; text-align: left; height: 219px; border-bottom: 1px dashed #d7d7d7;}
+.popup-letters .msg .txt-right {text-align: right; line-height: 26px;}
+.popup-letters .msg .f12 {font-size: 12px;}
+.popup-letters .pop-buttons {bottom: 40px;}
+
+h5>a{
+	color: #999;
+}
+#layui-layer-shade1{
+	display: none;
+}
+#layui-layer-shade{
+	display: none;
+}

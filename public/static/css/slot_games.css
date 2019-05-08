@@ -1,0 +1,115 @@
+@charset "utf-8";
+
+/* CSS Document | 11082017 */
+html, body {background: #1e1e1e;}
+body, div, ul, li, dl, dt, dd, ol, p, h1, h2, h3, h4, h5, h6 { margin: 0; padding: 0;}
+
+.slot {overflow: visible;}
+.slot .banner {width: 100%;  position: relative; overflow: hidden;}
+.slot .banner-cycle, .slot .banner-img {width: 100%; height: 100%;}
+.slot .banner-img a {display: block; width: 100%; height: 100%;}
+.slot .holder {position: absolute; top: 0; left: 0; height: 100%; width: 100%;}
+.slot .holder .content {position: relative; height: 100%;}
+.slot .holder .pager {display: block; position: absolute; bottom: 0; width: 100%; left: 0; z-index: 100; text-align: center;}
+.slot .holder .pager span {cursor: pointer; font-size: 40px; color: #fff; margin: 0 2px;}
+.slot .holder .pager span:hover, .slot .holder .pager span.cycle-pager-active {color: #a4201c;}
+.slot .cover-sprite {position: absolute; top: 150px; display: block; cursor: pointer; z-index: 99; }
+.slot #prev {left: -60px;}
+.slot #next {right: -60px;}
+
+.slot .feature {background: url("//image.beike188.com/KFY/images/slot/feature.jpg") no-repeat center top #1e1e1e; width: 100%; height: 120px; margin-top: 0px;}
+.slot .feature .col {width: 270px; text-align: center; padding-top: 16px;}
+
+.feature .col .prize { height: 24px; text-align: center; color: #999; font-size: 26px; text-shadow: 2px 6px 5px #000; }
+.feature .col .prize span { color: #fff; font-size: 26px;}
+.feature .col p { font-size: 16px; color: #ffcc66; margin: 15px 0 0; text-shadow: 2px 6px 5px #000; }
+
+.slot .main {background: url("//image.beike188.com/KFY/images/slot/bg1.jpg") no-repeat center top #1e1e1e; width: 100%; padding: 15px 0 40px; position: relative; min-height: 590px;}
+.slot .main-bottom {background: url("//image.beike188.com/KFY/images/slot/bg2.jpg") no-repeat center; width: 100%; height: 440px; position: absolute; bottom: 0; left: 0;}
+.slot .main .tab {height: 44px; border-bottom: 1px solid #323232;}
+.slot .main .tab a {height: 43px; line-height: 40px; display: block; float: left; width: 94px; border-bottom: 2px solid transparent; text-align: center; font-size: 16px; color: #999; margin-right: 24px;}
+.slot .main .tab a:hover, .slot .main .tab a.active {border-bottom: 2px solid #cc2944; color: #fff;}
+.slot .tab .search {z-index: 5; float: right; width: 240px; height: 34px; background: url("//image.beike188.com/KFY/images/slot/search.png") no-repeat; position: relative;top: 18px;}
+.slot .tab .search-input {height: 100%; width: 190px; padding: 0 34px 0 16px; font-size: 14px; line-height: 34px; color: #999; background: none; border: 0; outline: 0;}
+.slot .tab a.search-btn {display: block; background: url("//image.beike188.com/KFY/images/slot/icon-search.png") no-repeat; border-bottom: 0; width: 18px; height: 18px; position: absolute; top: 8px; right: 16px; margin: 0;}
+.slot .tab a.search-btn:hover {border-bottom: 0;}
+
+.slot .tab-content {margin: 20px 0 0 -8px; position: relative; z-index: 0; display:block;}
+.slot #recommended-tab {display: block;}
+.slot .game {width: 233px; height: 131px; position: relative; float: left; margin: 0 0 8px 8px; overflow: hidden;}
+.slot .game2 img{
+    width: 233px;
+    height: 131px;
+}
+.slot .game1 {width: 596px;}
+.slot .game img {transform:scale(1); transition: all 0.5s ease-in-out; margin: 0 auto;}
+.slot .game-mask {background: url("//image.beike188.com/KFY/images/slot/mask.png") repeat; width: 100%; height: 100%; z-index: 100; display: block; position: absolute; top: 0; left: 0;}
+.slot .game .tag {background: url("//image.beike188.com/KFY/images/slot/tag1.png") no-repeat; width: 70px; height: 70px; position: absolute; top: 0; right: 0; z-index: 100;}
+.slot .game .tag3 {background: url("//image.beike188.com/KFY/images/slot/tag3.png") no-repeat; width: 70px; height: 70px; position: absolute; top: 0; right: 0; z-index: 100;}
+.slot .game .game-details {position: absolute; height: 16px; width: 100%; bottom: 14px; left: 0; color: #fff; z-index: 200;}
+.slot .game .game-title {font-size: 14px; color: #000; float: left; padding: 0 15px; line-height: 20px; position: absolute; bottom: -3px; left: 0;background-color: rgba(255,255,255,.8); text-align: center;  }
+.slot .game .game-title .game-name {margin-bottom: 10px; display: block;}
+.slot .game .game-title .game-dec {color: #cca352; font-size: 12px;}
+.slot .game .game-details .likes {float: right; margin-right: 14px; font-size: 12px; color: #fff; line-height: 16px;}
+.slot .game .game-details .icon-flame {background: url("//image.beike188.com/KFY/images/slot/icon-flame.png") no-repeat; width: 16px; height: 20px; display: inline-block; vertical-align: middle; position: relative; top: -4px; margin-left: 8px;}
+.slot .game .game-hover {display: none; z-index: 200; padding-top: 28px; text-align: center; width: 100%; height: 100%; border: 1px solid #996b3d; position: absolute; top: 0; left: 0; background: url("//image.beike188.com/KFY/images/slot/trans1.png") repeat;}
+.slot .game .jackpot {background: url("//image.beike188.com/KFY/images/slot/tag2.png") no-repeat; width: 157px; height: 28px; position: absolute; top: 10px; left: 0; z-index: 200; text-align: center; font-size: 16px; color: #fff; line-height: 29px; letter-spacing: 1px;}
+.slot .game1 .game-hover {width: 594px;}
+.slot .game-hover h5 {font-size: 16px; color: #fff; font-weight: normal; margin-bottom: 22px;}
+.slot .game-hover .game-btn {width: 160px; height: 40px; display: block; background: url("//image.beike188.com/KFY/images/slot/btn1.png") no-repeat; margin: 0 auto 15px; font-size: 16px; color: #fff; line-height: 40px; text-align: center;}
+.slot .game-hover a.trial {font-size: 14px; color: #cca352; text-align: center; float: none; margin: 0; width: auto; height: auto;}
+.slot .game:hover .game-hover {display: block;}
+.slot .game:hover img {transform: scale(1.05);}
+.slot .game .tag4 {width: 47px; height: 46px; background: url("//image.beike188.com/KFY/images/slot/tag4.png") no-repeat; position: absolute; top: -1px; right: -1px; display: none; z-index:100}
+.slot .game:hover .tag4 {display: block; z-index: 300;}
+
+.slot .filter {margin: 22px 0 0 8px;}
+.filter .filter-group {height: 28px; line-height: 28px; margin-bottom: 8px;}
+.filter .filter-group label {float: left; font-size: 14px; color: #999; width: 94px;}
+.filter .filter-group a {border-radius: 3px; height: 26px; line-height: 26px; float: left; padding: 0 12px; display: block; line-height: 26px; font-size: 14px; color: #999; margin-right: 10px; border: 1px solid transparent;}
+.filter .filter-group a:hover, .filter .filter-group a.active {border: 1px solid #c1974d; color: #cca352;}
+
+.slot .game-results {margin-top: 20px;}
+.game-results .game {width: 234px; height: 131px; margin-left: 7px;}
+.game-results .game1 {width: 476px;}
+.game-results .game .game-details {bottom: 12px;}
+.game-results .game-mask {background: url("//image.beike188.com/KFY/images/slot/all/mask.png") repeat;}
+.game-results .game .game-hover {width: 232px; height: 109px; padding-top: 20px}
+.game-results .game1 .game-hover {width: 474px;}
+.game-results .game-hover h5 {margin-bottom: 10px;}
+.game-results .game-hover .game-btn {margin-bottom: 8px;}
+.game-results .game .game-details .likes {margin-right: 7px;}
+.game-results .game .jackpot2 {width: 121px; background-position: right;}
+
+.recently-played {margin-top: 50px;}
+.recently-played h5 {font-size: 16px; color: #999; font-weight: normal; margin: 0 0 18px 7px;}
+.recently-played .refresh {float: right; font-size: 16px; color: #cca352; display: block; width: auto; height: auto; position: relative; top: auto;}
+.recently-played .refresh .icon-refresh {background: url("//image.beike188.com/KFY/images/slot/icon-refresh.png") no-repeat; width: 15px; height: 15px; display: inline-block; margin-right: 5px;}
+
+/*.footer {height: 377px;}*/
+.game-footer {height: 92px; background: #141414; overflow: hidden; width: 100%; position: fixed; z-index: 200; bottom: 0; left: 0;}
+.game-footer .content {height: 100%; width: 1010px; margin: 0 auto; position: relative;}
+.game-footer .thumb {width: 250px; height: 60px; margin-top: 16px; display: inline-block;margin-left: 14px; opacity: 1 !important;filter: alpha(opacity=100) !important;  margin-right:16px;}
+.game-footer .thumb-info {float: left; font-size: 12px; color: #7f7f7f; line-height: 20px;}
+.game-footer .thumb-info span {color: #c4c4c4;}
+.game-footer .thumb-info .t {font-size: 12px; color: #ba924a;margin: 0; width: 95px; text-decoration: underline;}
+.games-cycle {width: 1200px; height: 90px;border: 2px solid red; margin:0 auto}
+.game-footer .foot-mask {position: absolute; width: 400px; height: 92px; z-index: 100; display: block; top: 0;}
+.game-footer .left-mask {background: url("//image.beike188.com/KFY/images/slot/left-mask.png") no-repeat; left: 180px;}
+.game-footer .right-mask {background: url("//image.beike188.com/KFY/images/slot/right-mask.png") no-repeat; right: 180px;}
+.game-footer .thumb-img {width: 58px; height: 58px; float: left; margin-right: 20px; background: #141414; border: 1.6px solid #be964c; border-radius: 26px; overflow: hidden;}
+.game-footer .thumb-holder {margin: 0 110px;}
+
+.loading { cursor: pointer; text-align: center; width: 890px; height: 40px; margin: 13px auto 12px; color: #a6a6a6; line-height: 40px; font-size: 13px; }
+.loading img {position: relative; top: 3px;}
+
+
+.ele_pages{ width: 1000px; height: 55px; text-align: center; margin: 57px auto 0;position: relative;  bottom: -8px; }
+.ele_pages h3{ display: inline-block; width: 63px; height: 25px; line-height: 25px; font-size: 12px; text-align: center;}
+/*.ele_pages h3 a{ color: #000;}*/
+.ele_pages h3 button{  width: 63px; height: 25px; line-height: 25px; border:0;color: #fff;background: #c8a675; vertical-align: middle;}
+.ele_pages ul{ display: inline-block; vertical-align: middle;}
+.ele_pages ul li{list-style: none; float: left; margin: 0px 5px; color: #fff;}
+.ele_pages ul li i{  font-style: normal; color: #fff;}
+.ele_pages ul li span{ color:#fff;}
+.ele_pages ul .pages_on a{ color: #ffbf3c;}

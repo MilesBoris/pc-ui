@@ -1,0 +1,132 @@
+.float-left-nav { position: fixed; top: 200px; left: 0; z-index: 9999; }
+.float-left-nav a { display: inline-block; }
+.left-nav-wrapper { margin-top: 20px; }
+.left-nav-wrapper:first-child { margin-top: 0; }
+.float-left-nav-container { background: url('../../__static/__images/lb4222/side_button_background.png'); width: 191px; height: 80px; position: absolute; z-index: -1; display: none; left: -7px; }
+.left-nav-wrapper a:hover .float-left-nav-container { display: block; }
+.left-nav-wrapper .common-sprite{background-color: rgba(0,0,0,.6); border-radius: 50%; background-repeat: no-repeat;}
+.app, .launch, .customer-service, .barcode, .callback { margin-left: 7px; float: left; position: relative; }
+.float-left-nav-text { color: #ffffff; float: left; height: 62px; line-height: 62px; margin-left: 81px; }
+.barcode-sample { background: url('../../__static/__images/lb4222/barcode-sample.jpg'); width: 100px; height: 100px; position: absolute; right: 22px; bottom: -83px; }
+.float-right-nav { position: fixed; bottom: 50px; right: 55px; z-index: 9999; display: none; }
+/*====== icon_common.css start ======*/
+.common-sprite { background-image: url('//image.beike188.com/KFY/images/register/icon_common.png'); background-color: transparent; }
+.app { width: 61px; height: 62px; background-position: -2px -81px; }
+.barcode { width: 61px; height: 62px; background-position: -65px -81px; }
+.customer-service { width: 61px; height: 62px; background-position: -128px -64px; }
+.launch { width: 61px; height: 62px; background-position: -191px -64px; }
+.convenient { width: 60px; height: 60px; background-position: -2px -19px; }
+.licence { width: 60px; height: 60px; background-position: -64px -19px; }
+.newbie { width: 60px; height: 60px; background-position: -126px -2px; }
+.phone { width: 60px; height: 60px; background-position: -188px -2px; }
+.lang { width: 18px; height: 13px; background-position: -2px -2px; }
+.check { width: 15px; height: 15px; background-position: -22px -2px; }
+.clock { width: 15px; height: 15px; background-position: -39px -2px; }
+.head-next { width: 15px; height: 15px; background-position: -56px -2px; }
+.live { width: 7px; height: 7px; background-position: -73px -2px; margin-right:-5px; }
+.sport-icon-1 { width: 19px; height: 19px; background-position: -2px -144px; }
+.sport-icon-2 { width: 19px; height: 19px; background-position: -23px -144px; }
+.incorrect { width: 16px; height: 15px; background-position: -44px -144px; float: left; margin-right: 5px; }
+.check3 { width: 16px; height: 15px; background-position: -61px -144px; float: left; margin-top: 13px; margin-left: 10px; }
+.check4 { width: 15px; height: 15px; background-position: -61px -144px; float: left; margin-right: 5px; }
+.empty-data-face { width: 68px; height: 68px; background-position: -127px -127px; }
+.callback {width: 61px; height: 62px; background: url("//image.beike188.com/KFY/images/register/callback.png") no-repeat;}
+.top-icon { width: 61px; height: 62px; background-position: -2px -165px; cursor: pointer; background-color:rgba(0,0,0,.6); border-radius:50%; background-color: transparent\9; background-repeat: no-repeat; }
+.top-icon:hover { background-position: -65px -165px; }
+.back {background: url("//image.beike188.com/KFY/images/register/icon-back.png") no-repeat; width: 61px; height: 62px; margin-left: 7px; position: relative; float: left;}
+/*====== icon_common.css end ======*/
+
+/*POPUP CALLBACK*/
+#backdrop-callback {top: 0; left: 0; position: fixed; height: 100%; width: 100%; background-color: #000; opacity: 0.5; filter: alpha(opacity = 50); z-index: 9999;}
+.wrap-callback {position: fixed; height: 100%; width: 100%; z-index: 9999; top: 25%; left: 0;}
+.pop-callback {width: 392px; height: 298px; margin: 0 auto; border: 6px solid #333; position: relative; background: #fff;}
+.pop-callback .callback-head {height: 63px; background: url("../../__static/__images/lb4222/member/pop-head.jpg") no-repeat center center #1e1e1e; width: 100%; height: 63px; position: relative; line-height: 63px; font-size: 18px; color: #cca352; text-align: center;}
+.pop-callback .callback-close {background: url("../../__static/__images/lb4222/member/icon-close.png") no-repeat; width: 10px; height: 9px; position: absolute; top: 10px; right: 10px; display: block;}
+.pop-callback .icon-callback {background: url("../../__static/__images/lb4222/icon-callback.png") no-repeat; width: 36px; height: 36px; display: inline-block; margin-right: 10px; position: relative; top: 12px;}
+.pop-callback .calback-content {padding: 48px 0 0 30px;}
+.pop-callback .calback-content .pop-group {height: 41px; margin-bottom: 18px;}
+.pop-callback .calback-content .pop-group label {float: left; font-size: 14px; color: #666; line-height: 41px; margin-right: 10px;}
+.pop-callback .calback-content .pop-group input {font-size: 16px; height: 39px; width: 168px; border: 1px solid #dbdbdb; padding: 0 10px; line-height: 39px; color: #666; font-family: "Microsoft YaHei";}
+.pop-callback .calback-content .pop-group input:focus { outline:none; border: 1px solid #b79675; }
+.pop-callback .calback-content form .validate {display: block; font-size: 14px; color: #999;}
+.pop-callback .calback-content .btn {display: block; width: 156px; height: 37px; text-align: center; line-height: 37px; color: #fff; font-size: 16px; background: url("../../__static/__images/lb4222/lightbox-button.png") no-repeat; margin: 25px 0 0 87px;}
+.pop-callback .calback1 {padding: 64px 0 0 35px;}
+.pop-callback .calback1 p {font-size: 14px; color: #666; line-height: 30px; text-align: left; margin: 0;}
+.pop-callback .calback1 p span {color: #d6981e; font-size: 16px; font-weight: bold;}
+.pop-callback2 {height: 258px;}
+.pop-callback3 {width: 582px; height: 348px;}
+.pop-callback3 .calback-content {padding: 28px 0 0;}
+.pop-callback3 .col_row { padding-top: 30px;}
+.pop-callback3 .col {float: left; height: 200px; width: 290px;}
+.pop-callback3 .col1 {border-right: 1px solid #ebebeb;}
+.pop-callback3 .col form {width: 190px; margin: 0 auto;}
+.pop-callback3 .col .pop-group {height: auto;}
+.pop-callback3 .col .pop-group label {line-height: 22px; display: block; margin-bottom: 7px; height: 22px;}
+.pop-callback3 .col .pop-group .validate {margin-top: 10px;}
+.pop-callback3 .col .btn {margin: 25px auto;}
+.pop-callback3 .col .pop-group .value {font-size: 16px; color: #d6981e; line-height: 40px; height: 40px; width: 190px; display: block;}
+
+.vip-callback .pop-callback3 .calback-content {	padding: 10px 0 0;}
+.vip-callback .pop-callback3 .col { height: 135px; }
+.vip-callback .tip {border: 1px dashed #909090; background: #fdebdd; padding: 10px 6px 8px; font-size: 13px; color: #666; line-height: 20px; margin:0 10px;}
+
+.pop-callback2 .pop-c {padding: 50px 0 0; text-align:center}
+.pop-callback2 .pop-c p {font-size: 13px; color: #666; line-height: 20px; margin: 0; text-align:center;}
+.pop-callback2 .pop-c p.val {margin-bottom: 34px;}
+.pop-callback2 .pop-c p span {color: #cca353;}
+
+
+.float-nav {position: fixed; top: 28%; right: 0px; z-index: 9999;}
+.floatnav-default {width: 86px;  margin-left: 40px; display: none;}
+.float-nav .sidenav {width: 86px; display: block; background: url("//image.beike188.com/KFY/images/register/side3.png") no-repeat; margin: 0; float: none; position: relative;}
+.float-nav .sidenav.customer-service {height: 65px; background-position: 0 0; line-height: 70px;}
+.float-nav .sidenav.vip {height: 60px; background-position: 0 -65px; line-height: 54px;}
+.float-nav .sidenav.callback {height: 55px; background-position: 0 -125px; line-height: 55px;}
+/*.float-nav .sidenav.launch {height: 60px; background-position: 0 -181px; line-height: 60px;}*/
+.float-nav .sidenav.barcode {height: 60px; background-position: 0 -180px; line-height: 50px;}
+.float-nav .sidenav.float-open {height: 24px; background-position: 0 bottom;}
+.float-nav .sidenav span.txt {font-size: 12px; color: #909090; text-align: center; position: absolute; width: 100%; display: none; bottom: 5px; line-height: normal;}
+.float-nav .sidenav:hover span.txt {display: block;}
+.float-nav .sidenav .tips {display: none; background: url("//image.beike188.com/KFY/images/register/tips.png") no-repeat; width: 61px; height: 21px; padding-left: 6px; position: absolute; bottom: 16px; left: -47px; font-size: 11px; color: #ccc; text-align: left; line-height: 22px;}
+.float-nav .sidenav.launch .tips {background: url("//image.beike188.com/KFY/images/register/tips2.png") no-repeat; width: 69px; left: -56px;}
+.float-nav .sidenav:hover .tips {display: block;}
+
+.floatnav-open {width: 147px; display: none;}
+.floatnav-open .sidenav {background: url("//image.beike188.com/KFY/images/register/side3-open.png") no-repeat; padding-left: 66px; font-size: 12px; color: #ccc;}
+.floatnav-open .sidenav.barcode {height: 176px; cursor: default; padding: 12px 0 0; width: 147px;}
+.qr-code {background: url("//image.beike188.com/KFY/images/register/qr.jpg") no-repeat; width: 118px; height: 118px; display: block; margin: 0 auto 8px;}
+.floatnav-open .barcode p {font-size: 12px; color: #ccc; text-align: center; margin: 0; line-height: normal;}
+.float-nav .sidenav.float-close {height: 32px; background-position: 0 bottom;}
+
+.barcode-info {display: none; background: url("//image.beike188.com/KFY/images/register/side-hover.png") no-repeat; width: 166px; height: 183px; position: absolute; top: -102px; left: -168px; z-index: 100; padding-top: 15px;}
+.barcode-info .qr-code {margin: 0; width: 155px; background-position: center;}
+.barcode-info p {font-size: 12px; color: #ccc; text-align: center; width: 155px; margin: 5px 0 0; line-height: normal;}
+.barcode-info .new_qr {margin-left:15px}
+.float-nav .sidenav.barcode:hover .barcode-info {display: block;}
+.top-icon {display: none;}
+.top-icon, .top-icon:hover {background: url("//image.beike188.com/KFY/images/register/top.png") no-repeat; width: 87px; height: 43px; position: relative; margin: 10px 0 0 35px; border-radius: 0;}
+
+.float-gif {width: 88px; height: 49px; display: block; background: url("//image.beike188.com/KFY/images/register/side1.png") no-repeat; margin: 0 0 6px 40px; padding-top: 3px;}
+.float-gif .pop-gif {width: 46px; height: 46px; background: url("../../__static/__images/manchester_schalke04/pop-gif.gif") no-repeat; display: block; margin: 0 auto;}
+.float-gif-open {width: 147px; background: url("//image.beike188.com/KFY/images/register/side1-open.png") no-repeat; display: none; margin-left: 0; position: relative;}
+.float-gif-open .pop-gif {margin: 0 10px 0 15px; float: left;}
+.float-gif-open span {font-size: 12px; color: #ccc; display: block; height: 49px; line-height: 49px; position: absolute; bottom: 0; left: 67px;}
+.sponsor-popup {background: url("../../__static/__images/manchester_schalke04/pop-banner.png") no-repeat center top; width: 100%; height: 695px; position: fixed; bottom: 0; left: 0; z-index: 200;}
+.sponsor-popup .content {position: relative; height: 100%;}
+.sponsor-popup .qr-box {width: 200px; height: 150px; position: absolute; bottom: 0; right: 230px; padding-top: 30px;}
+.sponsor-popup .qr {background: url("../../__static/__images/manchester_schalke04/qr.jpg") no-repeat; width: 100px; height: 100px; display: block; margin: 0 auto 14px;}
+.sponsor-popup .qr-box p {font-size: 12px; color: #fff; text-align: center;}
+.sponsor-popup .sponsor-close {background: url("../../__static/__images/manchester_schalke04/pop-close.png") no-repeat; display: block; width: 57px; height: 57px; position: absolute; right: 130px; bottom: 60px;}
+.sponsor-popup .pop-link {display: block; width: 365px; height: 200px; position: absolute; left: 244px; background: none;}
+
+.promo58 {z-index: 9999999999999; background: url("../../__static/__images/lb4222/promo58/promo58.png") no-repeat; width: 88px; height: 96px; display: block; margin: 0 0 10px 38px; top: 40%;position: fixed; right: 2%;}
+.promo58 p {font-size: 12px; color: #fff; text-align: center; padding-top: 64px;}
+
+.side-worldcup { background: url("//image.beike188.com/KFY/images/index2/worldcup-fixed.png") no-repeat; width: 184px; height: 381px; display: block; position: fixed; top: 176px; left: 15px; z-index: 99999; }
+.side-worldcup .wc-close { background: url("../../__static/__images/lb4222/worldcup-close.png") no-repeat; width: 36px; height: 36px; display: block; position: absolute; bottom: -58px; left: 72px; }
+.side-worldcup .wc-content { padding-top: 212px; }
+.side-worldcup .players { height: 38px; margin-bottom: 10px; }
+.side-worldcup .players .team { font-size: 16px; font-weight: bold; color: #fff; width: 80px; display: block; line-height: 38px; float: left; font-style: italic; text-align: center; }
+.side-worldcup .players .team2 { float: right; }
+.side-worldcup p { font-size: 12px; color: #fff; text-align: center; margin: 0; }
+.side-worldcup .btn {font-size: 13px; width: 109px; height: 30px; text-align: center; line-height: 30px; color: #fff; margin: 32px auto 0; display: block;}

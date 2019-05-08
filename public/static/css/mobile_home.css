@@ -1,0 +1,132 @@
+.mobile-page1 { height: 719px; background: url('//image.beike188.com/KFY/images/mobile/mobile-page1.jpg') center; }
+.mobile1 { width: 449px; height: 788px; background: url('//image.beike188.com/KFY/images/mobile/mobile1.png'); position: absolute; left: 706px; top: 56px; z-index: 10; }
+.mobile-page2 { height: 740px; }
+.mobile2 { width: 483px; height: 762px; background: url('//image.beike188.com/KFY/images/mobile/mobile2.png'); position: absolute; left: 0; top: 103px; z-index: 10; }
+.page2-text-wrapper { overflow: hidden; width: 485px; position: absolute; top: 172px; right: 114px; z-index: 10; }
+.page-title { font-size: 36px; color: #616161; text-align: right; }
+.page-line { border-bottom: 1px solid #dadada; width: 372px; float: right; margin-top: 20px; margin-bottom: 10px;}
+.page-text { color: #777777; line-height: 37px; float: right; margin-bottom: 49px; }
+.mobile-page2-icon { width: 373px; height: 85px; background: url('//image.beike188.com/KFY/images/mobile/mobile-page2-icon.jpg'); float: right; margin-top: 7px; }
+.mobile-page3 { height: 813px; background: url('//image.beike188.com/KFY/images/mobile/mobile-page3.jpg') center; }
+.fish { width: 104px; height: 97px; background: url('//image.beike188.com/KFY/images/mobile/fish.png'); position: absolute; left: 326px; top: 513px; z-index: 10; }
+.bubble1 { width: 13px; height: 13px; background: url('//image.beike188.com/KFY/images/mobile/bubble1.png'); position: absolute; left: 276px; top: 562px; z-index: 10; }
+.bubble2 { width: 7px; height: 7px; background: url('//image.beike188.com/KFY/images/mobile/bubble2.png'); position: absolute; left: 290px; top: 572px; z-index: 10; }
+.mobile-page4 { height: 753px; background: #212121;}
+.mobile3 { width: 351px; height: 566px; background: url('//image.beike188.com/KFY/images/mobile/mobile3.png'); position: absolute; right: 43px; top: 70px; z-index: 10; }
+.mobile4 { width: 366px; height: 570px; background: url('//image.beike188.com/KFY/images/mobile/mobile4.png'); position: absolute; right: 252px; top: 135px; z-index: 10; }
+.ring1 { width: 209px; height: 209px; background: url('//image.beike188.com/KFY/images/mobile/ring1.png'); position: absolute; right: 202px; top: 276px; z-index: 20; }
+.ring2 { width: 236px; height: 236px; background: url('//image.beike188.com/KFY/images/mobile/ring2.png'); position: absolute; right: 190px; top: 262px; z-index: 20; }
+.mobile-protect { width: 152px; height: 151px; background: url('//image.beike188.com/KFY/images/mobile/mobile-protect.png'); position: absolute; right: 230px; top: 306px; z-index: 30; }
+.page4-text-wrapper { width: 375px; overflow: hidden; position: absolute; left: 70px; top: 230px; z-index: 10; }
+.mobile-page4 .page-title { line-height: 55px; color: #fffefe; text-align: left;}
+.mobile-page4 .page-text { text-align: left; color: #fffefe; float: none;}
+.mobile-page5 { height: 773px; background: url('//image.beike188.com/KFY/images/mobile/mobile-page5.jpg') center; }
+.tutorial-wrapper { position: absolute; left: 90px; top: 268px; overflow: hidden; }
+.toogle-wrapper { border: 2px solid #a2a9af;  border-radius: 4px;  overflow: hidden;  float: left;  }
+.toogle { color: #a2a9af; font-size: 22px; float: left; cursor: pointer; padding: 6px 18px 5px 20px; }
+.toogle:first-child { padding: 6px 20px 5px 18px; }
+.toogle.active { color: #212121; background: #a2a9af; }
+.step-text { font-size: 16px; color: #ffffff; float: left; margin-top: 50px; overflow: hidden; width: 100%; }
+.step-text-large { font-size: 20px; float: left; }
+.step-text-small { float: left; line-height: 28px }
+.step-text-small br { margin-top: 10px; display: block; content: " "; }
+.system { font-size: 22px; color: #ffffff; position: absolute; top: 43px; left: 842px; }
+.prev-step { width: 54px; height: 100px; background: url('//image.beike188.com/KFY/images/mobile/prev-step.png'); position: absolute; left: 590px; top: 370px; z-index: 10; cursor: pointer; }
+.next-step { width: 54px; height: 100px; background: url('//image.beike188.com/KFY/images/mobile/next-step.png'); position: absolute; left: 1119px; top: 370px; z-index: 10; cursor: pointer; }
+.mobile-screen { position: absolute; left: 718px; top: 173px; z-index: 10; }
+.mobile-page6 { height: 537px; text-align: center; }
+.mobile-page6 .page-title { margin-top: 77px; text-align: center; }
+.more { margin-top: 11px; text-align: center; background: #ffa200; color: #ffffff; border-radius: 4px; display: inline-block; padding: 0 6px; }
+.faq-wrapper { overflow: hidden; margin: 53px auto 0; width: 915px; }
+/* .cell { float: left; margin-left: 90px; } */
+.cell:first-child { margin-left: 0; }
+.faq-icon { background: url('//image.beike188.com/KFY/images/mobile/mobile-faq-icon.png') no-repeat; }
+#icon-1 { width: 103px; height: 107px; background-position: 0 0; position: absolute; left: 50%; top: 50%; margin-left: -51px; margin-top: -53px; }
+#icon-2 { width: 108px; height: 110px; background-position: -106px 0; position: absolute; left: 50%; top: 50%; margin-left: -55px; margin-top: -53px; }
+#icon-3 { width: 116px; height: 113px; background-position: -218px 0; position: absolute; left: 50%; top: 50%; margin-left: -58px; margin-top: -56px; }
+#icon-4 { width: 148px; height: 112px; background-position: -337px 0; position: absolute; left: 50%; top: 50%; margin-left: -74px; margin-top: -56px; }
+.faq-icon-wrapper { width: 161px; height: 159px; position: relative; }
+#faq-icon-wrapper-1 { background: #e3f7ff; }
+#faq-icon-wrapper-2 { background: #defff1; }
+#faq-icon-wrapper-3 { background: #fff7e3; }
+#faq-icon-wrapper-4 { background: #e8fbff; }
+/* .cell-text { font-size: 22px; color: #616161; margin-top: 27px; display: inline-block; } */
+
+/* ====== animation start ====== */
+.mobile2 { animation-name: mobile2_move; animation-duration: 1s; animation-direction: alternate; animation-iteration-count: infinite; }
+@keyframes mobile2_move {
+	from { top: 103px; }
+	to { top: 83px; }
+}
+.fish { animation-name: fish_move; animation-duration: 1s; animation-direction: alternate; animation-iteration-count: infinite; }
+@keyframes fish_move {
+	from { top: 513px; }
+	to { top: 493px; }
+}
+.bubble1 { animation: bubble1_move 2s linear infinite; }
+@keyframes bubble1_move {
+	0% { left: 276px; top: 562px; opacity: 0.1; }
+	33% { left: 266px; top: 557px; opacity: 1; }
+	66% { left: 266px; top: 547px; opacity: 1; }
+	100% { left: 256px; top: 542px; opacity: 0.1; }
+}
+.bubble2 { animation: bubble2_move 2s linear infinite; }
+@keyframes bubble2_move {
+	0%, 25% { left: 290px; top: 572px; opacity: 0; }
+	50% { left: 275px; top: 572px; opacity: 1; }
+	75% { left: 275px; top: 562px; opacity: 1; }
+	100% { left: 260px; top: 562px; opacity: 0.1; }
+}
+.mobile3 { animation: mobile3_move 1s ease 0s infinite alternate; }
+@keyframes mobile3_move {
+	from { top: 70px; }
+	to { top: 50px; }
+}
+.mobile4 { animation: mobile4_move 1s ease 0s infinite alternate; }
+@keyframes mobile4_move {
+	from { top: 135px; }
+	to { top: 155px; }
+}
+.ring2 {  animation: ring2_move 1s ease 0s infinite; }
+@keyframes ring2_move {
+	0% { transform: scale(0.65); opacity: 1; }
+	33% { transform: scale(1); opacity: 1; }
+	66% { transform: scale(0.65); opacity: 0; }
+	100% { transform: scale(0.65); opacity: 0; }
+}
+.ring1 {  animation: ring1_move 1s ease 0s infinite; }
+@keyframes ring1_move {
+	0% { transform: scale(0.72); opacity: 0; }
+	33% { transform: scale(0.72); opacity: 1; }
+	66% { transform: scale(1.12); opacity: 1; }
+	100% { transform: scale(0.72); opacity: 0; }
+}
+/* ====== animation end ====== */
+
+#mobile_home {background: #fff;}
+
+.mobile-page7 {height: 673px;}
+.mobile-page7 .mobile { background: url("//image.beike188.com/KFY/images/mobile/mobile5.png") no-repeat; width: 450px; height: 673px; position: absolute; top: 36px; left: 0; z-index: 100; animation-name: mobile5_move; animation-duration: 1s; animation-direction: alternate; animation-iteration-count: infinite; }
+@keyframes mobile5_move {
+	from { top: 63px; }
+	to { top: 36px; }
+}
+
+.page5-text-wrapper {width: 370px; position: absolute; top: 160px; right: 114px;}
+.page5-text-wrapper .page-text {margin-bottom: 20px;}
+.page5-text-wrapper .img {background: url("//image.beike188.com/KFY/images/mobile/img.png") no-repeat; width: 388px; height: 130px;}
+
+.mobile-page3 .text {position: absolute; top: 200px; left: 85px; width: 485px;}
+.mobile-page3 .text .t {height: 124px; border-bottom: 1px solid #a6a6a6; width: 400px; margin-bottom: 25px;}
+.mobile-page3 .text h1 {font-size: 36px; color: #fefefe; font-weight: normal; margin: 0; line-height: 52px;}
+.mobile-page3 .text p {font-size: 16px; color: #bcbcbc; margin: 0 0 10px; line-height: 36px;}
+
+.noselect {
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    user-select: none;
+}

@@ -1,0 +1,453 @@
+/*====== fast register start ======*/
+.page { background: #1E1E1E; color: #999999; }
+.register-title-wrapper { background: #141414; margin-top: 40px; padding: 25px 60px; }
+.register-title { color: #cca353; font-size: 22px; float: left; }
+.title-info { float: right; }
+.page a { color: #cca352; }
+.page a.gold-button { color: #ffffff; }
+.fast-register-wrapper { background: #181818; margin-bottom: 60px; }
+.fast-register-panel {position: relative; background: url('//image.beike188.com/KFY/images/register/fast_register_panel.png') no-repeat; width: 910px; height: 570px; margin-left: 150px; margin-top: 55px; }
+.fast-register-panel3 {background: url('../images/fast_register_panel3.png') no-repeat;  }
+.register-info { text-align: center; font-size: 13px; margin: 35px auto; }
+.form-wrapper { margin-top: 40px; margin-left: 70px; }
+.form-label { font-size: 16px; color: #696969; margin-bottom: 6px; }
+.form-input-wrapper { position: relative; margin-bottom: 15px; }
+.form-wrapper input[type=text], .form-wrapper input[type=password] { border: 1px solid #DBDBDB; font-size: 14px; padding-top: 10px; padding-bottom: 10px; }
+.form-wrapper input:focus { outline:none; border:1px solid #b79675; }
+.account { padding-left: 35px; width: 261px; }
+.account-c { position: absolute; left: 12px; top: 11px; }
+.register-password { padding-left: 12px; padding-right: 12px; width: 270px; }
+.eye_position  { position: absolute; left: 262px; top: 14px; }
+.captcha-input { padding-left: 12px; width: 186px; float: left; }
+.register-captcha { display: block; float: left; width: 103px; height: 41px; cursor: pointer; }
+.submit_regist { background: url('//image.beike188.com/KFY/images/register/submit_register1.png'); width: 302px; height: 42px; outline: 0; border: none; cursor: pointer; margin-top: 20px; text-align: center; font-size: 16px; color: #fff; line-height: 32px;}
+.submit_register:hover { background: url('//image.beike188.com/KFY/images/register/submit_register2.png');  }
+.form-wrapper .submit_register:focus {border: none;}
+/*.refresh { position: absolute; left: 308px; top: 16px; cursor: pointer; background: url("//image.beike188.com/KFY/images/register/sprite_register/refresh.png") no-repeat;}*/
+.check2 { position: absolute; top: 15px; left: 306px; }
+.check3 { position: absolute; top: 0; left: 296px; }
+.close_eyes.eye_position, .close_eyes2.eye_position { top: 17px; }
+.form-input-wrapper input.input-error { background: #FFE5E6; border: 1px solid #EB4B4B; }
+.incorrect { float: left; margin-left: 2px; margin-right: 4px; }
+.error-message { color: #eb4b4b; font-size: 11px; line-height: 15px; margin-top: 5px; }
+
+.fast-register-panel .ca {width: 78px; height: 24px; position: absolute; display: block; bottom: 0px;
+    left: 192px;}
+/*====== fast register end ======*/
+
+/*====== register success start ======*/
+.register-success-wrapper { background: #181818; padding: 30px 0; margin-bottom: 40px; }
+.register-success-panel { width: 848px; margin: 0 auto; text-align: center; }
+.congrats-wrapper { overflow: hidden; display: inline-block; }
+.new-big-check {float: left; margin: 7px 10px 0 0;}
+/*.new-big-check {float: none; margin: 0 auto 10px; display: block; width: 74px; height: 74px; background: url("//image.beike188.com/KFY/images/register/sprite_register_success/big_check.png") no-repeat;}*/
+.congrats { font-size: 26px; float: left; line-height: 53px; }
+.congrats-tips { font-size: 14px; padding-bottom: 35px; border-bottom: 1px solid #292929; }
+.congrats-tips a { color: #fff; text-decoration: underline;}
+.info {border-bottom: 1px solid #292929; padding: 27px 0;}
+.member-balance { display: inline-block; }
+.gold-button {margin-left: 84px; display: inline-block; position: relative; top: -5px;}
+.info-gold { color: #cca353; font-size: 24px; }
+.payment-wrapper { padding: 15px 0; border-bottom: 1px solid #292929;}
+.payment-wrapper .cell {display: block; float: left; margin-left: 8px; width: 160px; height: 146px; border-radius: 5px; -webkit-border-radius: 5px; padding-top: 18px;}
+.payment-wrapper .cell:hover {background: #1f1f1f;}
+.payment-gold { font-size: 14px; margin-top: 10px; margin-bottom: 8px; }
+.payment-gray { font-size: 13px; color: #828282; line-height: 20px; }
+.new-online-payment { margin: 0 auto; }
+.new-barcode-payment { margin: 5.5px auto; display: inline-block; }
+.new-point-payment { margin: 10px auto; display: inline-block; }
+.new-complete-profile { margin: 5.5px auto; display: inline-block; }
+.content-link-wrapper { width: 566px; margin: 0 auto; margin-top: 12px; }
+a.content-link { color: #828282; font-size: 15px; margin-left: 60px; text-decoration: underline; }
+a.content-link:hover { color: #cccccc; }
+.content-link:first-child { margin-left: 0; }
+.row-1 { margin-top: 40px; }
+.row-1-title { color: #cca353; font-size: 22px; }
+.row-1-text { color: #cccccc; margin-top: 8px; font-size: 16px; }
+.row-2 { overflow: hidden; padding-top: 30px; border-bottom: 1px solid #292929; padding-bottom: 28px; }
+.cell-2 { float: left; margin-left: 77px; }
+.cell-2:first-child { margin-left: 36px; }
+.cell-2-text { color: #929292; font-size: 13px; margin-top: 30px; }
+#registerok-cs { text-decoration: underline; }
+
+.register-title-wrapper p.pull-right {float: right; font-size: 13px; color: #999; margin: 0; line-height: 28px;}
+.register-title-wrapper p.pull-right a {color: #cca353; text-decoration: underline;}
+.info .info-text {width: 250px; margin: 0 auto;}
+.info-text .info-group {height: 25px; line-height: 25px; font-size: 14px; color: #ccc; text-align: left;}
+.info-text .info-group span {color: #fff;}
+.info-text .info-link {float: right; font-size: 14px; color: #cca353; text-decoration: underline;}
+
+.info .info-text2 {width: 295px; line-height: 25px;}
+.info .info-text2 .info-group {margin-bottom: 5px; height: auto;}
+.info-text .form-group .check3 {left: 220px; margin-top: 5px;}
+.info-text .form-group .error-message span {color: #eb4b4b; font-size: 12px;}
+.info-text .form-group {display: inline-block; width: 220px; min-height: 25px; position: relative; vertical-align: middle;}
+.info-text .form-group #prefix {padding: 0; background: #fff; width: 22px; border: 0; line-height: 25px; height: 25px; font-size: 14px; color: #313030; position: absolute; top: 0; left: 0; text-align: center;}
+.info-text .form-group .form-input {outline: 0; width: 176px; height: 25px; padding: 0 22px; border:0; background: #fff; line-height: 25px; font-size: 13px; color: #828282;}
+.info-text .info-btn {background: url("//image.beike188.com/KFY/images/register/register_success/btn2.png") no-repeat; width: 100px; height: 27px; font-size: 13px; color: #fff; text-align: center; line-height: 27px; margin: 18px 0 0 98px; display: block;}
+.info-text .info-btn:hover {background: url("//image.beike188.com/KFY/images/register/register_success/btn2h.png") no-repeat;}
+.info-text .form-group .value {color: #c5c5c5; background: transparent; line-height: 25px; padding: 0; width: 220px; text-align: left; height: 25px; font-size: 14px;}
+.info-text .form-group .check3 {left: 220px; margin-top: 5px;}
+.info-text .form-group .error-message span {color: #eb4b4b; font-size: 12px;}
+.info-text2 .form-group {float: left;}
+.info-text2 .info-group label {float: left; height: 25px; line-height: 25px;}
+
+    /*====== register success end ======*/
+
+/*REGISTER SUCCESS*/
+.register_success {padding: 36px 0 60px; background: #1e1e1e;}
+.register_success ul, .register_success li, .register_success dl, .register_success dt, .register_success dd,
+.register_success ol, .register_success p, .register_success h1, .register_success h2,
+.register_success h3, .register_success h4, .register_success h5, .register_success h6 { margin: 0; padding: 0; }
+
+.register_success h4 {font-size: 16px; color: #989898; font-weight: normal; margin-bottom: 15px;}
+.register_success .box {background: #181818; margin-bottom: 35px;}
+.register_success .box .t {height: 44px; line-height: 44px; padding: 0 20px; background: #141414; font-size: 14px; color: #989898;}
+.register_success .box .c {padding: 0 20px; height: 76px; line-height: 76px;}
+.register_success .box .c p {display: inline-block; line-height: 76px; font-size: 14px; color: #ccc; margin-right: 25px;}
+.register_success .box .c p span {color: #cca353;}
+.register_success .box .c p.pull-right {float: right; margin: 0;}
+.register_success .box .c p a {color: #cca353; text-decoration: underline; margin-left: 20px;}
+.register_success .games .group {margin-bottom: 20px;}
+.register_success .group .t {height: 35px; border-bottom: 1px solid #323232; font-size: 16px; color: #fff; margin-bottom: 20px;}
+.register_success .group .t span {display: block; float: left; border-bottom: 2px solid #cc2944; height: 34px;}
+.register_success .group .c {margin-left: -12px;}
+.register_success .group .game {position: relative; height: 230px; margin-left: 12px; width: 272px; float: left;}
+.register_success .group .game1 {width: 348px;}
+.register_success .group .game .game-t {font-size: 18px; color: #ccc; position: absolute; top: 22px; left: 20px; z-index: 100;}
+.register_success .group .gameh {display: none; background: url("//image.beike188.com/KFY/images/register/main/trans1.png") repeat; width: 270px; height: 228px; border: 1px solid #996b3d; position: absolute; top: 0; left: 0; z-index: 100;}
+.register_success .group .game1 .gameh {width: 346px;}
+.register_success .group .gameh .gh-t {font-size: 18px; color: #fff; text-align: center; padding-top: 70px; display: block;}
+.register_success .group .gameh .line {width: 27px; height: 2px; background: #d7a647; display: block; margin: 6px auto 20px;}
+.register_success .group .gameh .btn {width: 120px; height: 37px; background: url("//image.beike188.com/KFY/images/register/cover/trial-button.png"); display: block; text-decoration: none; line-height: 35px; color: #fff; margin: 0 auto; text-align: center;}
+.register_success .group .game:hover .gameh {display: block;}
+.register_success .group .game:hover .game-t {display: none;}
+
+.register_success .group .game2 {width: 291px; height: 180px;}
+.register_success .group .game2 .gameh {width: 289px; height: 178px;}
+.register_success .group .game2 .gameh .gh-t {padding-top: 50px;}
+.register_success .games .group2 {margin-bottom: 0;}
+
+.register_success .game-more a { float: right; font-size: 14px; color: #989898; }
+.register_success .game-more a:hover { color: #cccccc; }
+
+.fast-register-panel .register-tab {text-align: center; padding-bottom: 6px; font-size:16px;border-bottom: 1px solid #dbdbdb; width: 300px; margin-top:40px; margin-left: 50px}
+.fast-register-panel .register-tab2 {margin-left: 125px;}
+.fast-register-panel .register-tab a {font-size: 16px; color: #b0b0b0; float: left; display: block; border-bottom: 3px solid transparent; height: 23px;}
+.fast-register-panel .register-tab a.pull-right {float: right;}
+.fast-register-panel .register-tab a:hover, .fast-register-panel .register-tab a.active {border-bottom: 3px solid #cc2944; color: #696969;}
+.register-captcha {position: absolute; top: 0; left: 196px; background: url("//image.beike188.com/KFY/images/register/captcha.png") no-repeat;}
+
+.form-select {height: 20px; margin-bottom: 15px;}
+.form-select .select-col {width: 126px; height: 20px; font-size: 14px; line-height: 20px; color: #686868; display: block; float: left; position: relative;}
+.form-select .select-col.pull-right {margin-left: 48px;}
+.select-col input[type=radio]:not(old) {position: absolute; top: 0; left: 0; z-index: 100; cursor: pointer; width: 19px; height: 19px; margin: 0; padding: 0; opacity: 0; filter: alpha(opacity=0); }
+.select-col input[type=radio]:not(old) + label {padding-left: 24px;}
+.select-col input[type=radio]:not(old) + label i {background: url("//image.beike188.com/KFY/images/register/sprite_register/radio-checkboxes.jpg") no-repeat 0 0; width: 19px; height: 19px; position: absolute; top: 0; left: 0;}
+.select-col input[type=radio]:not(old):checked + label i { background: url("//image.beike188.com/KFY/images/register/sprite_register/radio-checkboxes.jpg") no-repeat -19px 0;}
+.custom-account {display: block;}
+.custom-account .form-group1 {display: none;}
+.custom-account .submit_register {margin: 5px 0 0;}
+#mobile-account .form-wrapper {margin-top: 20px;}
+#mobile-account #account2 .submit_register {margin-top: 10px;}
+.account-type {display: block;}
+#ordinary-account {display: block;}
+/*#ordinary-account .submit_register {margin-top: 55px;}*/
+
+#mobile-account .form-wrapper {margin-left : 70px;}
+.form-wrapper .form-group {min-height: 38px; margin-bottom: 15px;}
+.form-group .form-label {float: left; line-height: 38px; margin: 0 15px 0 0; width: 70px; text-align: right;}
+.form-group .form-input-wrapper {float: left; width: 296px; margin-bottom: 0;}
+.form-select {margin-left: 0; width: 310px;}
+.form-group .captcha-phone {float: left; width: 101px; height: 36px; cursor: pointer; border: 1px solid #dbdbdb; text-align: center; line-height: 36px; color: #999; font-size: 14px;}
+.form-group a.captcha-phone:hover { color: #c08103; text-decoration:underline; }
+.form-group .form-inpt1 {float: left; width: 160px; margin-right: 6px;}
+
+.fast-payment {background: url("//image.beike188.com/KFY/images/register/sprite_register_success/icon-card.png") no-repeat center center; width: 50px; height: 53px; display: block; margin: 0 auto;}
+.info .group {margin-bottom: 15px; padding-left: 292px;}
+.info p {font-size: 14px; color: #ccc; text-align: left; margin: 0; float: left;}
+.info p.member-info {width: 195px;}
+.info p.txt-gray {color: #808080;}
+.info .group a {font-size: 14px; color: #cca353; text-decoration: underline; float: left;}
+.info .member-balance {margin-top: 30px;}
+
+.title-info a.open-online-chat:hover { color: #c08103; text-decoration: underline; }
+
+.form-input-wrapper .form-inpt1 { float: left; width: 160px; margin-right: 6px; }
+.form-input-wrapper .captcha-phone { float: left; width: 101px; height: 36px; cursor: pointer; border: 1px solid #dbdbdb; text-align: center; line-height: 36px; color: #999; font-size: 14px; }
+.form-input-wrapper a.captcha-phone:hover { color: #c08103; text-decoration: underline; }
+.custom-account .submit_register2 {margin-top: 40px;}
+
+/*modifyaccount*/
+.modifyaccount {background: #1e1e1e; padding: 40px 0; }
+.modifyaccount .t {height: 90px; background: #101010; padding: 0 60px; line-height: 90px; font-size: 24px; color: #cca353;}
+.modifyaccount .t span {color: #999; font-size: 16px; float: right;}
+.modifyaccount .t a {color: #cca353; text-decoration: underline;}
+.modifyaccount .c {background: #181818; padding: 120px 0; min-height: 350px;}
+.modifyaccount .form-holder {padding-left: 336px;}
+.modifyaccount .form-group {min-height: 41px; margin-bottom: 16px; line-height: 41px;}
+.modifyaccount label {width: 94px; float: left; font-size: 13px; color: #fff; line-height: 41px; margin-right: 10px; text-align: right;}
+.modifyaccount .input-group {float: left; position: relative;}
+.modifyaccount .readonly {width: 30px; height: 39px; border: 0; background: #323232; outline: 0; text-align: center; line-height: 41px; color: #666; font-size: 13px; float: left; margin-right: 5px;}
+.modifyaccount .form-input {width: 220px; height: 39px; border: 1px solid #6e6e6e; padding: 0 18px; outline: 0; background: transparent; font-size: 13px; color: #666;}
+.modifyaccount .form-input1 {width: 205px; padding: 0 8px; float: left;}
+.modifyaccount .form-buttons {margin: 20px 0 0 104px;}
+.modifyaccount .form-buttons .submit {background: url("//image.beike188.com/KFY/images/register/member/btn10.png") no-repeat; width: 258px; height: 41px; text-align: center; font-size: 16px; color: #fff; line-height: 41px; display: block;}
+.modifyaccount .form-buttons .submit:hover {background: url("//image.beike188.com/KFY/images/register/member/btn10h.png") no-repeat;}
+.modifyaccount .form-buttons .submit.disabled {color: #909090; background: #555; border-radius: 5px;}
+::-webkit-input-placeholder { color: #999; opacity: 0.8; }
+.modifyaccount .check3 {position: relative; left: auto;}
+
+.popmodifysuccess_backdrop { position: fixed; z-index: 88888; background: #000000; opacity: 0.6; filter: alpha(opacity=60); top: 0; left: 0; width: 100%; height: 100%;}
+.pop-wrap {width: 100%; height: 100%; position: fixed; top: 200px;left: 0; z-index: 88888;}
+.popmodifysuccess {width: 422px; height: 290px; background: #fff; border: 6px solid #333; margin: 0 auto; position: relative;}
+.popmodifysuccess .pop-head { height: 63px; background: url("//image.beike188.com/KFY/images/register/lightbox-title-bg.jpg") no-repeat center #1e1e1e; color: #cca352; line-height: 63px; position: relative; text-align: center; font-size: 18px; }
+.popmodifysuccess .pop-close { position: absolute; right: 10px; top: 3px; line-height: normal; cursor: pointer; color: #cca353;}
+.popmodifysuccess .success-msg {padding: 27px 0; text-align: center;}
+.popmodifysuccess .success {width: 50px; height: 50px; display: block; margin: 0 auto 25px; background: url("//image.beike188.com/KFY/images/register/member/icon-success.png") no-repeat;}
+.popmodifysuccess p {font-size: 13px; color: #666;}
+.popmodifysuccess .button {background: url("//image.beike188.com/KFY/images/register/lightbox-button.png") no-repeat; width: 156px; height: 37px; font-size: 16px; color: #fff; display: block; margin: 30px auto 0; line-height: 37px;}
+.popmodifysuccess .button:hover {background: url("//image.beike188.com/KFY/images/register/lightbox-buttonh.png") no-repeat;}
+.partner_icon {background: url("//image.beike188.com/KFY/images/register/sprite_register_success/icon1.png") no-repeat; width: 42px; height: 48px; display: block; margin: 5.5px auto;}
+
+.form-group {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    margin: 5px 0;
+}
+.form-group .control-label {
+    width: 25%;
+    color: #fff;
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 32px;
+}
+
+.form-group .control-label {
+    display: inline-block;
+    float: left;
+
+    height: 20px;
+    margin: 0 auto;
+    padding: 0 15px;
+
+    text-align: right;
+}
+.form-group .control-div {
+    width: 45%;
+    text-align: left;
+    line-height: 32px;
+}
+
+.form-group .control-div {
+    display: block;
+    float: left;
+    width: 45%;
+    padding: 0 15px;
+    text-align: left;
+}
+.form-group .control-div>label {
+    display: inline-block;
+}
+.form-group .control-div {
+    width: 45%;
+    text-align: left;
+    line-height: 32px;
+}
+#moreoption, .agreement {
+    color: #428bca;
+    cursor: pointer;
+}
+
+.register-content {
+    padding: 0 70px
+}
+.register-content .mobile-captcha {
+    width: 302px;
+    margin-right: 1px
+}
+.register-content .content-header .item {
+    padding-left: 27px;
+    padding-right: 27px;
+    padding-bottom: 10px;
+    position: relative;
+    font-size: 16px;
+    color: #666
+}
+.register-content .content-header .item.active {
+    color: #c8a675
+}
+.register-content .icon-input-div {
+    position: relative;
+    border-radius: 5px;
+    border: 1px solid #eaeaea;
+    height: 50px;
+    /*margin-bottom: 10px*/
+}
+.register-content .item .icon {
+    width: 45px;
+    height: 48px;
+    position: absolute;
+    left: 0;
+    border-radius: 4px 0 0 4px;
+    z-index: 1
+}
+.register-content .item .icon-user {
+    background: #c2c2c2 url(//image.beike188.com/KFY/images/register/zhu_yonghu.59daa54.png) no-repeat;
+    background-size: 20px 20px;
+    background-position: 50%
+}
+.register-content .item .icon-phone {
+    background: #c2c2c2 url(//image.beike188.com/KFY/images/register/zhu_phone.79f374e.png) no-repeat;
+    background-size: 20px 20px;
+    background-position: 50%
+}
+.register-content .item .icon-pass {
+    background: #c2c2c2 url(//image.beike188.com/KFY/images/register/zhu_mima.162894e.png) no-repeat;
+    background-size: 20px 20px;
+    background-position: 50%;
+}
+/*.register-content .item .icon-mobile {*/
+    /*background: #c2c2c2 url(//image.beike188.com/KFY/images/register/zhu_mima.162894e.png) no-repeat;*/
+    /*background-size: 20px 20px;*/
+    /*background-position: 50%;*/
+/*}*/
+.register-content .item .icon-captcha {
+    background: #c2c2c2 url(//image.beike188.com/KFY/images/register/zhu_tu.7e89126.png) no-repeat;
+    background-size: 20px 20px;
+    background-position: 50%;
+}
+.register-content .item .icon-phone-captcha {
+    background: #c2c2c2 url(//image.beike188.com/KFY/images/register/zhu_yaoqin.bb32262.png) no-repeat;
+    background-size: 20px 20px;
+    background-position: 50%;
+}
+.register-content .item .icon-code {
+    background: #c2c2c2 url(//image.beike188.com/KFY/images/register/zhu_yaoqin-08.68a4fef.png) no-repeat;
+    background-size: 20px 20px;
+    background-position: 50%;
+}
+.register-content .item .icon-weixin {
+    background: #c2c2c2 url(//image.beike188.com/KFY/images/register/zhu_weixin.png) no-repeat;
+    background-size: 20px 20px;
+    background-position: 50%;
+}
+.register-content .item .icon-input {
+    outline: 0;
+    /*padding: 16px 0 10px 0px;*/
+    /*width: 100%;*/
+    font-size: 14px;
+    border: 0;
+    border-radius: 5px
+}
+.register-content .item .phone {
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #eaeaea;
+    vertical-align: top;
+    outline: none;
+    height: 42px;
+    margin-left: 143px;
+    margin-top: -46px;
+    width: 177px;
+}
+.register-content .quick_code{
+    position:relative;
+}
+.register-content .item .ca {
+    margin-top: -3px;
+    width: 133px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    padding: 0;
+    font-size: 14px
+}
+.register-content .radio {
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    border-radius: 50%;
+    border: 1px solid #eaeaea;
+    vertical-align: middle;
+    margin-right: 10px;
+    position: absolute;
+    top: -2px;
+    background: #fff
+}
+.register-content .radio.active {
+    background: url(//image.beike188.com/KFY/images/register/xuan.255cf20.png) no-repeat;
+    background-size: cover;
+    border: 0
+}
+.register-content .txt2 {
+    margin-left: 24px
+}
+.register-content .item .ca img{
+    width: 131px;
+    height: 48px;
+    cursor: pointer;
+}
+.register-content {
+    padding: 0 50px
+}
+.register-content .icon-input-div {
+    width:320px;
+    height: 44px
+}
+.register-content .icon-input-div>input{
+    width:268px;
+    float:right;
+    height: 41px;
+}
+/* .ivu-select-selection .ivu-select-selected-value {
+    font-size: 14px!important;
+    color: #666
+}
+.ivu-select-selection .ivu-select-selected-value {
+    height: 44px!important;
+    line-height: 44px!important;
+    float: right;
+    margin-right: 24px;
+} */
+
+.register-content .item .icon {
+    width: 45px;
+    height: 42px
+}
+.register-content .item .phone {
+    /*padding: 11px 8px 10px 10px;*/
+    line-height: 20px
+}
+.register-content .mobile-captcha {
+    width: 188px
+}
+.register-content .item .ca {
+    height: 44px;
+    line-height: 44px
+}
+.register-content .item .ca img{
+    width: 131px;
+    height: 42px;
+    cursor: pointer;
+}
+.submitBtn{
+    margin-top: 40px;
+    cursor: pointer;
+    background: url(//image.beike188.com/KFY/images/register/submit_register1.png) no-repeat;
+    width: 302px;
+    height: 46px;
+    outline: 0;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    line-height: 32px;
+    margin-left: 48px;
+}
+.submitBtn:hover{
+    background: url(//image.beike188.com/KFY/images/register/submit_register2.png);
+}

@@ -1,0 +1,196 @@
+.poker-banner {overflow: hidden;}
+.poker-banner, .banner-cycle { height: 300px; width: 100%; position: relative;}
+.banner-cycle .banner-img {width: 100%; height: 100%;}
+.banner1 {background: url("//image.beike188.com/KFY/images/lottery_chess/banner.jpg") no-repeat center top;}
+.banner2 {background: url("//image.beike188.com/KFY/images/lottery_chess/banner2.jpg") no-repeat center top;}
+.banner-img .content {padding-top: 210px;}
+.poker-banner .pager {position: absolute; bottom: -15px; left: 0; width: 100%; text-align: center; z-index: 200;}
+.poker-banner .pager span {font-size: 50px; color: #fff; cursor: pointer; margin: 0 2px;}
+.poker-banner .pager span:hover, .poker-banner .pager span.cycle-pager-active {color: #cc2944;}
+#poker .poker-banner .poker-button, .cell .poker-button { display: block; color: #ffffff; text-decoration: none; text-align: center; line-height: 37px; margin-left: 6px; font-size: 16px; }
+
+#poker .poker-banner .poker-button {margin-left: 30px;}
+#poker .poker-banner .lottery-button {margin-left: 35px;}
+.poker-button-wrapper { margin-top: 180px; }
+/* .cell { width: 586px; height: 267px; float: left; position: relative; } */
+#cell-1 { background: url('//image.beike188.com/KFY/images/lottery_chess/game-4.jpg'); height: 272px; margin-bottom: 20px; }
+#cell-2 { background: url('//image.beike188.com/KFY/images/lottery_chess/game-2.jpg'); }
+#cell-3 { background: url('//image.beike188.com/KFY/images/lottery_chess/game-3.jpg'); float: right;}
+#cell-4 { background: url('//image.beike188.com/KFY/images/lottery_chess/game-5.jpg'); float: right; height: 272px; margin-bottom: 20px;}
+.cell-title-wrapper { top: 34px; left: 122px; position: absolute; z-index: 100; }
+/* .cell-title { color: #ffffff; font-size: 24px; position: absolute; top: 34px; left: 26px; z-index: 100; } */
+.icon-1.poker-sprite, .icon-2.poker-sprite { float: left; margin-left: 12px; margin-top: 4px; }
+.icon-3.poker-sprite { float: left; margin-top: 3px; margin-right: 2px; }
+.online-wrapper { color: #cecece; font-size: 13px; position: absolute; z-index: 100; left: 26px; top: 190px; }
+.cell-line { width: 27px; border-bottom: 2px solid #cc2944; margin-top: 73px; }
+.cell .trans { background: url('//image.beike188.com/KFY/images/lottery_chess/poker-trans.png'); width: 584px; height: 265px; }
+.cell:hover .trans { display: block; }
+.trans-inner-wrapper { padding-left: 26px; }
+/* .cell-text { position: absolute; color: #ffffff; left: 26px; z-index: 100; } */
+.cell-small-text { position: absolute; color: #cecece; left: 26px; font-size: 13px; z-index: 100; }
+#cell-text-1 { top: 104px; }
+#cell-small-text-1 { top: 134px; }
+.cell .poker-button { margin-left: 0; margin-top: 150px; }
+#cell-title-wrapper-2 { left: 144px; }
+#cell-text-2 { margin-top: 86px; }
+#cell-text-3 { margin-top: 98px; }
+#cell-1-wrapper { position: relative; height: 100%; margin-left: 605px; }
+.arrow-box { position: relative; background: #242526; border: 1px solid #996b3d; color: #ffffff; display: inline-block; font-size: 13px; white-space: nowrap; padding: 1px 6px 2px;  }
+.arrow-box:after, .arrow-box:before { top: 100%; left: 50%; border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; }
+.arrow-box:after { border-top-color: #242526; border-width: 4px; margin-left: -4px; }
+.arrow-box:before { border-top-color: #996b3d; border-width: 5px; margin-left: -5px; }
+.arrow-box-wrapper { position: absolute; margin-left: -20px; margin-top: -31px; display: none; }
+.poker-sprite:hover .arrow-box-wrapper { display: block; }
+#cell-2 .online-wrapper, #cell-3 .online-wrapper {top: 160px;}
+#cell-2 .poker-button, #cell-3 .poker-button {margin-top: 130px; font-size: 14px;}
+a.poker-button:hover { background-image: none; background-color: #9a6b3d; border-radius: 3px; }
+#cell-1 .trans, #cell-4 .trans {height: 270px;}
+
+/*POKER*/
+body {background: #0a0a0a;}
+ul, li, dl, dt, dd, ol, p, h1, h2, h3, h4, h5, h6 { margin: 0; padding: 0; }
+/*.marquee {background: #181818;}*/
+.poker-banner .marquee {background-color: rgba(0,0,0,0.3); position: absolute; top: 0; left: 0; width: 100%; z-index: 200;}
+
+.wrap {background: #1e1e1e; padding: 40px 0 70px;}
+.poker .main {background: #323232; border-top-left-radius: 4px; -webkit-border-top-left-radius: 4px;}
+.poker .sidenav {width: 260px; float: left; background: #323232; border-top-left-radius: 4px; -webkit-border-top-left-radius: 4px;}
+.poker .sidenav .t {font-size: 18px; color: #cccccc; text-align: center; height: 65px; line-height: 65px; background: #3c3c3c; border-top-left-radius: 4px; -webkit-border-top-left-radius: 4px;}
+.poker .sidenav ul {list-style: none; width: 100%; padding-left: 0; margin: 0}
+.poker .sidenav ul li { width: 100%; height: 60px; position: relative; background: url("../../__static/__images/lb4222/member/icon5.png") no-repeat 228px center;}
+.poker .sidenav ul li .hr { display: none; width: 4px; background: #323232; position: absolute; height: 100%; top: 0; left: 4px; }
+.poker .sidenav ul li a {width: 225px; height: 59px; padding-left: 18px; margin-left: 12px; border-bottom: 1px solid #232323; display: block; font-size: 13px; color: #ccc; line-height: 60px; }
+.poker .sidenav ul li:hover, .poker .sidenav ul li.active { background: url("../../__static/__images/lb4222/member/icon5h.png") no-repeat 228px center #282828; border-bottom: 1px solid #323232; height: 59px; }
+.poker .sidenav ul li:hover .hr, .poker .sidenav ul li.active .hr { display: block; }
+.poker .sidenav ul li:hover a, .poker .sidenav ul li.active a { color: #f8ad32; }
+
+.poker .right { width: 752px; background: #282828; float: left; height: 100%; min-height: 500px; box-shadow: 2px 0px 10px #222 inset; padding: 42px 94px 80px;}
+.poker .tab {height: 50px; border-bottom: 1px solid #404040; margin-bottom: 30px;}
+.poker .tab ul {list-style: none; height: 51px;}
+.poker .tab ul li {float: left; width: 126px; height: 49px; border: 1px solid #404040; margin-right: -1px;}
+.poker .tab a {display: block; width: 100%; height: 100%; line-height: 48px; font-size: 13px; color: #5e5e5e; text-align: center;}
+.poker .tab li:hover, .poker .tab li.active {background: #404040; color: #ccc;}
+.poker .tab li:hover a, .poker .tab li.active a {color: #ccc;}
+
+.poker .info {display: none;}
+.poker #tab1-info {display: block;}
+.poker .promo-group {margin-bottom: 30px;}
+.poker .promo-group h2 {font-size: 16px; color: #cca353; font-weight: normal; margin-bottom: 10px;}
+.poker .promo-group h4 {font-size: 13px; color: #cca353; font-weight: normal; line-height: 22px;}
+.poker .promo-group p {font-size: 13px; color: #808080; line-height: 22px;}
+.poker .promo-group .box { width: 185px; height: 140px; float: left; margin: 30px 2px 0 0; background: #222;}
+.poker .promo-group .box-top {height: 60px; text-align: center; background: #323232; padding-top: 10px; font-size: 14px; color: #b1b1b1; line-height: 26px;}
+.poker .promo-group .box-top span, .poker .promo-group .bottom span {font-size: 20px;}
+.poker .promo-group .bottom {height: 60px; text-align: center; padding-top: 10px; font-size: 14px; color: #808080; line-height: 26px;}
+.poker .promo-group table {margin: 30px 0; width: 100%; border-spacing: 1px; border-collapse: separate;}
+.poker table th {height: 35px; text-align: center; font-size: 14px; color: #b1b1b1; font-weight: normal; background: #323232;}
+.poker table td {height: 35px; text-align: center; font-size: 14px; color: #808080; background: #222;}
+
+.poker .promo-group .row {margin-bottom: 15px;}
+.poker .promo-group .list {font-size: 14px; margin-bottom: 5px; clear: both;}
+.poker .promo-group .list span {float: left; display: block; font-size: 13px; color: #808080; line-height: 22px;}
+.poker .promo-group .img {margin: 30px 0;}
+.poker .promo-group ul {list-style: none; padding-left: 0}
+.poker .promo-group ul li {font-size: 13px; color: #808080; line-height: 22px;}
+
+.poker .step-pager {height: 42px; margin-top: 30px;}
+.poker .step-pager span { cursor: pointer; display: block; float: left; width: 148px; height: 40px; border: 1px solid #404040; text-align: center; line-height: 40px; font-size: 13px; color: #5e5e5e; margin-right: -1px;}
+.poker .step-pager span.cycle-pager-active, .poker .step-pager span.hover {background: #404040; color: #ccc;}
+.poker .step-holder {width: 754px; height: 455px; position: relative; overflow: hidden; margin-top: 30px;}
+.poker .step-holder .step .img {width: 755px;}
+.poker .step-holder .step .img img {width: 100%; max-width: 100%;}
+
+.poker .tab3-tab, .poker .guide-tab {height: 42px; margin-bottom: 30px;}
+.poker .tab3-tab ul, .poker .guide-tab ul {height: 42px; list-style: none;}
+.poker .tab3-tab ul li, .poker .guide-tab ul li {float: left; width: 151px; height: 40px; border: 1px solid #404040;  margin-right: -1px;}
+.poker .tab3-tab a, .poker .guide-tab a {display: block; color: #5e5e5e; font-size: 13px; text-align: center; line-height: 40px; width: 100%; height: 100%;}
+.poker .tab3-tab li:hover, .poker .tab3-tab li.active,
+.poker .guide-tab li:hover, .poker .guide-tab li.active {background: #404040; color: #ccc;}
+.poker .tab3-tab li:hover a, .poker .tab3-tab li.active a,
+.poker .guide-tab li:hover a, .poker .guide-tab li.active a {color: #ccc;}
+
+.poker .tab-info {margin-left: -14px; display: none;}
+.poker #zhuang-tab, .poker #guide1-tab {display: block;}
+.poker .tab-info .item {float: left; width: 241px; height: 270px; position: relative; margin-left: 14px;}
+.poker .tab-info .item img {width: 241px; margin-bottom: 15px;}
+.poker .tab-info .item p {font-size: 13px; color: #808080; line-height: 22px;}
+.poker .tab-info ol {padding-left: 20px;}
+.poker .tab-info ol li {font-size: 13px; color: #808080; line-height: 22px;}
+
+.poker .guide .tab-info {margin-left: 0;}
+.poker .guide img {width: 755px;}
+
+.poker .faq .group {background: #222; margin-bottom: 20px;}
+.poker .faq .group .t {cursor: pointer; height: 32px; background: #323232; line-height: 32px; padding: 0 9px; font-size: 14px; color: #b1b1b1; position: relative;}
+.poker .faq .group .icons {background: url("../../__static/__images/lb4222/branch/icons.png") no-repeat;}
+.poker .faq .group .icon-help {display: block; float: left; width: 20px; height: 20px; background-position: 0 0; margin: 5px 10px 0 0;}
+.poker .faq .group .icon-arrow {display: block; width: 9px; height: 6px; position: absolute; top: 14px; right: 12px; background-position: -42px -7px;}
+.poker .faq .group.open .icon-help {background-position: -20px 0;}
+.poker .faq .group.open .icon-arrow {background-position: -42px 0;}
+.poker .faq .group .c {padding: 10px 20px; display: none;}
+.poker .faq .group .c p {font-size: 12px; color: #808080; line-height: 22px;}
+.poker .faq .group .c a {color: #cca353; text-decoration: underline;}
+
+.poker table.no-border {border: 0; width: 400px; margin: 0;}
+.poker table.no-border td {height: 24px; line-height: 24px; text-align: left; font-size: 13px; color: #808080; background: 0;}
+
+.trans-maintain {width: 584px; height: 270px; z-index: 100;}
+.trans-maintain .icon-maintain-l {margin-top: 96px;}
+#cell-2 .trans-maintain, #cell-3 .trans-maintain {height: 265px;}
+
+.page-body .row {margin-bottom: 44px;}
+.row .promo-c {margin-left: -25px; position: relative;}
+.row .promo-c1 {margin-left: -12px;}
+.promo-c .item {width: 400px; height: 300px; position: relative; float: left; margin-left: 12px;}
+.promo-c .item1 {background: url("//image.beike188.com/KFY/images/lottery_chess/poker-img1.jpg") no-repeat;}
+.promo-c .item2 {background: url("//image.beike188.com/KFY/images/lottery_chess/promo2.jpg") no-repeat;}
+.promo-c .item3 {background: url("//image.beike188.com/KFY/images/lottery_chess/poker-img2.jpg") no-repeat;}
+.promo-c .item4 {background: url("//image.beike188.com/KFY/images/lottery_chess/poker-img3.jpg") no-repeat;}
+.promo-c .trans {width: 400px; height: 300px; background: url("//image.beike188.com/KFY/images/lottery_chess/poker-trans.png") repeat;}
+.promo-c .trans .poker-button {display: block; color: #fff; text-align: center; background: url("//image.beike188.com/KFY/images/lottery_chess/btn3.png") no-repeat; width: 115px; line-height: 37px; position: absolute; top: 200px; left: 24px;}
+/*.promo-c .item-c {padding: 34px 0 0 24px; z-index: 100; position: relative;}*/
+.item-c .t {margin-bottom: 22px; position: relative;}
+.item-c h2 {font-size: 24px; color: #fff; font-weight: normal; float: left;}
+.item-c p {font-size: 16px; color: #f0f0f1;}
+.item-c .online-wrapper {top: 156px;}
+.promo-c .item:hover .trans {display: block;}
+.promo-c .trans-maintain {width: 280px; height: 270px;}
+.promo-c .red-line {width: 27px; height: 2px; background: #cc2944; display: none; position: absolute; bottom: -10px; left: 0;}
+/*.promo-c .item:hover .red-line {display: block;}*/
+.promo-c .trans-maintain {width:1200px; height: 270px; margin-left: 12px;}
+
+.lottery {width: 588px; height: 300px; float: left; margin: 0 0 24px 24px; position: relative;}
+.lottery1 {background: url("//image.beike188.com/KFY/images/lottery_chess/lottery_xig.jpg") no-repeat;}
+.lottery2 {background: url("//image.beike188.com/KFY/images/lottery_chess/lottery_vr.jpg") no-repeat;}
+.lottery3 {background: url("//image.beike188.com/KFY/images/lottery_chess/lottery_ig.jpg") no-repeat;}
+.lottery4 {background: url("//image.beike188.com/KFY/images/lottery_chess/lottery_x6.jpg") no-repeat;}
+.lottery6 {background: url("//image.beike188.com/KFY/images/lottery_chess/lottery_6.jpg") no-repeat;}
+.lottery5 {background: url("//image.beike188.com/KFY/images/lottery_chess/lottery_gy.jpg") no-repeat;}
+
+
+.free1{background: url("//image.beike188.com/KFY/images/free/free02.jpg") no-repeat;}
+.free2{background: url("//image.beike188.com/KFY/images/free/free01.jpg") no-repeat;}
+
+.promo-lottery .trans-maintain {height: 300px;width:1222px;}
+.lottery h2 {font-size: 22px; color: #ccc; font-weight: normal; margin: 20px 0 0 26px;}
+.lottery .trans { cursor:pointer;width: 586px; height: 300px; background: url("//image.beike188.com/KFY/images/lottery_chess/lot-trans.png") repeat;}
+.lottery .promo-info {margin-top: 72px; text-align: center;}
+.lottery .promo-info h2 {margin: 0;}
+.lottery .red-line {display: block; position: relative; bottom: auto; left: auto; margin: 8px auto 15px; width: 100px;}
+.lottery .promo-info p {font-size: 13px; color: #cecece; line-height: 24px;}
+.lottery .trans .poker-button {margin: 20px auto; position: relative; top: auto; left: auto;}
+.lottery:hover .trans {display: block;}
+
+#trial .lightbox-content { padding-top: 20px; padding-left: 29px; padding-right: 32px; padding-bottom: 34px; }
+#trial .limit-text { float:left; color: #686868; font-size: 18px; line-height: 67px; margin-left: 50px; }
+#trial .limit-line { float:left; border-right: 1px solid #e4e4e4; height: 45px; margin: 11px 22px 0 26px; }
+#trial .limit-number { float:left; color: #bea064; font-size: 51px; }
+#trial .limit-row { margin-bottom: 16px; }
+#trial .lightbox-input-wrapper { width: 331px; }
+#trial .trial-now { border: 1px solid #cca352; color: #cca352; text-align: center; width: 154px; height: 35px; float: left; line-height: 35px; border-radius: 4px; cursor: pointer; }
+#trial .register-now { float: right; color: #ffffff; text-align: center; line-height: 37px; text-decoration: none; }
+#trial .button-row { margin-top: 25px; }
+
+.lottery .trans-maintain {width: 588px; height: 300px; margin-left: 0;}
+.lottery  .trans-maintain .icon-maintain-l {margin-top: 124px;}
+.banner3 {background: url("//image.beike188.com/KFY/images/lottery_chess/banner3.jpg") no-repeat center top;}
